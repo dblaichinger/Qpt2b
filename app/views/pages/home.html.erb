@@ -18,5 +18,11 @@
 
 <div id="form" style="height:500px;border:3px solid #CCCCCC;margin:1em;">
 <h2>Form</h2>
+
+<%= form_for @order do |f| %>
+	<%= f.label :code %>
+	<%= f.text_field :code %>
+<% end %>
+
 <a class="toScroll" rel="info">next >></span>
 </div>

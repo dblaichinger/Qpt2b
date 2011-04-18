@@ -4,6 +4,7 @@ Meps::Application.routes.draw do
   get "pages/info"
 
   devise_for :users
+  resources :orders
 
   root :to => "pages#home"
 
