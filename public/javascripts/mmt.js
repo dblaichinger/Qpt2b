@@ -1,11 +1,7 @@
 $(document).ready(function() { 
-	// Example for scrolling
-	$("#toMap").click(function() {
-		$.scrollTo("#map", 2000);
-	});
-
-
-	$("#toEditor").click(function() {
-		$.scrollTo("#editor", 2000);
+	// Scrolling
+	// Define: <span class="toScroll" rel="target.id">Some text</span>
+	$(".toScroll").click(function() {
+		$.scrollTo("#" + $(this).attr("rel"), 2000);
 	});
 });
