@@ -3,17 +3,19 @@
 
 <div id="info" style="height:500px;border:3px solid #CCCCCC;margin:1em;">
 <h2>Info Text</h2>
-<a class="toScroll" rel="map">next >></span>
+<a class="toScroll" rel="map">next >></a>
 </div>
+<h2 id="map">Map</h2>
+<a class="toScroll" rel="editor">next >></a>
 
-<div id="map" style="height:500px;border:3px solid #CCCCCC;margin:1em;">
-<h2>Map</h2>
-<a class="toScroll" rel="editor">next >></span>
+<%= gmaps("markers" => {"data" => @json}, "map_options" => {"map_container_id" => "map_box", "auto_adjust" => "true"}) %>
+<!-- NOTE: do not add (inline) css to div#map, neither put content within div#map. otherwise map won't get loaded -->
+<div id="map_box">
 </div>
 
 <div id="editor" style="height:500px;border:3px solid #CCCCCC;margin:1em;">
 <h2>Editor</h2>
-<a class="toScroll" rel="form">next >></span>
+<a class="toScroll" rel="form">next >></a>
 </div>
 
 <div id="form" style="height:500px;border:3px solid #CCCCCC;margin:1em;">
@@ -24,5 +26,5 @@
 	<%= f.text_field :code %>
 <% end %>
 
-<a class="toScroll" rel="info">next >></span>
+<a class="toScroll" rel="info">next >></a>
 </div>

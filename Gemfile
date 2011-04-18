@@ -4,7 +4,7 @@ gem 'rails', '3.0.4'
 
 gem 'mysql2'
 gem 'devise'
-#gem 'gmaps4rails'
+gem 'gmaps4rails'
 gem 'jquery-rails'
 
 
