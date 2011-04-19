@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  trashcan_id: 1
+  owner_id: 1
+  code: MyString
+  design_id: 1
+
+two:
+  trashcan_id: 1
+  owner_id: 1
+  code: MyString
+  design_id: 1
