@@ -7,9 +7,12 @@ class DemandTest < ActiveSupport::TestCase
   end
 
   test "vote count" do
-    d = Demand.create(:address => "FH", :longitude => 47.724299, :latitude => 13.086305, :counter => 0 )
+    d = Demand.create(:address => "Plueddemanngasse 1, Graz", :counter => 0 )
     
-    d.vote
-    assert d.counter == 1
+    42.times do
+      d.vote
+    end
+
+    assert d.counter == 42
   end
 end

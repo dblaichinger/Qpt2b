@@ -10,9 +10,4 @@ class PagesControllerTest < ActionController::TestCase
   	get :info
   	assert_response :success
   end
-
-  test "should not get vote" do
-  	get :vote
-  	assert_response :error
-  end
 end
