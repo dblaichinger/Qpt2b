@@ -9,10 +9,9 @@ Meps::Application.routes.draw do
 
   devise_for :users
   resources :orders
-
   resources :users
 
-  resources :demands, :only => [:index, :show]
+  resources :demands, :only => [:index, :update]
 
   root :to => "pages#home"
 

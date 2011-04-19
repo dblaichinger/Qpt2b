@@ -25,7 +25,9 @@
 	  <%= render 'shared/error_messages', :object => f.object %>
 
 	<%= f.fields_for :orders do |t| %>
+		<%= t.label :design_id %>
 		<%= t.text_field :design_id  %>
+		<%= t.label :trashcan_id %>
 		<%= t.text_field :trashcan_id %>
 	<% end %>
 
