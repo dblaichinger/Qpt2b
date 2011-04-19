@@ -19,3 +19,10 @@ function setTrashcanId(val) {
 	$("#user_orders_attributes_0_trashcan_id").val( val );
 	$.scrollTo("#editor", 2000);
 }
+
+function vote( id ) {
+  $.ajax({
+    type: 'PUT', 
+    url: '/demands/'+id
+  });
+}

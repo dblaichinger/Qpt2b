@@ -21,6 +21,6 @@ class Demand < ActiveRecord::Base
   def gmaps4rails_infowindow
   #link_to 'Vote', demand_path(5), :method => 'put', :remote => true
   #"<form method='put' action='/demands/#{self.id}'><input type='submit' value='Vote'></form>"
-  "<input type='submit' value='Vote' onclick='vote(#{self.id})'>"
+  "<input type='submit' value='Vote' onclick='vote(#{self.id})'><br>Current Votes: #{self.counter}"
   end
 end
