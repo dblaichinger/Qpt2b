@@ -7,7 +7,7 @@ Meps::Application.routes.draw do
 
   devise_for :users
   resources :orders
-  resources :demands, :only => [:index]
+  resources :demands, :only => [:index, :show]
 
   root :to => "pages#home"
 
