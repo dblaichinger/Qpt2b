@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 
 	// Set trashcan_id to order form input
-	$(".toForm").click(function() {
+	$(".trashcanID").click(function() {
 		$("#user_orders_attributes_0_trashcan_id").val( $(this).attr("id") );
 	});
 
