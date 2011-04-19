@@ -23,8 +23,8 @@
 
 <%= form_for @user, :url => orders_path do |f| %>
 
-	<% f.fields_for :orders do |t| %>
-		<%= t.text_field :design_id %>
+	<%= f.fields_for :orders do |t| %>
+		<%= t.text_field :design_id  %>
 		<%= t.text_field :trashcan_id %>
 	<% end %>
 
