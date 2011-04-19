@@ -7,11 +7,10 @@ gem 'devise'
 gem 'gmaps4rails'
 gem 'jquery-rails'
 
-
-#group :test do
-#  gem 'machinist'
-#  gem 'faker', '0.3.1'
-#  gem 'shoulda'
-#  gem 'capybara'
-#  gem 'mocha', :require => false
-#end
+group :test do
+  gem 'machinist'
+  gem 'faker', '0.3.1'
+  gem 'shoulda'
+  gem 'capybara'
+  gem 'mocha', :require => false
+end
