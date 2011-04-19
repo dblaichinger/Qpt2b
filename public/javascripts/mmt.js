@@ -25,4 +25,6 @@ function gmaps4rails_callback() {
    Gmaps4Rails.clear_markers();
    if (marker != null) { marker.setMap(null); }
    google.maps.event.addListener(Gmaps4Rails.map, 'click', function(object){ marker = new google.maps.Marker({position: object.latLng, map: Gmaps4Rails.map});});
+
+   //latitude can be retrieved with: object.latLng.lat(), longitude with: object.latLng.lng()
 }
