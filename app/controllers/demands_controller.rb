@@ -3,7 +3,7 @@ class DemandsController < ApplicationController
     @markers = Demand.all.to_gmaps4rails
   end
 
-  def show
+  def update
   demand = Demand.find(params[:id])
   demand.vote
   redirect_to demands_path

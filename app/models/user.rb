@@ -6,4 +6,7 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me, :name, :street, :city, :token
+
+  has_many :orders, :dependent => :destroy
+  accepts_nested_attributes_for :orders
 end

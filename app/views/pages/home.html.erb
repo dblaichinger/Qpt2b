@@ -21,9 +21,26 @@
 <div id="form" style="height:500px;border:3px solid #CCCCCC;margin:1em;">
 <h2>Form</h2>
 
-<%= form_for @order do |f| %>
-	<%= f.label :code %>
-	<%= f.text_field :code %>
+<%= form_for @user, :url => orders_path do |f| %>
+
+	<%= f.fields_for :orders do |t| %>
+		<%= t.text_field :design_id  %>
+		<%= t.text_field :trashcan_id %>
+	<% end %>
+
+	<%= f.label :email %>
+	<%= f.text_field :email %>
+
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+
+	<%= f.label "Strasse:" %>
+	<%= f.text_field :street %>
+
+	<%= f.label "Stadt:" %>
+	<%= f.text_field :city %>
+
+	<%= f.submit " Bestellung anfordern " %>
 <% end %>
 
 <a class="toScroll" rel="info">next >></a>

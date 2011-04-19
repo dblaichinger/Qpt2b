@@ -1,4 +1,11 @@
-
+<script> 
+function vote( id ) {
+  $.ajax({
+    type: 'PUT', 
+    url: '/demands/'+id
+  });
+}
+</script>
 <h1>Demand map</h1>
 <%= gmaps("markers" => {"data" => @markers}, "map_options" => {"map_container_id" => "map_box", "auto_adjust" => "true"}) %>
 <div id="demand_map"></div>
