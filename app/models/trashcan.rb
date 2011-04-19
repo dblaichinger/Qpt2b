@@ -1,5 +1,6 @@
 class Trashcan < ActiveRecord::Base
   acts_as_gmappable
+  attr_accessible :latitude, :longitude, :address
 
   require 'marker_module.rb'
   include MarkerModule

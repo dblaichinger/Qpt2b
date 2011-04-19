@@ -1,12 +1,13 @@
 class Demand < ActiveRecord::Base
   acts_as_gmappable
+  attr_accessible :latitude, :longitude, :address, :counter
 
   require 'marker_module.rb'
   include MarkerModule
 
   def gmaps4rails_marker_picture
    {
-    "picture" => "/images/icon-Yes.png",
+    "picture" => "/images/demand.png",
     "width" => "45",
     "height" => "45"
    }
