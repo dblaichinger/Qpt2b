@@ -5,6 +5,9 @@ Meps::Application.routes.draw do
 
   devise_for :users
   resources :orders
+  resources :users do
+  	post "/order",  :to => 'users#order'
+  end
 
   root :to => "pages#home"
 

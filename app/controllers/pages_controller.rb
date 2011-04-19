@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def home
-  	@order = Order.new
+  	@user = User.new
+  	order = @user.orders.build
 	@json = Trashcan.all.to_gmaps4rails
   end
 
