@@ -19,3 +19,10 @@ function setTrashcanId(val) {
 	$("#user_orders_attributes_0_trashcan_id").val( val );
 	$.scrollTo("#editor", 2000);
 }
+
+var marker = null;
+function gmaps4rails_callback() {
+   Gmaps4Rails.clear_markers();
+   if (marker != null) { marker.setMap(null); }
+   google.maps.event.addListener(Gmaps4Rails.map, 'click', function(object){ marker = new google.maps.Marker({position: object.latLng, map: Gmaps4Rails.map});});
+}
