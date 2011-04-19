@@ -1,17 +1,13 @@
 require 'test_helper'
 
 class TrashcanTest < ActiveSupport::TestCase
-  # Replace this with your real tests.
-  test "the truth" do
-    assert true
-  end
 
   test "create trashcan" do
     t = Trashcan.create(:address => "Plueddemanngasse 1, Graz", :is_free => true )
 
-    assert t != nil
-    assert t.latitude && t.latitude != nil 
-    assert t.longitude && t.longitude != nil
+    assert_not_nil(t)
+    assert_not_nil(t.latitude)
+    assert_not_nil(t.longitude)
   end
 
   test "trashcan gmaps4rails_address" do
@@ -20,7 +16,7 @@ class TrashcanTest < ActiveSupport::TestCase
     assert t.address = t.gmaps4rails_address
 
     answer = t.gmaps4rails_infowindow
-    assert   answer == t.address
+    assert_equal(answer, t.address)
   end
 
 end
