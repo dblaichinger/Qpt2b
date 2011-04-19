@@ -6,6 +6,7 @@ gem 'mysql2'
 gem 'devise'
 gem 'gmaps4rails'
 gem 'jquery-rails'
+gem 'annotate-models'
 
 group :test do
   gem 'machinist'
