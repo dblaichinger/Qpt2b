@@ -5,6 +5,8 @@ Meps::Application.routes.draw do
   get "pages/home"
   get "pages/info"
 
+  get "pages/vote"
+
   devise_for :users
   resources :orders
   resources :demands, :only => [:index]
@@ -12,4 +14,5 @@ Meps::Application.routes.draw do
   root :to => "pages#home"
 
   match '/', :to => 'pages#home'
+  match '/info', :to => 'pages#info'
 end
