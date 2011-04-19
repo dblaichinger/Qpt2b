@@ -10,7 +10,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110419080153) do
+ActiveRecord::Schema.define(:version => 20110419083731) do
+
+  create_table "demands", :force => true do |t|
+    t.integer  "counter"
+    t.float    "longitude"
+    t.float    "latitude"
+    t.string   "address"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "orders", :force => true do |t|
     t.integer  "trashcan_id"
