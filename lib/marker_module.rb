@@ -4,6 +4,6 @@ module MarkerModule
   end
 
   def gmaps4rails_infowindow
-    "#{self.address}"
+    "#{self.address} <input type='button' id='3' class='trashcanID' onclick='setTrashcanId(#{self.id})' value='Nimm mich!' />" #
   end
 end

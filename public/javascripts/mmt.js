@@ -8,7 +8,14 @@ $(document).ready(function() {
 
 	// Set trashcan_id to order form input
 	$(".trashcanID").click(function() {
-		$("#user_orders_attributes_0_trashcan_id").val( $(this).attr("id") );
+		$("#user_orders_attributes_0_trashcan_id").val( 2 ); //$(this).attr("id")
+		console.log("Dong");
 	});
 
+
 });
+
+function setTrashcanId(val) {
+	$("#user_orders_attributes_0_trashcan_id").val( val );
+	$.scrollTo("#editor", 2000);
+}
