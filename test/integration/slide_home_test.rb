@@ -4,7 +4,7 @@ class SlideHomeTest < ActionDispatch::IntegrationTest
   include Capybara
 
   # Replace this with your real tests.
-  test "the truth" do
+  test "the navigation link" do
   	visit pages_home_path
     click_link "weiter zur Map >>"
   end
