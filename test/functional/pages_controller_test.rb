@@ -11,4 +11,8 @@ class PagesControllerTest < ActionController::TestCase
   	assert_response :success
   end
 
+  test "should get not get vote" do
+  	get :vote
+  	assert_response :error
+  end
 end
