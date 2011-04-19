@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Meps</title>
+  <title><%= "MEPS | "+@title %></title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= javascript_include_tag  'jquery.scrollTo-min', 'mmt' %>
@@ -15,7 +15,7 @@
 					<%= value %>
 				</div>
 <% end %>                          
-
+<p><%= request.remote_ip %>
 <p><%=link_to 'Home', pages_home_path %> <%=link_to 'Info', pages_info_path %> <%= link_to 'Demands', demands_path %></p>
 
 <%= yield %>

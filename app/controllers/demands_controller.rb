@@ -1,5 +1,6 @@
 class DemandsController < ApplicationController
   def index
+    @title = "Vote"
     @markers = Demand.all.to_gmaps4rails
   end
 

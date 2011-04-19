@@ -17,7 +17,8 @@ class OrdersController < ApplicationController
 		if @newUser.save
 			flash[:notice] = "Bestellung getaetigt !"
 		else
-			flash[:alert] = "Bestell Fehler !"
+			flash[:error] = "Bestellung fehlgeschlagen"
+
 		end
 		redirect_to pages_home_path
 	end
