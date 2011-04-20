@@ -11,14 +11,14 @@ class PagesController < ApplicationController
 
 
     if ((@users_longitude != nil) && (@users_longitude != nil))
-		   @userpos = [description: "Dein Standort",
-		   			   title: "Dein Standort", 
-		   			   sidebar: "",
-		   			   longitude: @users_longitude,
-		   			   latitude: @users_latitude, 
-		   			   picture: "", 
-		   			   width: "", 
-		   			   height: ""]
+		   @userpos = [:description => "Dein Standort",
+		   			   :title => "Dein Standort", 
+		   			   :sidebar => "",
+		   			   :longitude => @users_longitude,
+		   			   :latitude => @users_latitude, 
+		   			   :picture => "", 
+		   			   :width => "", 
+		   			   :height => ""]
 		 
 		  
 		  @userpos = @userpos.to_json.to_s.chop

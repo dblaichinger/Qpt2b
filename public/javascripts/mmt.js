@@ -15,9 +15,8 @@ $(document).ready(function() {
 	//Get current position
 	if(typeof position === 'undefined'){
 		getPosition();
+		$.scrollTo("#map", 2000);
 	} 
-	else alert('HEHE');
-	
 
 });
 
@@ -83,6 +82,5 @@ function getPosition(){
 //Send current position to get marker on the map
 function sendPosition(longitude, latitude) {
 	$(location).attr('href','pages/home?latitude='+latitude+"&longitude="+longitude);
-
 }
 
