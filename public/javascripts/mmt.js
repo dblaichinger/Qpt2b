@@ -31,7 +31,6 @@ function setTrashcanId(val) {
 function vote( id ) {
   // user already voted within the last 24 hours
   if($.cookie('demand') == "true") {
-    $('.voteButton').attr("disabled", "true");
     $('.markerInfo').html('Du kannst nur alle 24 Stunden abstimmen');
   }
   // user is allowed to vote
@@ -43,8 +42,9 @@ function vote( id ) {
     });
     // remember the vote 
     $.cookie('demand', "true", { expires: 1 });
-    location.reload();
+    $('.markerInfo').html('Erfolgreich gevotet');
   }
+  $('.voteButton').hide();
 }
 
 var marker = null;
