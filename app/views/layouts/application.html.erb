@@ -10,37 +10,6 @@
 <script type="text/javascript">
 
 
-
-if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(success, error);
-} else {
-  alert("Not Supported!");
-}
-
-function success(position) {
-  alert(position.coords.latitude);
-  alert(position.coords.longitude);
-
-}
-
-
-function error(msg) {
-  console.log(typeof msg == 'string' ? msg : "error");
-}
-
-// Always send the authenticity_token with ajax
-$(document).ajaxSend(function(event, request, settings) {
-    if ( settings.type == 'post' ) {
-        settings.data = (settings.data ? settings.data + "&" : "")
-                + "authenticity_token=" + encodeURIComponent( AUTH_TOKEN );
-        request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    }
-});
-
-// When I say html I really mean script for rails
-$.ajaxSettings.accepts.html = $.ajaxSettings.accepts.script;
-
-
 </script>
 
 </head>
@@ -50,14 +19,16 @@ $.ajaxSettings.accepts.html = $.ajaxSettings.accepts.script;
 				<div class="flash <%= key %>">
 					<%= value %>
 				</div>
-<% end %>                          
-<p><%= request.remote_ip %>
+<% end %>  
+
+                        
 <p><%=link_to 'Home', pages_home_path %> <%=link_to 'Info', pages_info_path %> <%= link_to 'Demands', demands_path %></p>
 
-<%= javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? -%>
 
 <%= yield %>
 
 <%= yield :scripts %>
+
+
 </body>
 </html>

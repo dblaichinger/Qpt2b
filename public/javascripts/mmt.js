@@ -1,4 +1,5 @@
 $(document).ready(function() { 
+
 	// Scrolling
 	// Example: <span class="toScroll" rel="target.id">Some text</span>
 	$(".toScroll").click(function() {
@@ -9,11 +10,17 @@ $(document).ready(function() {
 	// Set trashcan_id to order form input
 	$(".trashcanID").click(function() {
 		$("#user_orders_attributes_0_trashcan_id").val( 2 ); //$(this).attr("id")
-		console.log("Dong");
 	});
 
+	//Get current position
+	if(typeof position === 'undefined'){
+		getPosition();
+	} 
+	else alert('HEHE');
+	
 
 });
+
 
 function setTrashcanId(val) {
 	$("#user_orders_attributes_0_trashcan_id").val( val );
@@ -48,3 +55,34 @@ function gmaps4rails_callback() {
 
    //latitude can be retrieved with: object.latLng.lat(), longitude with: object.latLng.lng()
 }
+
+
+
+//Get current position of user
+function getPosition(){
+
+		if (navigator.geolocation) {
+	 		navigator.geolocation.getCurrentPosition(success, error);
+		} else {
+	  		alert("Not Supported!");
+		}
+
+	function success(position) {
+  		//console.log(position.coords.latitude);
+  		//console.log(position.coords.longitude);
+  		sendPosition(position.coords.longitude, position.coords.latitude);
+	}
+
+	function error(msg) {
+ 	 console.log(typeof msg == 'string' ? msg : "error");
+	}
+
+}
+
+
+//Send current position to get marker on the map
+function sendPosition(longitude, latitude) {
+	$(location).attr('href','pages/home?latitude='+latitude+"&longitude="+longitude);
+
+}
+
