@@ -11,6 +11,7 @@ class PagesController < ApplicationController
 
 
     if ((@users_longitude != nil) && (@users_longitude != nil))
+
 		   @userpos = [:description => "Dein Standort",
 		   			   :title => "Dein Standort", 
 		   			   :sidebar => "",
@@ -19,8 +20,8 @@ class PagesController < ApplicationController
 		   			   :picture => "", 
 		   			   :width => "", 
 		   			   :height => ""]
-		 
-		  
+
+				  
 		  @userpos = @userpos.to_json.to_s.chop
 		  @userpos.slice!(0)
 		  @markers = @markers.chop + "," + @userpos + "]"
