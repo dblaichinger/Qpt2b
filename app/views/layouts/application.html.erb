@@ -7,6 +7,11 @@
   <%= javascript_include_tag  'jquery.scrollTo-min', 'mmt', 'jquery.min', 'jquery.cookie', 'jquery-ui.min' %>
   <%= csrf_meta_tag %>
   <%= yield :head %>
+<script type="text/javascript">
+
+
+</script>
+
 </head>
 <body>
 <div id="cat"></div>
@@ -14,12 +19,16 @@
 				<div class="flash <%= key %>">
 					<%= value %>
 				</div>
-<% end %>                          
-<p><%= request.remote_ip %>
+<% end %>  
+
+                        
 <p><%=link_to 'Home', pages_home_path %> <%=link_to 'Info', pages_info_path %> <%= link_to 'Demands', demands_path %></p>
+
 
 <%= yield %>
 
 <%= yield :scripts %>
+
+
 </body>
 </html>

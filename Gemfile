@@ -7,6 +7,7 @@ gem 'devise'
 gem 'gmaps4rails'
 gem 'jquery-rails'
 gem 'annotate-models'
+gem 'json_pure'
 
 group :test do
   gem 'machinist'
