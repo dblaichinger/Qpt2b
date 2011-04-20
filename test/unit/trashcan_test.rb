@@ -13,10 +13,7 @@ class TrashcanTest < ActiveSupport::TestCase
   test "trashcan gmaps4rails_address" do
     t = Trashcan.create(:address => "Plueddemanngasse 1, Graz", :is_free => true )
 
-    assert t.address = t.gmaps4rails_address
-
-    answer = t.gmaps4rails_infowindow
-    assert_equal(answer, t.address)
+    assert_equal(t.gmaps4rails_address, t.address)
   end
 
 end

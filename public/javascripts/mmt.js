@@ -20,9 +20,22 @@ function setTrashcanId(val) {
 	$.scrollTo("#editor", 2000);
 }
 
+// vote function for trashcan demands
 function vote( id ) {
-  $.ajax({
-    type: 'PUT', 
-    url: '/demands/'+id
-  });
+  // user already voted within the last 24 hours
+  if($.cookie('demand') == "true") {
+    $('.voteButton').attr("disabled", "true");
+    $('.markerInfo').html('Du kannst nur alle 24 Stunden abstimmen');
+  }
+  // user is allowed to vote
+  else {
+    // send vote via ajax
+    $.ajax({
+      type: 'PUT', 
+      url: '/demands/'+id
+    });
+    // remember the vote 
+    $.cookie('demand', "true", { expires: 1 });
+    location.reload();
+  }
 }
