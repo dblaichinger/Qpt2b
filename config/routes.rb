@@ -11,7 +11,7 @@ Meps::Application.routes.draw do
   resources :orders
   resources :users
 
-  resources :demands, :only => [:index, :update]
+  resources :demands, :only => [:index, :update, :create]
 
   root :to => "pages#home"
 

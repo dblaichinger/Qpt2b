@@ -1,4 +1,5 @@
-$(document).ready(function() { 
+$(document).ready(function() {
+    $('#benutzerDel').click();
 	// Scrolling
 	// Example: <span class="toScroll" rel="target.id">Some text</span>
 	$(".toScroll").click(function() {
@@ -44,7 +45,40 @@ var marker = null;
 function gmaps4rails_callback() {
    Gmaps4Rails.clear_markers();
    if (marker != null) { marker.setMap(null); }
-   google.maps.event.addListener(Gmaps4Rails.map, 'click', function(object){ marker = new google.maps.Marker({position: object.latLng, map: Gmaps4Rails.map});});
+   google.maps.event.addListener(Gmaps4Rails.map, 'click', function(object){
+     $("#dialog").dialog({
+    	bgiframe: true,
+    	autoOpen: false,
+    	height: 300,
+    	modal: true,
+    	buttons: {
+    		OK: function() {
+          //marker = new google.maps.Marker({position: object.latLng, map: Gmaps4Rails.map});
+          $.getJSON("http://maps.google.com/maps/api/geocode/json?latlng="+object.latLng.lat().toString()+","+object.latLng.lng().toString()+"&sensor=true_or_false",
+  function(data, textStatus){
+    alert(data);
+  });
 
+          /*$.ajax({
+            type: 'POST',
+            url: '/demands/',
+            data: 'longitude='+object.latLng.lng()+'&latitude='+object.latLng.lat()
+          });*/
+    		  $(this).dialog('close');
+          location.reload();
+    		},
+    		Abbrechen: function() {
+    			$(this).dialog('close');
+          confirmation = false;
+    		}
+    	}
+    });
+    openDialog();
+   });
    //latitude can be retrieved with: object.latLng.lat(), longitude with: object.latLng.lng()
+}
+
+
+function openDialog() {
+  $('#dialog').dialog('open');
 }
