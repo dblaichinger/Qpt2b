@@ -12,10 +12,15 @@ $(document).ready(function() {
 	});
 
 	//Get current position
-	if(typeof position === 'undefined'){
-		getPosition();
-		$.scrollTo("#map", 2000);
-	} 
+	//if(typeof position === 'undefined'){
+
+	currentURL = window.location.toString();
+
+	if(currentURL.search("latitude")==-1)
+		getPosition();		
+	else {
+		location.href='#map';
+	}
 
 });
 
