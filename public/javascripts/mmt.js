@@ -36,7 +36,8 @@ function vote( id ) {
     });
     // remember the vote 
     $.cookie('demand', "true", { expires: 1 });
-    location.reload();
+    //location.reload();
+    $('.markerInfo').html('Erfolgreich gevotet');
   }
 }
 
