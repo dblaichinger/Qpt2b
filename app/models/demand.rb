@@ -33,6 +33,6 @@ class Demand < ActiveRecord::Base
   end
 
   def gmaps4rails_infowindow
-    "<h2>#{self.address}</h2><input class='voteButton' type='submit' value='Vote' onclick='vote(#{self.id})'><p class='markerInfo' style='display:inline; font-size: 12px;'></p><p>Current Votes: #{self.counter}</p>"
+    "<h2>#{self.address}</h2><input class='voteButton' type='submit' value='Vote' onclick='vote(#{self.id})' onload='checkCookie()'><p class='markerInfo' style='display:inline; font-size: 12px;'></p><p>Current Votes: #{self.counter}</p>"
   end
 end
