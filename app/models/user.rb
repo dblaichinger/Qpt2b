@@ -34,4 +34,15 @@ class User < ActiveRecord::Base
 
   has_many :orders, :dependent => :destroy
   accepts_nested_attributes_for :orders
+
+  email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+
+  validates :email, :presence   => true,
+    :format     => { :with => email_regex },
+    :uniqueness => { :case_sensitive => false }
+
+  validates :name, :presence => true, :length => {:within => 3..100}
+  validates :street, :presence => true
+  validates :city, :presence => true
+
 end

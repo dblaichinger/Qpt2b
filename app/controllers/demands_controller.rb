@@ -1,6 +1,7 @@
 class DemandsController < ApplicationController
   protect_from_forgery :except => [:update]
   def index
+    @title = "Vote"
     @markers = Demand.all.to_gmaps4rails
     #cookies["demand"] = {:value => "true", :expires => 1.second.from_now}
   end

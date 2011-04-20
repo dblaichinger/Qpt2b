@@ -19,4 +19,7 @@ class Order < ActiveRecord::Base
 	belongs_to :user
 	belongs_to :trashcan
 	has_one :design
+
+	validates :code, :presence => true
+
 end

@@ -27,4 +27,5 @@ class Trashcan < ActiveRecord::Base
     "height" => "128"
    }
   end
+
 end

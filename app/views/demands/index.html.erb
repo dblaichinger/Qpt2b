@@ -1,5 +1,5 @@
 <h1>Demand map</h1>
-<%= cookies %>
 <%= gmaps("markers" => {"data" => @markers}, "map_options" => {"map_container_id" => "map_box", "auto_adjust" => "true"}) %>
+
 <div id="demand_map"></div>
 <%= link_to 'Vote', demand_path(5), :method => 'put', :remote => true %>
