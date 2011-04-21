@@ -115,5 +115,5 @@ function getPosition(){
 
 //Send current position to get marker on the map
 function sendPosition(longitude, latitude) {
-	$(location).attr('href','pages/home?latitude='+latitude+"&longitude="+longitude);
+  $(location).attr('href','/pages/home/?latitude='+latitude+"&longitude="+longitude);      
 }
