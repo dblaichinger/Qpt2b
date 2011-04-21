@@ -29,6 +29,27 @@ $(document).ready(function() {
 });
 
 
+var GeoTool = function(lat, lon) {
+  
+    var geocoder = new google.maps.Geocoder();
+    var latlng = new google.maps.LatLng(lat, lon);
+    that = this;
+    this.address = "";
+
+    this.getIt = function() {
+        geocoder.geocode({'latLng': latlng}, function(results, status) {
+              if (status == google.maps.GeocoderStatus.OK) {
+                if (results[1]) {
+                  that.address = results[1].formatted_address;
+                  console.log("Addr1: " + that.address);
+                }
+                return that.address;
+              }
+            }); 
+    }
+}
+
+
 function setTrashcanId(val) {
 	$("#user_orders_attributes_0_trashcan_id").val( val );
 	$.scrollTo("#editor", 2000);
@@ -66,15 +87,26 @@ function gmaps4rails_callback() {
     	modal: true,
     	buttons: {
     		OK: function() {
-          //marker = new google.maps.Marker({position: object.latLng, map: Gmaps4Rails.map});
-          var g = $('#address_field').reversegeocode({
-                    lat: object.latLng.lat(),
-                    lng: object.latLng.lng()
-                });
+            marker = new google.maps.Marker({position: object.latLng, map: Gmaps4Rails.map});
+          
+            // Get Address of Long Lat
+            var geocoder = new google.maps.Geocoder();
+            var latlng = new google.maps.LatLng(object.latLng.lat(), object.latLng.lng());
+            geocoder.geocode({'latLng': latlng}, function(results, status) {
+              if (status == google.maps.GeocoderStatus.OK) {
+                if (results[1]) {
 
-          var a = $('#address_field').html();
-          console.log(g);
-          //alert($('#address_field').html(););
+                  // Save in Database
+                  $.ajax({
+                    type: 'POST',
+                    url: '/demands/',
+                    data: 'address=' + results[1].formatted_address
+                  });
+
+                }
+              }
+            }); 
+    
           /*$.getJSON("http://maps.google.com/maps/api/geocode/json?latlng="+object.latLng.lat().toString()+","+object.latLng.lng().toString()+"&sensor=false", function(data) {
     alert("hey");
   });*/
