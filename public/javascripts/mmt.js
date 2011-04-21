@@ -16,10 +16,14 @@ $(document).ready(function() {
 
 	currentURL = window.location.toString();
 
-	if(currentURL.search("latitude")==-1)
-		getPosition();		
-	else {
-		location.href='#map';
+
+	if(currentURL.search("demands")==-1 && currentURL.search("info")==-1){ 
+		if(currentURL.search("latitude")==-1 && currentURL.search("latitude")==-1){
+			getPosition();
+		}
+		else {
+			location.href='#map';
+		}
 	}
 
 });
