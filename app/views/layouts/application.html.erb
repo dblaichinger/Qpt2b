@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= "MEPS | "+@title %></title>
+  <title><%= title %></title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= javascript_include_tag  'jquery.scrollTo-min', 'mmt', 'jquery.min', 'jquery.cookie', 'jquery-ui.min', 'jquery.reversegeocode.min', 'gears_init' %>
@@ -23,7 +23,8 @@
 <% end %>  
 
                         
-<p><%=link_to 'Home', pages_home_path %> <%=link_to 'Info', pages_info_path %> <%= link_to 'Demands', demands_path %></p>
+<p><%=link_to 'Home', pages_home_path %> <%=link_to 'Info', pages_info_path %> <%= link_to 'Demands', demands_path %> <%=link_to 'Admin', trashcans_path  %>
+</p>
 
 
 <%= yield %>

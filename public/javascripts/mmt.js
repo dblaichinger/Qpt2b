@@ -12,20 +12,8 @@ $(document).ready(function() {
 	});
 
 	//Get current position
-  getPosition();
+  	getPosition();
 
-/*
-  //if(typeof position === 'undefined'){
-  currentURL = window.location.toString();
-	if(currentURL.search("demands")==-1 && currentURL.search("info")==-1){ 
-		if(currentURL.search("latitude")==-1 && currentURL.search("latitude")==-1){
-			getPosition();
-		}
-		else {
-			location.href='#map';
-		}
-	}
-*/
 });
 
 
