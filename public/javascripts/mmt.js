@@ -67,7 +67,9 @@ function gmaps4rails_callback() {
    Gmaps4Rails.clear_markers();
    if (marker != null) { marker.setMap(null); }
 
-   google.maps.event.addListener(google.maps.Circle, 'click',  function(){ console.log("clicked radius"); });
+   //google.maps.event.addListener(google.maps.Circle, 'click',  function(){ console.log("clicked radius"); });
+
+   //google.maps.event.addListener(object, “click”, function() { console.log("clicked radius"); });
 
    google.maps.event.addListener(Gmaps4Rails.map, 'click', function(object){
 
@@ -84,7 +86,8 @@ function gmaps4rails_callback() {
             // ADD MARKER onClick
             var marker = new google.maps.Marker({
               map: Gmaps4Rails.map,
-              position: new google.maps.LatLng(object.latLng.lat(), object.latLng.lng())
+              position: new google.maps.LatLng(object.latLng.lat(), object.latLng.lng()),
+              title: 'The armpit of Cheshire'
             });
 
             // Add circle overlay and bind to marker
