@@ -12,11 +12,11 @@ $(document).ready(function() {
 	});
 
 	//Get current position
-	//if(typeof position === 'undefined'){
+  getPosition();
 
-	currentURL = window.location.toString();
-
-
+/*
+  //if(typeof position === 'undefined'){
+  currentURL = window.location.toString();
 	if(currentURL.search("demands")==-1 && currentURL.search("info")==-1){ 
 		if(currentURL.search("latitude")==-1 && currentURL.search("latitude")==-1){
 			getPosition();
@@ -25,7 +25,7 @@ $(document).ready(function() {
 			location.href='#map';
 		}
 	}
-
+*/
 });
 
 
@@ -102,27 +102,59 @@ function openDialog() {
 
 //Get current position of user
 function getPosition(){
+  
+  var browserSupportFlag =  new Boolean();
+  var infowindow = new google.maps.InfoWindow();
+  var initialLocation;
 
-		if (navigator.geolocation) {
-	 		navigator.geolocation.getCurrentPosition(success, error);
-		} else {
-	  		alert("Not Supported!");
-		}
+  if(navigator.geolocation) {
 
-	function success(position) {
-  		//console.log(position.coords.latitude);
-  		//console.log(position.coords.longitude);
-  		sendPosition(position.coords.longitude, position.coords.latitude);
-	}
+        var browserSupportFlag = true;
 
-	function error(msg) {
- 	 console.log(typeof msg == 'string' ? msg : "error");
-	}
+        navigator.geolocation.getCurrentPosition(function(position) {
 
-}
+          initialLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+          
+          Gmaps4Rails.map.setCenter(initialLocation);
+          Gmaps4Rails.map.setZoom(15);
 
+          var contentString = "Location found - you are here !";
+          
+          infowindow.setContent(contentString);
+          infowindow.setPosition(initialLocation);
+          infowindow.open(Gmaps4Rails.map);
 
-//Send current position to get marker on the map
-function sendPosition(longitude, latitude) {
-	$(location).attr('href','/pages/home?latitude='+latitude+"&longitude="+longitude);
+          $.scrollTo("#map", 1000);
+        }, function() {
+          handleNoGeolocation(browserSupportFlag);
+        });
+   } else if (google.gears) {
+      // Try Google Gears Geolocation
+      browserSupportFlag = true;
+      var geo = google.gears.factory.create('beta.geolocation');
+      geo.getCurrentPosition(function(position) {
+        initialLocation = new google.maps.LatLng(position.latitude,position.longitude);
+        contentString = "Location found using Google Gears";
+        map.setCenter(initialLocation);
+        infowindow.setContent(contentString);
+        infowindow.setPosition(initialLocation);
+        infowindow.open(Gmaps4Rails.map);
+      }, function() {
+        handleNoGeolocation(browserSupportFlag);
+      });
+  } else {
+    // Browser doesn't support Geolocation
+    browserSupportFlag = false;
+    handleNoGeolocation(browserSupportFlag);
+  }
+
+  function handleNoGeolocation(errorFlag) {
+    if (errorFlag == true) {
+      contentString = "Error: The Geolocation service failed.";
+    } else {
+      contentString = "Error: Your browser doesn't support geolocation.";
+    }
+    infowindow.setContent(contentString);
+    infowindow.open(map);
+  }
 }
