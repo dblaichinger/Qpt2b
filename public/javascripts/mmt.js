@@ -92,6 +92,7 @@ function gmaps4rails_callback() {
                 }
               }
             }); 
+          $(this).dialog('close');
     		},
     		Abbrechen: function() {
     			$(this).dialog('close');
