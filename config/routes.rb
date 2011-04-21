@@ -7,11 +7,12 @@ Meps::Application.routes.draw do
 
   get "pages/vote"
 
-  get "trashcans/show"
+
 
   devise_for :users
   resources :orders
   resources :users
+  resources :trashcans
 
   resources :demands, :only => [:index, :update, :create]
 

@@ -12,7 +12,7 @@ $(document).ready(function() {
 	});
 
 	//Get current position
-  getPosition();
+  	getPosition();
 
 });
 
