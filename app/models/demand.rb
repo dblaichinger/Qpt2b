@@ -14,7 +14,7 @@
 
 class Demand < ActiveRecord::Base
   acts_as_gmappable
-  attr_accessible :latitude, :longitude, :address, :counter
+  attr_accessible :latitude, :longitude, :address, :counter, :radius
 
   require 'marker_module.rb'
   include MarkerModule
