@@ -66,7 +66,12 @@ var marker = null;
 function gmaps4rails_callback() {
    Gmaps4Rails.clear_markers();
    if (marker != null) { marker.setMap(null); }
+
+   google.maps.event.addListener(google.maps.Circle, 'click',  function(){ console.log("clicked radius"); });
+
    google.maps.event.addListener(Gmaps4Rails.map, 'click', function(object){
+
+      console.log(object);
      $("#dialog").dialog({
     	bgiframe: true,
     	autoOpen: false,
@@ -74,8 +79,23 @@ function gmaps4rails_callback() {
     	modal: true,
     	buttons: {
     		OK: function() {
-            marker = new google.maps.Marker({position: object.latLng, map: Gmaps4Rails.map});
-          
+
+            // -----------------------------------------
+            // ADD MARKER onClick
+            var marker = new google.maps.Marker({
+              map: Gmaps4Rails.map,
+              position: new google.maps.LatLng(object.latLng.lat(), object.latLng.lng())
+            });
+
+            // Add circle overlay and bind to marker
+            var circle = new google.maps.Circle({
+              map: Gmaps4Rails.map,
+              radius: 50,    // 10 miles in metres
+              fillColor: '#AA0000'
+            });
+            circle.bindTo('center', marker, 'position');
+
+             // -----------------------------------------
             // Get Address of Long Lat
             var geocoder = new google.maps.Geocoder();
             var latlng = new google.maps.LatLng(object.latLng.lat(), object.latLng.lng());
@@ -91,7 +111,8 @@ function gmaps4rails_callback() {
                   });
                 }
               }
-            }); 
+            });
+
           $(this).dialog('close');
     		},
     		Abbrechen: function() {
