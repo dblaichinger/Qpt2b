@@ -1,0 +1,63 @@
+<table class="trashcan">
+	<tr>
+		<th></th>
+		<th></th>
+		<th>ID</th>
+		<th>Adress</th>
+		<th>Latitude</th>
+		<th>Longitude</th>
+		<th>is_free</th>
+		<th>adopted_until</th>
+		<th>created_at</th>
+		<th>updated_at</th>
+	</tr>
+	
+	<%if @trashcans != [] %>
+		<% @trashcans.each do |trashcan| %>
+		<tr>
+			<td><%= link_to image_tag("../images/delete.png"), trashcan, :method => :delete, 
+			 	:confirm => "Attention:\nAre you sure to delete trashcan?", :title => "Delete #{trashcan.address}"
+				%>
+			</td>
+			<td><img src="../images/edit.png" /></td>
+			<td><%= trashcan.id %></td>
+			<td><%= trashcan.address %></td>
+			<td><%= trashcan.latitude %></td>
+			<td><%= trashcan.longitude %></td>
+			<td><%= trashcan.is_free %></td> 
+			<td><%= trashcan.adopted_until %></td>
+			<td><%= trashcan.created_at %></td>
+			<td><%= trashcan.updated_at %></td>
+		</tr>
+		<% end %>
+	<% end %>
+</table>
+<table class="trashcan">
+	<tr>
+		<th></th>
+		<th></th>
+		<th>ID</th>
+		<th>Adress</th>
+		<th>Latitude</th>
+		<th>Longitude</th>
+		<th>Votes</th>
+	</tr>
+	
+	<%if @demands != [] %>
+		<% @demands.each do |demand| %>
+		<tr>
+			<td><%= link_to image_tag("../images/delete.png"), demand, :method => :delete, 
+			 	:confirm => "Attention:\nAre you sure to delete this demand?", :title => "Delete #{demand.address}"
+				%>
+			</td>
+			<td><img src="../images/edit.png" /></td>
+			<td><%= demand.id %></td>
+			<td><%= demand.address %></td>
+			<td><%= demand.latitude %></td>
+			<td><%= demand.longitude %></td>
+			<td><%= demand.counter %></td> 
+		</tr>
+		<% end %>
+	<% end %>
+</table>
+
