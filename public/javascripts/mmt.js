@@ -67,12 +67,14 @@ function gmaps4rails_callback() {
     	buttons: {
     		OK: function() {
           //marker = new google.maps.Marker({position: object.latLng, map: Gmaps4Rails.map});
-          $('#address_field').reversegeocode({
+          var g = $('#address_field').reversegeocode({
                     lat: object.latLng.lat(),
                     lng: object.latLng.lng()
                 });
+
           var a = $('#address_field').html();
-          alert($('#address_field').html(););
+          console.log(g);
+          //alert($('#address_field').html(););
           /*$.getJSON("http://maps.google.com/maps/api/geocode/json?latlng="+object.latLng.lat().toString()+","+object.latLng.lng().toString()+"&sensor=false", function(data) {
     alert("hey");
   });*/
