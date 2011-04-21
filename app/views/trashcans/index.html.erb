@@ -20,10 +20,9 @@
 		<% @trashcans.each do |trashcan| %>
 		<tr>
 			<td><%= link_to image_tag("../images/delete.png"), trashcan, :method => :delete, 
-			 	:confirm => "Attention:\nAre you sure to delete trashcan?", :title => "Delete #{trashcan.address}"
-				%>
+			 	:confirm => "Attention:\nAre you sure to delete trashcan: #{trashcan.address}?" %>
 			</td>
-			<td><img src="../images/edit.png" /></td>
+			<td><%= link_to image_tag("../images/edit.png"), {:action =>'edit', :id => trashcan.id} %></td>
 			<td><%= trashcan.id %></td>
 			<td><%= trashcan.address %></td>
 			<td><%= trashcan.latitude %></td>
