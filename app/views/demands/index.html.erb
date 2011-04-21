@@ -1,6 +1,4 @@
 <h1>Demand map</h1>
-<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=FOOBAR" type="text/javascript"></script>
-
 <%= gmaps("markers" => {"data" => @markers},"circles" => {"data" => @circles}, "map_options" => {"map_container_id" => "map_box", "auto_adjust" => "true"}) %>
 
 <div id="map"></div>
@@ -11,4 +9,3 @@
    <input name="weiterer_parameter" type="hidden" value="2" />
   </form>
 </div>
-<div id="address_field"></div>

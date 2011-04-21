@@ -16,6 +16,27 @@ $(document).ready(function() {
 });
 
 
+var GeoTool = function(lat, lon) {
+  
+    var geocoder = new google.maps.Geocoder();
+    var latlng = new google.maps.LatLng(lat, lon);
+    that = this;
+    this.address = "";
+
+    this.getIt = function() {
+        geocoder.geocode({'latLng': latlng}, function(results, status) {
+              if (status == google.maps.GeocoderStatus.OK) {
+                if (results[1]) {
+                  that.address = results[1].formatted_address;
+                  console.log("Addr1: " + that.address);
+                }
+                return that.address;
+              }
+            }); 
+    }
+}
+
+
 function setTrashcanId(val) {
 	$("#user_orders_attributes_0_trashcan_id").val( val );
 	$.scrollTo("#editor", 2000);
@@ -53,7 +74,24 @@ function gmaps4rails_callback() {
     	modal: true,
     	buttons: {
     		OK: function() {
+            marker = new google.maps.Marker({position: object.latLng, map: Gmaps4Rails.map});
           
+            // Get Address of Long Lat
+            var geocoder = new google.maps.Geocoder();
+            var latlng = new google.maps.LatLng(object.latLng.lat(), object.latLng.lng());
+            geocoder.geocode({'latLng': latlng}, function(results, status) {
+              if (status == google.maps.GeocoderStatus.OK) {
+                if (results[1]) {
+
+                  // Save in Database
+                  $.ajax({
+                    type: 'POST',
+                    url: '/demands/',
+                    data: 'address=' + results[1].formatted_address
+                  });
+                }
+              }
+            }); 
     		},
     		Abbrechen: function() {
     			$(this).dialog('close');
