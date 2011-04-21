@@ -7,6 +7,8 @@ Meps::Application.routes.draw do
 
   get "pages/vote"
 
+  get "trashcans/show"
+
   devise_for :users
   resources :orders
   resources :users

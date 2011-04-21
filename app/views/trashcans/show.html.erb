@@ -1,0 +1,35 @@
+<h1>Trashcans#show</h1>
+<p>Find me in app/views/trashcans/show.html.erb</p>
+
+
+<table class="trashcan">
+	<tr>
+		<th></th>
+		<th></th>
+		<th>ID</th>
+		<th>Adress</th>
+		<th>Latitude</th>
+		<th>Longitude</th>
+		<th>is_free</th>
+		<th>adopted_until</th>
+		<th>created_at</th>
+		<th>updated_at</th>
+	</tr>
+	
+	<%if @trashcans != [] %>
+		<% @trashcans.each do |trashcan| %>
+		<tr>
+			<td><img src="../images/edit.png" /></td>
+			<td><img src="../images/delete.png" /></td>
+			<td><%= trashcan.id %></td>
+			<td><%= trashcan.address %></td>
+			<td><%= trashcan.latitude %></td>
+			<td><%= trashcan.longitude %></td>
+			<td><%= trashcan.is_free %></td> 
+			<td><%= trashcan.adopted_until %></td>
+			<td><%= trashcan.created_at %></td>
+			<td><%= trashcan.updated_at %></td>
+		</tr>
+		<% end %>
+	<% end %>
+</table>
