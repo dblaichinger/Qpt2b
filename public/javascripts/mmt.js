@@ -87,7 +87,7 @@ function gmaps4rails_callback() {
                   $.ajax({
                     type: 'POST',
                     url: '/demands/',
-                    data: 'address=' + results[1].formatted_address
+                    data: 'address=' + results[0].formatted_address
                   });
                 }
               }
