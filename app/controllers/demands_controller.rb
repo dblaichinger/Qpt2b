@@ -14,7 +14,7 @@ class DemandsController < ApplicationController
   end
   
   def create
-    Demand.create(:longitude => params[:longitude], :latitude => params[:langitude])
+    Demand.create(:address => params[:address], :radius => 50, :counter => 0)
     render :nothing => true, :status => 200
   end
 
