@@ -1,12 +1,14 @@
 <h1>Demand map</h1>
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=FOOBAR" type="text/javascript"></script>
 
 <%= gmaps("markers" => {"data" => @markers},"circles" => {"data" => @circles}, "map_options" => {"map_container_id" => "map_box", "auto_adjust" => "true"}) %>
 
 <div id="map"></div>
-<div id="dialog" style="display:none" title="Benutzer löschen">
+<div id="dialog" style="display:none" title="Neuer Mistkübel">
  <p>Willst du hier einen neuen Mistkübel fordern?</p>
  <form action="/demand/new" method="post">
    <input name="benutzerID" type="hidden" value="1" />
    <input name="weiterer_parameter" type="hidden" value="2" />
   </form>
 </div>
+<div id="address_field"></div>

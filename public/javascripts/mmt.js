@@ -67,10 +67,15 @@ function gmaps4rails_callback() {
     	buttons: {
     		OK: function() {
           //marker = new google.maps.Marker({position: object.latLng, map: Gmaps4Rails.map});
-          $.getJSON("http://maps.google.com/maps/api/geocode/json?latlng="+object.latLng.lat().toString()+","+object.latLng.lng().toString()+"&sensor=false",
-  function(data, textStatus){
-    alert(data);
-  });
+          $('#address_field').reversegeocode({
+                    lat: object.latLng.lat(),
+                    lng: object.latLng.lng()
+                });
+          var a = $('#address_field').html();
+          alert($('#address_field').html(););
+          /*$.getJSON("http://maps.google.com/maps/api/geocode/json?latlng="+object.latLng.lat().toString()+","+object.latLng.lng().toString()+"&sensor=false", function(data) {
+    alert("hey");
+  });*/
 
           /*$.ajax({
             type: 'POST',
@@ -78,7 +83,7 @@ function gmaps4rails_callback() {
             data: 'longitude='+object.latLng.lng()+'&latitude='+object.latLng.lat()
           });*/
     		  $(this).dialog('close');
-          location.reload();
+          //location.reload();
     		},
     		Abbrechen: function() {
     			$(this).dialog('close');
