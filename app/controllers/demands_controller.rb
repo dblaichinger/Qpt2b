@@ -17,6 +17,17 @@ class DemandsController < ApplicationController
   end
 
   def update
+    @demand = Demand.find(params[:id])
+
+    if @demand.update_attributes(params[:demand])
+      flash[:success] = "Demand-Zone aktualisiert!"
+      redirect_to admins_path
+    else
+      render 'edit'
+    end
+  end
+
+  def vote
       demand = Demand.find(params[:id])
       demand.vote
 

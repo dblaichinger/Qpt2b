@@ -36,7 +36,6 @@ var GeoTool = function(lat, lon) {
     }
 }
 
-
 function setTrashcanId(val) {
 	$("#user_orders_attributes_0_trashcan_id").val( val );
 	$.scrollTo("#editor", 2000);
@@ -52,8 +51,9 @@ function vote( id ) {
   else {
     // send vote via ajax
     $.ajax({
-      type: 'PUT', 
-      url: '/demands/'+id
+      type: 'POST', 
+      url: '/demands/vote/',
+      data: 'id='+id
     });
     // remember the vote 
     $.cookie('demand', "true", { expires: 1 });

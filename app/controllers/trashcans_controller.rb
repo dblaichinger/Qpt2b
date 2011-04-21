@@ -20,7 +20,7 @@ def update
 
     if @trashcan.update_attributes(params[:trashcan])
       flash[:success] = "Muelleimer aktualisiert!"
-      redirect_to trashcans_path
+      redirect_to admins_path
     else
       @title = "Edit trashcan"
       render 'edit'

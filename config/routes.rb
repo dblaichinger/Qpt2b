@@ -16,10 +16,11 @@ Meps::Application.routes.draw do
   resources :admins
   resources :trashcans
 
-  resources :demands, :only => [:index, :update, :create]
+  resources :demands
 
   root :to => "pages#home"
 
   match '/', :to => 'pages#home'
   match '/info', :to => 'pages#info'
+  match '/demands/vote/' => 'demands#vote'
 end
