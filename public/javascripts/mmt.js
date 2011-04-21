@@ -5,7 +5,6 @@ $(document).ready(function() {
 		$.scrollTo("#" + $(this).attr("rel"), 2000);
 	});
 
-
 	// Set trashcan_id to order form input
 	$(".trashcanID").click(function() {
 		$("#user_orders_attributes_0_trashcan_id").val( 2 ); //$(this).attr("id")
@@ -54,30 +53,10 @@ function gmaps4rails_callback() {
     	modal: true,
     	buttons: {
     		OK: function() {
-          //marker = new google.maps.Marker({position: object.latLng, map: Gmaps4Rails.map});
-          var g = $('#address_field').reversegeocode({
-                    lat: object.latLng.lat(),
-                    lng: object.latLng.lng()
-                });
-
-          var a = $('#address_field').html();
-          console.log(g);
-          //alert($('#address_field').html(););
-          /*$.getJSON("http://maps.google.com/maps/api/geocode/json?latlng="+object.latLng.lat().toString()+","+object.latLng.lng().toString()+"&sensor=false", function(data) {
-    alert("hey");
-  });*/
-
-          /*$.ajax({
-            type: 'POST',
-            url: '/demands/',
-            data: 'longitude='+object.latLng.lng()+'&latitude='+object.latLng.lat()
-          });*/
-    		  $(this).dialog('close');
-          //location.reload();
+          
     		},
     		Abbrechen: function() {
     			$(this).dialog('close');
-          confirmation = false;
     		}
     	}
     });

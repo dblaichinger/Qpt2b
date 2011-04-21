@@ -1,7 +1,7 @@
 class TrashcansController < ApplicationController
 
 
-def show
+def index
 	@title = "Show trashcans"
 	@trashcans = Trashcan.all
 end
@@ -9,7 +9,15 @@ end
 def destroy
 	Trashcan.find(params[:id]).destroy
 	flash[:sucess] = "Muelleimer wurde geloescht"
-	redirect_to(:action => "show")
+	redirect_to trashcans_path
+end
+
+def edit
+	@trashcan = Trashcan.find(params[:id])
+end
+
+def update
+
 end
 
 end
