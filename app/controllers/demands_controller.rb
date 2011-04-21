@@ -14,7 +14,7 @@ class DemandsController < ApplicationController
   end
   
   def create
-    Demand.create(:address => params[:address], :radius => 50)
+    Demand.create(:address => params[:address], :radius => 500)
     render :nothing => true, :status => 200
   end
 
