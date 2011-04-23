@@ -1,0 +1,18 @@
+<%= form_for(@trashcan) do |f| %>
+<h3>Edit trashcan</h3>
+	<%= render 'shared/error_messages', :object => f.object %>
+
+	  <%= f.label :id %>
+	  <%= f.text_field :id %>
+
+	  <%= f.label :address %>
+	  <%= f.text_field :address %>
+
+	  <%= f.label :is_free %>
+	  <%= f.text_field :is_free %>
+
+	  <%= f.label :adopted_until %>
+	  <%= f.text_field :adopted_until %>
+
+	  <%= f.submit "Change" %>
+<% end %>

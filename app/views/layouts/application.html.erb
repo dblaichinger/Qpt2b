@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= "MEPS | "+@title %></title>
+  <title><%= title %></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
-  <%= javascript_include_tag  'jquery.scrollTo-min', 'mmt', 'jquery.min', 'jquery.cookie', 'jquery-ui.min' %>
+  <%= javascript_include_tag  'jquery.scrollTo-min', 'mmt', 'jquery.min', 'jquery.cookie', 'jquery-ui', 'jquery.reversegeocode.min', 'gears_init' %>
   <%= csrf_meta_tag %>
   <%= yield :head %>
 <script type="text/javascript">
@@ -22,8 +23,9 @@
 				</div>
 <% end %>  
 
-                        
-<p><%=link_to 'Home', pages_home_path %> <%=link_to 'Info', pages_info_path %> <%= link_to 'Demands', demands_path %></p>
+
+<p><%=link_to 'Home', pages_home_path %> <%=link_to 'Info', pages_info_path %> <%= link_to 'Demands', demands_path %> <%=link_to 'Admin', admins_path  %>
+</p>
 
 
 <%= yield %>
