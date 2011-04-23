@@ -1,47 +1,84 @@
+/*
+  MMT.JS
+  QPT2b MMT09 - made by Andre Schweighoder, Daniel Blaichinger, Francois Weber
+
+  _DESCRIPTION:
+    - This file includes most of the own javascript code of the site
+*/
+
 $(document).ready(function() { 
+
 	// Scrolling
 	// Example: <span class="toScroll" rel="target.id">Some text</span>
 	$(".toScroll").click(function() {
 		$.scrollTo("#" + $(this).attr("rel"), 2000);
 	});
 
-	// Set trashcan_id to order form input
-	$(".trashcanID").click(function() {
-		$("#user_orders_attributes_0_trashcan_id").val( 2 ); //$(this).attr("id")
-	});
-
-	//Get current position
+	// Get current geo position
   	getPosition();
 
 });
 
-
-var GeoTool = function(lat, lon) {
+// --------------------------------------------------
+// GeoTool Helper Class
+var GeoTool = function() {
   
-    var geocoder = new google.maps.Geocoder();
-    var latlng = new google.maps.LatLng(lat, lon);
     that = this;
     this.address = "";
+    that.lat = 0.0;
+    that.lng = 0.0;
 
-    this.getIt = function() {
+    var RADIUS = 50;
+
+    this.reverseGeoCode = function(lat, lng) {
+       
+        var geocoder = new google.maps.Geocoder();
+        var latlng = new google.maps.LatLng(lat, lng);
+
         geocoder.geocode({'latLng': latlng}, function(results, status) {
-              if (status == google.maps.GeocoderStatus.OK) {
-                if (results[1]) {
-                  that.address = results[1].formatted_address;
-                  console.log("Addr1: " + that.address);
-                }
-                return that.address;
-              }
-            }); 
+          if (status == google.maps.GeocoderStatus.OK) {
+            if (results[1]) {
+              that.address = results[1].formatted_address;
+              console.log("Addr1: " + that.address);
+            }            
+          }
+        });
+
+        return that.address;
+    },
+
+    this.addMarker = function(lat, lng) {   
+      that.lat = lat;
+      that.lng = lng;   
+      var marker = new google.maps.Marker({
+              map: Gmaps4Rails.map,
+              position: new google.maps.LatLng(that.lat, that.lng)
+      });
+      return marker;
+    },
+
+    this.addCircle = function(lat, lng) {
+       
+      var marker = that.addMarker(lat, lng);
+      var circle = new google.maps.Circle({
+              map: Gmaps4Rails.map,
+              radius: RADIUS,
+              fillColor: '#AA0000'
+      });
+      circle.bindTo('center', marker, 'position');   
     }
+
 }
 
+// --------------------------------------------------
+// Order: Set Trashcan id in order form
 function setTrashcanId(val) {
 	$("#user_orders_attributes_0_trashcan_id").val( val );
 	$.scrollTo("#editor", 2000);
 }
 
-// vote function for trashcan demands
+// --------------------------------------------------
+// Vote function for trashcan demands
 function vote( id ) {
   // user already voted within the last 24 hours
   if($.cookie('demand') == "true") {
@@ -62,8 +99,12 @@ function vote( id ) {
   $('.voteButton').hide();
 }
 
-var marker = null;
+// --------------------------------------------------
+// GoogleMap Callback
 function gmaps4rails_callback() {
+   
+   var marker = null;
+   
    Gmaps4Rails.clear_markers();
    if (marker != null) { marker.setMap(null); }
 
@@ -73,7 +114,6 @@ function gmaps4rails_callback() {
 
    google.maps.event.addListener(Gmaps4Rails.map, 'click', function(object){
 
-      console.log(object);
      $("#dialog").dialog({
     	bgiframe: true,
     	autoOpen: false,
@@ -82,23 +122,14 @@ function gmaps4rails_callback() {
     	buttons: {
     		OK: function() {
 
+            var geoTool = new GeoTool();
+            //TODO: var address = geoTool.reverseGeoCode(object.latLng.lat(), object.latLng.lng());
+
             // -----------------------------------------
-            // ADD MARKER onClick
-            var marker = new google.maps.Marker({
-              map: Gmaps4Rails.map,
-              position: new google.maps.LatLng(object.latLng.lat(), object.latLng.lng()),
-              title: 'The armpit of Cheshire'
-            });
+            // Add CIRCLE to Map
+            var circle = geoTool.addCircle(object.latLng.lat(), object.latLng.lng());
 
-            // Add circle overlay and bind to marker
-            var circle = new google.maps.Circle({
-              map: Gmaps4Rails.map,
-              radius: 50,    // 10 miles in metres
-              fillColor: '#AA0000'
-            });
-            circle.bindTo('center', marker, 'position');
-
-             // -----------------------------------------
+            // -----------------------------------------
             // Get Address of Long Lat
             var geocoder = new google.maps.Geocoder();
             var latlng = new google.maps.LatLng(object.latLng.lat(), object.latLng.lng());
@@ -125,14 +156,14 @@ function gmaps4rails_callback() {
     });
     openDialog();
    });
-   //latitude can be retrieved with: object.latLng.lat(), longitude with: object.latLng.lng()
 }
 
 function openDialog() {
   $('#dialog').dialog('open');
 }
 
-//Get current position of user
+// --------------------------------------------------
+// Get current position of user
 function getPosition(){
   
   var browserSupportFlag =  new Boolean();
