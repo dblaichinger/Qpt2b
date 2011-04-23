@@ -10,7 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110418160512) do
+ActiveRecord::Schema.define(:version => 20110420120811) do
+
+  create_table "demands", :force => true do |t|
+    t.integer  "counter"
+    t.float    "longitude"
+    t.float    "latitude"
+    t.string   "address"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "radius"
+  end
 
   create_table "orders", :force => true do |t|
     t.integer  "trashcan_id"
@@ -24,6 +34,16 @@ ActiveRecord::Schema.define(:version => 20110418160512) do
   add_index "orders", ["design_id"], :name => "index_orders_on_design_id"
   add_index "orders", ["owner_id"], :name => "index_orders_on_owner_id"
   add_index "orders", ["trashcan_id"], :name => "index_orders_on_trashcan_id"
+
+  create_table "trashcans", :force => true do |t|
+    t.string   "address"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.boolean  "is_free"
+    t.date     "adopted_until"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                               :default => "", :null => false
@@ -39,6 +59,10 @@ ActiveRecord::Schema.define(:version => 20110418160512) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
+    t.string   "street"
+    t.string   "city"
+    t.string   "token"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

@@ -12,14 +12,16 @@
 #  updated_at  :datetime
 #
 
-class Order < ActiveRecord::Base
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-	attr_accessible :owner_id, :trashcan_id, :design_id, :code
+one:
+  trashcan_id: 1
+  owner_id: 1
+  code: MyString
+  design_id: 1
 
-	belongs_to :user
-	belongs_to :trashcan
-	has_one :design
-
-	validates :code, :presence => true
-
-end
+two:
+  trashcan_id: 1
+  owner_id: 1
+  code: MyString
+  design_id: 1

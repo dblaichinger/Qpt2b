@@ -1,3 +1,7 @@
 .toScroll {
 	cursor:pointer;
 }
+
+label {
+	display:block;
+}

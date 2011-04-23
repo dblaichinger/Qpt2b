@@ -1,28 +1,53 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 
+
 <div id="info" style="height:500px;border:3px solid #CCCCCC;margin:1em;">
 <h2>Info Text</h2>
-<a class="toScroll" rel="map">next >></span>
+<a href="#" class="toScroll" rel="map">weiter zur Map >></a>
 </div>
+<h2 id="map">Map</h2>
+<a class="toScroll" rel="editor">next >></a>
 
-<div id="map" style="height:500px;border:3px solid #CCCCCC;margin:1em;">
-<h2>Map</h2>
-<a class="toScroll" rel="editor">next >></span>
+
+<%= gmaps( "markers" => {"data" => @markers}, "map_options" => {"map_container_id" => "map_box", "auto_adjust" => "true"}
+) %>
+<!-- NOTE: do not add (inline) css to div#map, neither put content within div#map. otherwise map won't get loaded -->
+<div id="map_box">
 </div>
 
 <div id="editor" style="height:500px;border:3px solid #CCCCCC;margin:1em;">
 <h2>Editor</h2>
-<a class="toScroll" rel="form">next >></span>
+<a class="toScroll" rel="form">next >></a>
 </div>
 
 <div id="form" style="height:500px;border:3px solid #CCCCCC;margin:1em;">
 <h2>Form</h2>
 
-<%= form_for @order do |f| %>
-	<%= f.label :code %>
-	<%= f.text_field :code %>
+<%= form_for @user, :url => orders_path do |f| %>
+	  <%= render 'shared/error_messages', :object => f.object %>
+
+	<%= f.fields_for :orders do |t| %>
+		<%= t.label :design_id %>
+		<%= t.text_field :design_id  %>
+		<%= t.label "TrashcanID" %>
+		<%= t.text_field :trashcan_id %>
+	<% end %>
+
+	<%= f.label :email %>
+	<%= f.text_field :email %>
+
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+
+	<%= f.label "Strasse:" %>
+	<%= f.text_field :street %>
+
+	<%= f.label "Stadt:" %>
+	<%= f.text_field :city %>
+
+	<%= f.submit " Bestellung anfordern " %>
 <% end %>
 
-<a class="toScroll" rel="info">next >></span>
+<a class="toScroll" rel="info">next >></a>
 </div>

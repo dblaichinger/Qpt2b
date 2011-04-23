@@ -1,0 +1,25 @@
+# == Schema Information
+# Schema version: 20110419083731
+#
+# Table name: demands
+#
+#  id         :integer(4)      not null, primary key
+#  counter    :integer(4)
+#  longitude  :float
+#  latitude   :float
+#  address    :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  counter: 
+  longitude: 1.5
+  latitude: 1.5
+
+two:
+  counter: 
+  longitude: 1.5
+  latitude: 1.5
