@@ -1,6 +1,5 @@
 #encoding: UTF-8
 class TrashcansController < ApplicationController
-
 def index
 	@title = "Alle Mülleimer"
 	@trashcans = Trashcan.all
@@ -8,6 +7,7 @@ end
 
 def destroy
 	Trashcan.find(params[:id]).destroy
+
 	flash[:sucess] = "Mülleimer wurde gelöscht"
 	redirect_to trashcans_path
 end
