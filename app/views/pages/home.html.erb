@@ -1,53 +1,87 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+   <section id="content">
+    
+    	<div id="step1" class="step">
+        
+        	<h1> Mülleimer-Patenschaft </h1>
+         	<p> Lorem üüüäääööö dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit 
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+           	<!--<div class="icons"> <img src="media/icons.png" alt="" title="" /> </div>-->
+            <a href="#" class="toScroll" rel="map">weiter zur Map >></a>
+        </div>
 
 
-<div id="info" style="height:500px;border:3px solid #CCCCCC;margin:1em;">
-<h2>Info Text</h2>
-<a href="#" class="toScroll" rel="map">weiter zur Map >></a>
-</div>
-<h2 id="map">Map</h2>
-<a class="toScroll" rel="editor">next >></a>
+       <div id="step2" class="step">
+        	<h1> Mülleimer auswählen </h1>
+         	<p> Hier kannst Du sehen, welche öffentliche Mülleimer bereits einen Paten haben. Wähle einen noch freien Mülleimer aus </p>
+        	<div id="map">
+            	<div id="map_wahl">
+                	<input type="text" name="suche" size="50" />
+                    <div id="alle"><input type="submit" name="abschicken" value="alle Mülleimer anzeigen" class="button"/></div>
+                    <div id="frei"><input type="submit" name="abschicken" value="freie Mülleimer anzeigen" class="button"/></div>
+				</div>
+            	
+					<%= gmaps( "markers" => {"data" => @markers}, "map_options" => {"map_container_id" => "map_box"}
+					) %>
+					<!-- NOTE: do not add (inline) css to div#map, neither put content within div#map. otherwise map won't get loaded -->
+					<div id="map_box">
+					</div>
+            
+            </div>
+        
+           	<!--<div class="icons"> <img src="media/icons.png" alt="" title="" /> </div>-->
+        <a class="toScroll" rel="editor">next >></a>    
+        </div>
 
 
-<%= gmaps( "markers" => {"data" => @markers}, "map_options" => {"map_container_id" => "map_box"}
-) %>
-<!-- NOTE: do not add (inline) css to div#map, neither put content within div#map. otherwise map won't get loaded -->
-<div id="map_box">
-</div>
+    	<div id="step3" class="step">
+        
+        	<h1> Mülleimer gestalten </h1>
+         	<p> Erstelle mit Hilfe des Editors dein Wunschdesign, das auf dem Mülleimer angebracht werden soll. </p>
+            <div id="editor"> <img src="/images/media/editor.png" /> </div>
+           	<!--<div class="icons"> <img src="media/icons.png" alt="" title="" /> </div>-->
+          <a class="toScroll" rel="form">next >></a>  
+        </div>    
+        
 
-<div id="editor" style="height:500px;border:3px solid #CCCCCC;margin:1em;">
-<h2>Editor</h2>
-<a class="toScroll" rel="form">next >></a>
-</div>
+  		<div id="step4" class="step">
+        
+        	<h1> Pate werden </h1>
+         	<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit 
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+            <div id="formular">
+				 <%= form_for @user, :url => orders_path do |f| %>
+					  <%= render 'shared/error_messages', :object => f.object %>
 
-<div id="form" style="height:500px;border:3px solid #CCCCCC;margin:1em;">
-<h2>Form</h2>
+					<%= f.fields_for :orders do |t| %>
+						<%= t.label :design_id %>
+						<%= t.text_field :design_id  %>
+						<%= t.label "TrashcanID" %>
+						<%= t.text_field :trashcan_id %>
+					<% end %>
 
-<%= form_for @user, :url => orders_path do |f| %>
-	  <%= render 'shared/error_messages', :object => f.object %>
+					<%= f.label :email %>
+					<%= f.text_field :email %>
 
-	<%= f.fields_for :orders do |t| %>
-		<%= t.label :design_id %>
-		<%= t.text_field :design_id  %>
-		<%= t.label "TrashcanID" %>
-		<%= t.text_field :trashcan_id %>
-	<% end %>
+					<%= f.label :name %>
+					<%= f.text_field :name %>
 
-	<%= f.label :email %>
-	<%= f.text_field :email %>
+					<%= f.label "Strasse:" %>
+					<%= f.text_field :street %>
 
-	<%= f.label :name %>
-	<%= f.text_field :name %>
+					<%= f.label "Stadt:" %>
+					<%= f.text_field :city %>
 
-	<%= f.label "Strasse:" %>
-	<%= f.text_field :street %>
+					<%= f.submit "", :id => "pate_werden" %>
+				<% end %>
+            </div>
+           	<!--<div class="icons"> <img src="media/icons.png" alt="" title="" /> </div>-->
+            <a class="toScroll" rel="info">next >></a>
+        </div>     
+        
+    </section>
 
-	<%= f.label "Stadt:" %>
-	<%= f.text_field :city %>
 
-	<%= f.submit " Bestellung anfordern " %>
-<% end %>
 
-<a class="toScroll" rel="info">next >></a>
-</div>
+
