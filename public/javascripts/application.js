@@ -83,6 +83,7 @@ function setTrashcanId(val) {
 // --------------------------------------------------
 // Vote function for trashcan demands
 function vote( id ) {
+  
   // user already voted within the last 24 hours
   if($.cookie('demand') == "true") {
     $('.markerInfo').html('Du kannst nur alle 24 Stunden abstimmen');
@@ -93,13 +94,13 @@ function vote( id ) {
     $.ajax({
       type: 'POST', 
       url: '/demands/vote/',
-      data: 'id='+id
+      data: 'demand={"id=" '+ id + '}'
     });
     // remember the vote 
     $.cookie('demand', "true", { expires: 1 });
     $('.markerInfo').html('Erfolgreich gevotet');
   }
-  $('.voteButton').hide();
+  $('.voteButton').attr('disabled', 'disabled');
 }
 
 // --------------------------------------------------
@@ -163,6 +164,10 @@ function gmaps4rails_callback() {
 
 function openDialog() {
   $('#dialog').dialog('open');
+}
+
+function voteClicked() {
+  $('.vote_button').attr('disabled', 'disabled');
 }
 
 // --------------------------------------------------
