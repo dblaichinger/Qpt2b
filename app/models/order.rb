@@ -16,10 +16,10 @@ class Order < ActiveRecord::Base
 
 	attr_accessible :owner_id, :trashcan_id, :design_id, :code
 
-	belongs_to :user
+	belongs_to :user, :foreign_key => "owner_id"
 	belongs_to :trashcan
 	has_one :design
 
-	validates :code, :presence => true
-
+	#validates :code, :presence => true
+	validates owner_id, :presence => true
 end
