@@ -38,5 +38,4 @@ class DemandsController < ApplicationController
     Demand.create(:address => params[:address], :radius => 50, :counter => 0)
     render :nothing => true, :status => 200
   end
-
 end
