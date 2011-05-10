@@ -1,7 +1,6 @@
 class DemandsController < ApplicationController
   protect_from_forgery :except => [:update]
   def index
-    cookies[:demand] = false
     @title = "Vote"
     @markers = Demand.all.to_gmaps4rails
     @top_demands = Demand.find(:all, :order => 'counter DESC', :limit => 6)
