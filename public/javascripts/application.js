@@ -100,7 +100,7 @@ function vote( id ) {
     $.cookie('demand', "true", { expires: 1 });
     $('.markerInfo').html('Erfolgreich gevotet');
   }
-  $('.voteButton').attr('disabled', 'disabled');
+  $('.vote_button').attr('disabled', 'disabled');
 }
 
 // --------------------------------------------------
