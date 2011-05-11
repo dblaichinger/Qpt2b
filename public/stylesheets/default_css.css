@@ -62,4 +62,46 @@ table.trashcan td {
   list-style: square;
 }
 
+/* EDITOR */
+#editorWrapper {
+	background:#cccccc;
+	overflow:hidden;
+	padding:1em;
+	width:620px;
+}
 
+#canvas {
+	background:#ffffff url("grid.png");
+	width:580px;
+	height:300px;
+	margin-bottom:1em;
+}
+
+.innerPadding { padding:0.5em; }
+
+#editorText, #editorInfo, #imageList {
+	width:180px; border:1px solid #FFFFFF; margin-right:1em;
+}
+
+#editorText {
+	float:left;	
+}
+
+#editorInfo {
+	float:left;
+}
+
+
+#imageList {
+	overflow:hidden;
+	float:left;
+}
+
+.motiveIn { border:1px dotted #000000; }
+.motiv { cursor:pointer; margin-left:4px; }
+
+.textField, .motiveIn {
+	cursor:move;	
+}
+
+#deleteButton { position:absolute; background:#FFFFFF; }
