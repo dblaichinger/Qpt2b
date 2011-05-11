@@ -22,7 +22,7 @@ class Trashcan < ActiveRecord::Base
 
   def gmaps4rails_marker_picture
    {
-    "picture" => "/images/trash.jpg",
+    "picture" => "/images/trash.png",
     "width" => "128",
     "height" => "128"
    }

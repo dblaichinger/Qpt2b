@@ -91,7 +91,7 @@ var GeoTool = function() {
 // Order: Set Trashcan id in order form
 function setTrashcanId(val) {
 	$("#user_orders_attributes_0_trashcan_id").val( val );
-	$.scrollTo("#editor", 2000);
+	$.scrollTo("#step3", 2000);
 }
 
 // --------------------------------------------------
