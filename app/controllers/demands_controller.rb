@@ -1,6 +1,8 @@
+#encoding: UTF-8
 class DemandsController < ApplicationController
-  protect_from_forgery :except => [:update]
-  def index
+  protect_from_forgery
+  
+def index
     @title = "Vote"
     @markers = Demand.all.to_gmaps4rails
     @top_demands = Demand.find(:all, :order => 'counter DESC', :limit => 6)
@@ -9,11 +11,12 @@ class DemandsController < ApplicationController
   
   def destroy
 	  Demand.find(params[:id]).destroy
-	  flash[:sucess] = "Voting-Zone wurde geloescht"
+	  flash[:sucess] = "Voting wurde gelöscht"
 	  redirect_to admins_path
   end
 
   def edit
+  	  @title = "Voting bearbeiten"
 	  @demand = Demand.find(params[:id])
   end
 
@@ -21,7 +24,7 @@ class DemandsController < ApplicationController
     @demand = Demand.find(params[:id])
 
     if @demand.update_attributes(params[:demand])
-      flash[:success] = "Demand-Zone aktualisiert!"
+      flash[:success] = "Voting aktualisiert!"
       redirect_to admins_path
     else
       render 'edit'

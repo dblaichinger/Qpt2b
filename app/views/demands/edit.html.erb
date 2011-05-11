@@ -1,12 +1,14 @@
-<%= form_for(@demand) do |f| %>
-<h3>Edit Demand-Zone</h3>
-	<%= render 'shared/error_messages', :object => f.object %>
+ <section id="content">
 
-	  <%= f.label :id %>
-	  <%= f.text_field :id %>
+	<%= form_for(@demand, :html => { :class => "editform"} ) do |f| %>
+		<h1 class="admin">Voting bearbeiten</h1>
+		<%= render 'shared/error_messages', :object => f.object %>
 
-	  <%= f.label :address %>
-	  <%= f.text_field :address %>
+		  <%= f.label :id %>
+		  <%= f.text_field :id %>
 
-	  <%= f.submit "Change" %>
-<% end %>
+		  <%= f.label :address %>
+		  <%= f.text_field :address %>
+
+		  <%= f.submit "Speichern" %>
+	<% end %>

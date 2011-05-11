@@ -16,7 +16,7 @@ class UsersController < ApplicationController
 		Order.create(:owner_id => @newUser.id, :trashcan_id => params[:user][:orders_attributes]["0"][:trashcan_id], :design_id => params[:user][:orders_attributes]["0"][:design_id])
 
 		if @newUser.save
-			flash[:notice] = "Bestellung getaetigt !"
+			flash[:notice] = "Bestellung getätigt!"
 		else
 			flash[:error] = "Bestellung fehlgeschlagen"
 
