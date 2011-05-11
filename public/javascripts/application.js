@@ -1,8 +1,5 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
-
 /*
-  MMT.JS
+  application.JS
   QPT2b MMT09 - made by Andre Schweighoder, Daniel Blaichinger, Francois Weber
 
   _DESCRIPTION:
@@ -19,8 +16,26 @@ $(document).ready(function() {
 
 	// Get current geo position
   	getPosition();
-
+    $('.vote_button').click(function() {voteClicked($(this).attr('id'), false)});
 });
+
+// Vote-Button was clicked (within maps or top demands)
+function voteClicked($this, $fromMap) {
+    // don't let user click again
+    $('.vote_button').attr('disabled', 'disabled');
+    
+    //do not increase the counters html value, if not allowed to vote
+    if($.cookie('demand') != 'true') {
+      // increase counter at users view
+      var sel = '#counter_' + $this;
+      var countString = "" + (parseInt($(sel).html()) + 1);
+      $(sel).html(countString);
+    }
+
+    // if vote was sent from map, call AJAX vote
+    // otherwise vote was already executed by rails remote form
+    if($fromMap) {vote($this);};
+}
 
 // --------------------------------------------------
 // GeoTool Helper Class
@@ -29,7 +44,7 @@ var GeoTool = function() {
     that = this;
     this.address = "";
     that.lat = 0.0;
-    that.lng = 0.0;
+    that.lng = 0.0; 
 
     var RADIUS = 50;
 
@@ -70,7 +85,6 @@ var GeoTool = function() {
       });
       circle.bindTo('center', marker, 'position');   
     }
-
 }
 
 // --------------------------------------------------
@@ -94,11 +108,11 @@ function vote( id ) {
     $.ajax({
       type: 'POST', 
       url: '/demands/vote/',
-      data: 'demand={"id=" '+ id + '}'
+      data: 'id= '+ id
     });
     // remember the vote 
     $.cookie('demand', "true", { expires: 1 });
-    $('.markerInfo').html('Erfolgreich gevotet');
+    $('.markerInfo').html(' Erfolgreich abgestimmt!');
   }
   $('.vote_button').attr('disabled', 'disabled');
 }
@@ -164,10 +178,6 @@ function gmaps4rails_callback() {
 
 function openDialog() {
   $('#dialog').dialog('open');
-}
-
-function voteClicked() {
-  $('.vote_button').attr('disabled', 'disabled');
 }
 
 // --------------------------------------------------
