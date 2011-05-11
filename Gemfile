@@ -15,4 +15,5 @@ group :test do
   gem 'shoulda'
   gem 'capybara'
   gem 'mocha', :require => false
+  gem 'rspec-rails', '~> 2.5'
 end

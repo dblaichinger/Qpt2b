@@ -32,18 +32,20 @@
 		<% end %>
 	<% end %>
 </table>
-<table class="trashcan">
-	<tr>
-		<th></th>
-		<th></th>
-		<th>ID</th>
-		<th>Adress</th>
-		<th>Latitude</th>
-		<th>Longitude</th>
-		<th>Votes</th>
-	</tr>
+
+<%if @demands != [] %>
+	<table class="trashcan">
+		<tr>
+			<th></th>
+			<th></th>
+			<th>ID</th>
+			<th>Adress</th>
+			<th>Latitude</th>
+			<th>Longitude</th>
+			<th>Votes</th>
+		</tr>
 	
-	<%if @demands != [] %>
+
 		<% @demands.each do |demand| %>
 		<tr>
 			<td><%= link_to image_tag("../images/delete.png"), demand, :method => :delete, 
