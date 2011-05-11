@@ -17,8 +17,7 @@ class OrdersController < ApplicationController
 		if @newUser.save && @order.save
 			flash[:notice] = "Die Patenschaft wurde beantragt!"
 		else
-			flash[:error] = "Die Bestellung ist fehlgeschlagen! #{params[:user][:orders_attributes]["0"][:design_id]}"
-
+			flash[:error] = "Die Bestellung ist fehlgeschlagen! #{params[:user][:orders_attributes]["0"][:trashcan_id]} - UID: #{@newUser.id}"
 		end
 		redirect_to pages_home_path
 	end
