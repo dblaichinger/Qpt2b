@@ -5,7 +5,7 @@ class CreateTrashcans < ActiveRecord::Migration
       t.float :latitude
       t.float :longitude
       t.boolean :is_free
-      t.date :adopted_until
+      t.datetime :adopted_until
 
       t.timestamps
     end

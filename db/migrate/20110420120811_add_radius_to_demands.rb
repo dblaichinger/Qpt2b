@@ -7,3 +7,4 @@ class AddRadiusToDemands < ActiveRecord::Migration
     remove_column :demands, :radius, :int
   end
 end
+    

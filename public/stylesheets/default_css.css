@@ -68,12 +68,11 @@ table.trashcan td {
 
 
 #gmaps4rails_map {
-	width: 700px;
-	height: 350px;
-	top: -20px;
-	left: -20px;
+  	height: 445px;
+    left: -20px;
+    top: -114px;
+    width: 700px;
 }
-
 
 .flash {
     text-align: center;
@@ -89,7 +88,7 @@ table.trashcan td {
     background: #ffc0cb;
 }
 
-.flash.sucess {
+.flash.sucess, .flash.success {
 	border: thin solid #219b00;
 	background: #cdffc0;
 }
@@ -102,15 +101,6 @@ table.trashcan td {
 .flash.warning {
     border: thin solid #b8860b;
     background: #ff0;
-}
-
-.flash .close {
-    float:      right;
-}
-
-.flash .close a {
-    color:                              #f00;
-    text-decoration:    none;
 }
 
 

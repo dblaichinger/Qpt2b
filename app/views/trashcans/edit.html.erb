@@ -11,11 +11,12 @@
 			  <%= f.text_field :address %>
 
 			  <%= f.label :Frei? %>
-			  <%= f.text_field :is_free %>
+			  <%= f.check_box :is_free %>
 
-			  <%= f.label :Pate_bis %>
-			  <%= f.text_field :adopted_until %>
-
+	
+			   <%= f.label :Pate_bis %>
+			  <%= f.date_select :adopted_until, :order => [:day, :month, :year] %>
+			  
 			  <%= f.submit "Speichern" %>
 		<% end %>
 </section>
