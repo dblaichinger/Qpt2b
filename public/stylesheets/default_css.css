@@ -89,6 +89,11 @@ table.trashcan td {
     background: #ffc0cb;
 }
 
+.flash.sucess {
+	border: thin solid #219b00;
+	background: #cdffc0;
+}
+
 .flash.notice, .flash.info {
     border: thin solid #ff0;
     background: #ffe;

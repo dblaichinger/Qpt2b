@@ -1,5 +1,6 @@
 class AdminsController < ApplicationController
   def index
+  	@title = "Admin"
     @trashcans = Trashcan.all
     @demands = Demand.all
     @orders = Order.all
