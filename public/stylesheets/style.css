@@ -227,17 +227,17 @@ nav {
 	}
 
 .step {
-	min-height: 600px;
-	padding: 70px 0;
+	min-height: 500px;
+	margin: 140px 0;
 	}
 
 #step1 {
 	position: relative;
-	margin: ;
+	margin-top: 70px;
 	}
 
 #step1 p {
-	font-size: 35px;
+	font-size: 30px;
 	line-height: 1.2em;
 	}
 
@@ -372,7 +372,7 @@ iframe {
 	}
 footer {
 	position:relative;
-	height: 600px;
+	height: 400px;
 	padding: 70px 70px;
 	background-color:#CCC;
 	}
@@ -383,7 +383,7 @@ footer {
 #sponsoren {
 	width:100%;
 	margin-top:30px;
-	height:400px;
+	height:200px;
 	border: 2px solid #FFF;
 	float:right;
 	}
@@ -411,7 +411,7 @@ h1 {
     font-family: 'TitilliumText22LMedium';
 	font-size: 30px;
 	color: #003232;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	text-transform:uppercase;
 /*	text-shadow: -1px -1px 0px #202020, 1px 1px 0px #fff;*/
 

@@ -14,14 +14,18 @@ table.trashcan {
 	border-color: gray;
 	border-collapse: separate;
 	background-color: white;
+	font-size: 60%;
+	font-family: Verdana, sans-serif;
+	width: 900px;
+	margin-bottom: 20px;
 }
+
 table.trashcan th {
 	border-width: 1px;
 	padding: 3px;
 	border-style: inset;
 	border-color: gray;
 	background-color: white;
-	-moz-border-radius: 5px;
 }
 table.trashcan td {
 	border-width: 1px;
@@ -29,8 +33,8 @@ table.trashcan td {
 	border-style: inset;
 	border-color: gray;
 	background-color: white;
-	-moz-border-radius: 5px;
 }
+
 
 #error_explanation {
   width: 400px;
@@ -63,3 +67,57 @@ table.trashcan td {
 }
 
 
+#gmaps4rails_map {
+	width: 700px;
+	height: 350px;
+	top: -20px;
+	left: -20px;
+}
+
+
+.flash {
+    text-align: center;
+    padding:    .3em .4em;
+    margin:      0 auto .5em;
+    clear:       both;
+    max-width:  46.923em;
+
+}
+
+.flash.error {
+    border: thin solid #8b0000;
+    background: #ffc0cb;
+}
+
+.flash.sucess {
+	border: thin solid #219b00;
+	background: #cdffc0;
+}
+
+.flash.notice, .flash.info {
+    border: thin solid #ff0;
+    background: #ffe;
+}
+
+.flash.warning {
+    border: thin solid #b8860b;
+    background: #ff0;
+}
+
+.flash .close {
+    float:      right;
+}
+
+.flash .close a {
+    color:                              #f00;
+    text-decoration:    none;
+}
+
+
+.admin {
+	margin-top: 30px;
+}
+
+.editform {
+	margin-bottom: 30px;
+}
