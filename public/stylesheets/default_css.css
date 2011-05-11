@@ -103,7 +103,7 @@ table.trashcan td {
 }
 
 .motiveIn { border:1px dotted #000000; }
-.motiv { cursor:pointer; margin-left:4px; }
+.motiv { cursor:pointer; margin-left:4px; width:30px; height:30px;}
 
 .textField, .motiveIn {
 	cursor:move;	
