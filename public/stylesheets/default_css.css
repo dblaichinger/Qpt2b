@@ -66,6 +66,66 @@ table.trashcan td {
   list-style: square;
 }
 
+/* -------------------------------------------- */
+/* EDITOR */
+#editorWrapper {
+	background:#cccccc;
+	overflow:hidden;
+	padding:1em;
+	width:620px;
+	font-size:0.8em;
+}
+
+#canvas {
+	background:#ffffff url("images/grid.png");
+	width:580px;
+	height:300px;
+	margin-bottom:1em;
+}
+
+.innerPadding { padding:0.5em; }
+
+#editorText, #editorInfo, #imageList {
+	width:180px; border:1px solid #FFFFFF; margin-right:1em;
+}
+
+#editorText {
+	float:left;	
+}
+
+#editorInfo {
+	float:left;
+}
+
+
+#imageList {
+	overflow:hidden;
+	float:left;
+}
+
+.motiveIn { border:1px dotted #000000; }
+.motiv { cursor:pointer; margin-left:4px; width:30px; height:30px;}
+
+.textField, .motiveIn {
+	cursor:move;	
+}
+
+#deleteButton { position:absolute; background:#FFFFFF; }
+
+#editorWrapper select, #editorWrapper input  {
+	border:1px solid #000000;
+}
+
+#editorWrapper select {
+	color:#003232; background:#FFFFFF;
+}
+
+#editorWrapper input {
+	background:#003232; color:#FFFFFF;
+}
+
+
+/* -------------------------------------------- */
 
 #gmaps4rails_map {
   	height: 445px;
