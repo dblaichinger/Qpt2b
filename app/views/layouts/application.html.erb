@@ -65,15 +65,12 @@
 
 </div>
 
-	<% 	if !controller?("admins") && !action?("index")
-	  		render 'layouts/footer' 
-	 	end
-	 	
-	   	if !controller?("trashcans") && !action?("index")
-	     	render 'layouts/footer' 
-		end
-	%>
-	
+	<% 	if(( !controller?("admins") && !action?("edit") ) and ( !controller?("trashcans") && !action?("index") )) %>
+		<%= render 'layouts/footer' %> 
+	 <% end %>
+	<% 	if controller?("demands") && !action?("edit") %>
+		<%= render 'layouts/footer' %> 
+	 <% end %>
 
 
 </body>
