@@ -73,6 +73,7 @@ table.trashcan td {
 	overflow:hidden;
 	padding:1em;
 	width:620px;
+	font-size:0.8em;
 }
 
 #canvas {
