@@ -76,7 +76,7 @@ table.trashcan td {
 }
 
 #canvas {
-	background:#ffffff url("grid.png");
+	background:#ffffff url("images/grid.png");
 	width:580px;
 	height:300px;
 	margin-bottom:1em;
@@ -109,6 +109,13 @@ table.trashcan td {
 	cursor:move;	
 }
 
+#editorWrapper select {
+	color:#003232; background:#FFFFFF;
+}
+
+#editorWrapper input {
+	background:#003232; color:#FFFFFF;
+}
 
 #deleteButton { position:absolute; background:#FFFFFF; }
 
