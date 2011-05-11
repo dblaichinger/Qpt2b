@@ -18,9 +18,8 @@ def update
 
     if @trashcan.update_attributes(params[:trashcan])
       flash[:success] = "Mülleimer aktualisiert!"
-      redirect_to trashcans_path
+      redirect_to admins_path
     else
-      @title = "Mülleimer Standorte bearbeiten"
       render 'edit'
     end
 end
