@@ -21,5 +21,5 @@ class Order < ActiveRecord::Base
 	has_one :design
 
 	#validates :code, :presence => true
-	validates owner_id, :presence => true
+	validates :owner_id, :presence => true
 end
