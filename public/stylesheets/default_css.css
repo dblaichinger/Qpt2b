@@ -32,6 +32,7 @@ table.trashcan td {
 	-moz-border-radius: 5px;
 }
 
+
 #error_explanation {
   width: 400px;
   border: 2px solid red;
@@ -62,4 +63,45 @@ table.trashcan td {
   list-style: square;
 }
 
+
+#gmaps4rails_map {
+	width: 700px;
+	height: 350px;
+	top: -20px;
+	left: -20px;
+}
+
+
+.flash {
+    text-align: center;
+    padding:    .3em .4em;
+    margin:      0 auto .5em;
+    clear:       both;
+    max-width:  46.923em;
+
+}
+
+.flash.error {
+    border: thin solid #8b0000;
+    background: #ffc0cb;
+}
+
+.flash.notice, .flash.info {
+    border: thin solid #ff0;
+    background: #ffe;
+}
+
+.flash.warning {
+    border: thin solid #b8860b;
+    background: #ff0;
+}
+
+.flash .close {
+    float:      right;
+}
+
+.flash .close a {
+    color:                              #f00;
+    text-decoration:    none;
+}
 
