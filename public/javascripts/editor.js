@@ -58,8 +58,11 @@ var Picture = Motiv.extend({
 
         this.objectID = object.attr("id");
 
-        this.height = object.height();
-        this.width  = object.width();
+        var theHeight = (object.height() < 0) ? 30 : object.height();
+        var theWidth = (object.width() < 0) ? 30 : object.width();
+
+        this.height = theHeight;
+        this.width  = theWidth;
         this.ratio  = this.width / this.height;
 
         this.minResize = 25;
