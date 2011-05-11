@@ -4,5 +4,4 @@ class AdminsController < ApplicationController
     @demands = Demand.all
     @orders = Order.all
   end
-
 end

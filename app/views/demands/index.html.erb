@@ -42,17 +42,18 @@
     	<div id="step3" class="step">
         
         	<h1> Ranking </h1>
-         	<p> Erstelle mit Hilfe des Editors dein Wunschdesign, das auf dem Mülleimer angebracht werden soll. </p>
-            <div id="ranking">
-            	<ul>
-                	<li> </li>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                </ul>
-            </div>
+         	<p> Hier findest du die am dringendsten benötigten Mistkübel. </p>
+          <ul id="top_votes">
+          <% @top_demands.each do |demand| %>
+            <li>
+              <span class="top_address"><%= demand.address %></span>
+              <span class="top_counter"><%= demand.counter %></span>
+              <%= render :partial => 'top_vote_button_form', :locals => { :demand => demand } %>
+            </li>
+          <% end %>
+
+
+
            	<!--<div class="icons"> <img src="media/icons.png" alt="" title="" /> </div>-->
             
         </div>    

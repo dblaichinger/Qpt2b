@@ -3,6 +3,7 @@ class DemandsController < ApplicationController
   def index
     @title = "Vote"
     @markers = Demand.all.to_gmaps4rails
+    @top_demands = Demand.find(:all, :order => 'counter DESC', :limit => 6)
     @circles = Demand.all.map{|d| {:longitude => d.longitude, :latitude => d.latitude, :radius => d.radius}}.to_json
   end
   
@@ -38,5 +39,4 @@ class DemandsController < ApplicationController
     Demand.create(:address => params[:address], :radius => 50, :counter => 0)
     render :nothing => true, :status => 200
   end
-
 end
