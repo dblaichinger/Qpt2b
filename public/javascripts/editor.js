@@ -95,11 +95,15 @@ var Picture = Motiv.extend({
 var Textfield = Motiv.extend({
 
     init: function(object) {
-  			this._parent.init(object);
 
-				this.objectID = object.attr("id");
+  		this._parent.init(object);
 
-    		this.doResizeable();
+		this.objectID = object.attr("id");
+        
+        this.obj = this._parent.addToCanvas(object);
+        this.obj.css({'background' : 'none', 'color' : '#333333', 'border' : '1px dotted #000000' }).removeClass('textField').addClass('textIn');
+
+    	this.doResizeable();
         this.doDraggable();
     },
 
@@ -109,8 +113,8 @@ var Textfield = Motiv.extend({
 							var h = that.obj.height() / 10;
 							var leng = that.obj.val().length * ( that.obj.height() / 10);
 
-							that.obj.css({"font-size" : h + "em"});
-							that.obj.attr("size" , leng);
+							//that.obj.css({"font-size" : h + "em"});
+							//that.obj.attr("size" , leng);
 						}
         });
     },
@@ -132,8 +136,12 @@ $(document).ready(function() {
 
         var elements = new Array();
 		
-		$(".motiv").click(function() 	 { elements.push(new Picture( $(this) )); });//var object = new Picture( $(this) ); });
-		$(".textField").click(function() { var object = new Textfield( $(this) ); });
+		$(".motiv").click(function() {
+            elements.push(new Picture( $(this) )); 
+        });
+		$("#addTextToCanvas").click(function() {
+            elements.push(new Textfield( $('.textField') ));
+        });
 
 		$( "#slider" ).slider({
 			value:1,

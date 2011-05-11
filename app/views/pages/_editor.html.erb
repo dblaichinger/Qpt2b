@@ -11,16 +11,16 @@
 
     <div id="imageList">
         <div class="innerPadding">
-        <%= image_tag("/images/motive/motiv1.png", :class => 'motiv') %>
-        <%= image_tag("/images/motive/motiv2.png", :class => 'motiv') %>
-        <%= image_tag("/images/motive/motiv3.png", :class => 'motiv') %>
-        <%= image_tag("/images/motive/motiv4.png", :class => 'motiv') %>
+        <img src="motive/motiv1.png" id="1" class="motiv" style="height30px;width:30px;" >
+        <img src="motive/motiv2.png" id="2" class="motiv" style="height30px;width:30px;" >  
+        <img src="motive/motiv3.png" id="3" class="motiv" style="height30px;width:30px;" >
+        <img src="motive/motiv4.png" id="4" class="motiv" style="height30px;width:30px;" >
         </div>
     </div>
 
     <div id="editorText">
         <div class="innerPadding">
-        <input type="text" class="textField" />
+        <input type="text" class="textField"/>
 
         <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;" />
         <div id="slider"></div>
@@ -31,6 +31,9 @@
             <option value="Verdana">Verdana</option>
             <option value="Times New Roman">Times New Roman</option>
         </select>
+        <input type="button" id="addTextToCanvas" value=" Hinzufügen ">
         </div>
     </div>
+
+    <div id="deleteButton"><input type="button" value="X" id="" class="delBttn"></div>
 </div>

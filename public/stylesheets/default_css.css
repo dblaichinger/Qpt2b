@@ -110,6 +110,12 @@ table.trashcan td {
 	cursor:move;	
 }
 
+#deleteButton { position:absolute; background:#FFFFFF; }
+
+#editorWrapper select, #editorWrapper input  {
+	border:1px solid #000000;
+}
+
 #editorWrapper select {
 	color:#003232; background:#FFFFFF;
 }
@@ -118,7 +124,6 @@ table.trashcan td {
 	background:#003232; color:#FFFFFF;
 }
 
-#deleteButton { position:absolute; background:#FFFFFF; }
 
 /* -------------------------------------------- */
 
