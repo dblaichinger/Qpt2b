@@ -46,9 +46,7 @@
           <ul id="top_votes">
           <% @top_demands.each do |demand| %>
             <li>
-              <span class="top_address"><%= demand.address %></span>
-              <span class="top_counter"><%= demand.counter %></span>
-              <%= render :partial => 'top_vote_button_form', :locals => { :demand => demand } %>
+              <%= render :partial => 'top_vote_form', :locals => { :demand => demand } %>
             </li>
           <% end %>
 
