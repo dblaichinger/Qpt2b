@@ -42,10 +42,10 @@
 	        <%else%><li><% end %>
 	        <%= link_to 'Voting', demands_path %></li>
 	        
-	        <% if controller?("trashcans") && action?("index")  %>
+	        <% if controller?("admins") && action?("index") %>
 	        <li class="active">
 	        <%else%><li><% end %>
-	        <%=link_to '(Admin)', trashcans_path  %> </li>
+	        <%=link_to '(Admin)', admins_path  %> </li>
 	    </ul>
 	        
 	    <ul id="nav_klein">

@@ -14,14 +14,18 @@ table.trashcan {
 	border-color: gray;
 	border-collapse: separate;
 	background-color: white;
+	font-size: 60%;
+	font-family: Verdana, sans-serif;
+	width: 900px;
+	margin-bottom: 20px;
 }
+
 table.trashcan th {
 	border-width: 1px;
 	padding: 3px;
 	border-style: inset;
 	border-color: gray;
 	background-color: white;
-	-moz-border-radius: 5px;
 }
 table.trashcan td {
 	border-width: 1px;
@@ -29,7 +33,6 @@ table.trashcan td {
 	border-style: inset;
 	border-color: gray;
 	background-color: white;
-	-moz-border-radius: 5px;
 }
 
 
@@ -105,3 +108,11 @@ table.trashcan td {
     text-decoration:    none;
 }
 
+
+.admin {
+	margin-top: 30px;
+}
+
+.editform {
+	margin-bottom: 30px;
+}

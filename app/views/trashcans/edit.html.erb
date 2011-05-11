@@ -1,18 +1,21 @@
-<%= form_for(@trashcan) do |f| %>
-<h3>Edit trashcan</h3>
-	<%= render 'shared/error_messages', :object => f.object %>
+ <section id="content">
 
-	  <%= f.label :id %>
-	  <%= f.text_field :id %>
+		<%= form_for(@trashcan, :html => { :class => "editform"} ) do |f| %>
+		<h1 class="admin">Mistkübel bearbeiten</h1>
+			<%= render 'shared/error_messages', :object => f.object %>
 
-	  <%= f.label :address %>
-	  <%= f.text_field :address %>
+			  <%= f.label :id %>
+			  <%= f.text_field :id %>
 
-	  <%= f.label :is_free %>
-	  <%= f.text_field :is_free %>
+			  <%= f.label :Adresse %>
+			  <%= f.text_field :address %>
 
-	  <%= f.label :adopted_until %>
-	  <%= f.text_field :adopted_until %>
+			  <%= f.label :Frei? %>
+			  <%= f.text_field :is_free %>
 
-	  <%= f.submit "Change" %>
-<% end %>
+			  <%= f.label :Pate_bis %>
+			  <%= f.text_field :adopted_until %>
+
+			  <%= f.submit "Speichern" %>
+		<% end %>
+</section>

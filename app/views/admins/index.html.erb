@@ -1,38 +1,50 @@
-<table class="trashcan">
-	<tr>
-		<th></th>
-		<th></th>
-		<th>ID</th>
-		<th>Adress</th>
-		<th>Latitude</th>
-		<th>Longitude</th>
-		<th>is_free</th>
-		<th>adopted_until</th>
-		<th>created_at</th>
-		<th>updated_at</th>
-	</tr>
-	
-	<%if @trashcans != [] %>
-		<% @trashcans.each do |trashcan| %>
-		<tr>
-			<td><%= link_to image_tag("../images/delete.png"), trashcan, :method => :delete, 
-			 	:confirm => "Attention:\nAre you sure to delete trashcan?", :title => "Delete #{trashcan.address}"
-				%>
-			</td>
-			<td><%= link_to image_tag("../images/edit.png"), edit_trashcan_path(trashcan) %></td>
-			<td><%= trashcan.id %></td>
-			<td><%= trashcan.address %></td>
-			<td><%= trashcan.latitude %></td>
-			<td><%= trashcan.longitude %></td>
-			<td><%= trashcan.is_free %></td> 
-			<td><%= trashcan.adopted_until %></td>
-			<td><%= trashcan.created_at %></td>
-			<td><%= trashcan.updated_at %></td>
-		</tr>
-		<% end %>
-	<% end %>
-</table>
+ <section id="content">
+    
 
+        
+        	<h1 class="admin"> Vorhandene Mistkübel </h1>
+
+        	<%if @trashcans != [] %>
+				<table class="trashcan">
+					<tr>
+						<th></th>
+						<th></th>
+						<th>ID</th>
+						<th>Adress</th>
+						<th>Latitude</th>
+						<th>Longitude</th>
+						<th>is_free</th>
+						<th>adopted_until</th>
+						<th>created_at</th>
+						<th>updated_at</th>
+					</tr>
+				
+				
+					<% @trashcans.each do |trashcan| %>
+					<tr>
+						<td><%= link_to image_tag("../images/delete.png"), trashcan, :method => :delete, 
+						 	:confirm => "Attention:\nAre you sure to delete trashcan?", :title => "Delete #{trashcan.address}"
+							%>
+						</td>
+						<td><%= link_to image_tag("../images/edit.png"), edit_trashcan_path(trashcan) %></td>
+						<td><%= trashcan.id %></td>
+						<td><%= trashcan.address %></td>
+						<td><%= trashcan.latitude %></td>
+						<td><%= trashcan.longitude %></td>
+						<td><%= trashcan.is_free %></td> 
+						<td><%= trashcan.adopted_until %></td>
+						<td><%= trashcan.created_at %></td>
+						<td><%= trashcan.updated_at %></td>
+					</tr>
+					<% end %>
+				</table>
+			<% else %>
+				<p>Noch keine Mistkübel vorhanden</p>
+			<% end %>
+			
+
+
+	<h1 class="admin">Voting</h1>
 <%if @demands != [] %>
 	<table class="trashcan">
 		<tr>
@@ -60,6 +72,9 @@
 			<td><%= demand.counter %></td> 
 		</tr>
 		<% end %>
-	<% end %>
-</table>
+	</table>	
+<% else %>
+	<p>Noch keine Votings vorhanden</p>
+<% end %>
 
+</section>
