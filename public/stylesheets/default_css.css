@@ -66,14 +66,73 @@ table.trashcan td {
   list-style: square;
 }
 
-
-#gmaps4rails_map {
-	width: 700px;
-	height: 350px;
-	top: -20px;
-	left: -20px;
+/* -------------------------------------------- */
+/* EDITOR */
+#editorWrapper {
+	background:#cccccc;
+	overflow:hidden;
+	padding:1em;
+	width:620px;
+	font-size:0.8em;
 }
 
+#canvas {
+	background:#ffffff url("images/grid.png");
+	width:580px;
+	height:300px;
+	margin-bottom:1em;
+}
+
+.innerPadding { padding:0.5em; }
+
+#editorText, #editorInfo, #imageList {
+	width:180px; border:1px solid #FFFFFF; margin-right:1em;
+}
+
+#editorText {
+	float:left;	
+}
+
+#editorInfo {
+	float:left;
+}
+
+
+#imageList {
+	overflow:hidden;
+	float:left;
+}
+
+.motiveIn { border:1px dotted #000000; }
+.motiv { cursor:pointer; margin-left:4px; width:30px; height:30px;}
+
+.textField, .motiveIn {
+	cursor:move;	
+}
+
+#deleteButton { position:absolute; background:#FFFFFF; }
+
+#editorWrapper select, #editorWrapper input  {
+	border:1px solid #000000;
+}
+
+#editorWrapper select {
+	color:#003232; background:#FFFFFF;
+}
+
+#editorWrapper input {
+	background:#003232; color:#FFFFFF;
+}
+
+
+/* -------------------------------------------- */
+
+#gmaps4rails_map {
+  	height: 445px;
+    left: -20px;
+    top: -114px;
+    width: 700px;
+}
 
 .flash {
     text-align: center;
@@ -89,7 +148,7 @@ table.trashcan td {
     background: #ffc0cb;
 }
 
-.flash.sucess {
+.flash.sucess, .flash.success {
 	border: thin solid #219b00;
 	background: #cdffc0;
 }
@@ -102,15 +161,6 @@ table.trashcan td {
 .flash.warning {
     border: thin solid #b8860b;
     background: #ff0;
-}
-
-.flash .close {
-    float:      right;
-}
-
-.flash .close a {
-    color:                              #f00;
-    text-decoration:    none;
 }
 
 

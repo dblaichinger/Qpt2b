@@ -1,0 +1,41 @@
+<div id="editorWrapper">
+
+    <div id="canvas"></div>
+    
+    <div id="editorInfo">
+        <div class="innerPadding">
+        <label>Rotieren:</label>
+        <div id="rotator"></div>
+        </div>
+    </div>
+
+    <div id="imageList">
+        <div class="innerPadding">
+        <%= image_tag("/images/motive/motiv1.png", :class => 'motiv') %>
+        <%= image_tag("/images/motive/motiv2.png", :class => 'motiv') %>
+        <%= image_tag("/images/motive/motiv3.png", :class => 'motiv') %>
+        <%= image_tag("/images/motive/motiv4.png", :class => 'motiv') %>
+        </div>
+    </div>
+
+    <div id="editorText">
+        <div class="innerPadding">
+        <input type="text" class="textField"/>
+
+        <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;" />
+        <div id="slider"></div>
+        
+        <select id="font">
+            <option value="Comic Sans MS">Comic Sans MS</option>
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Times New Roman">Times New Roman</option>
+        </select>
+        <input type="button" id="addTextToCanvas" value=" Hinzufügen ">
+        </div>
+    </div>
+
+    <div id="deleteButton"><input type="button" value="X" id="" class="delBttn"></div>
+</div>
+
+

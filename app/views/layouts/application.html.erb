@@ -6,7 +6,7 @@
   
   <link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag :defaults %>
-  <%= javascript_include_tag  'jquery.scrollTo-min', 'jquery.cookie', 'jquery-ui', 'jquery.reversegeocode.min', 'gears_init' %>
+  <%= javascript_include_tag  'jquery.scrollTo-min', 'jquery.cookie', 'jquery-ui', 'jquery.reversegeocode.min', 'gears_init', 'jquery.class.min', 'editor' %>
   <%= csrf_meta_tag %>
   <%= yield :head %>
   <%= stylesheet_link_tag :all %>
@@ -44,6 +44,10 @@
 	        
 	        <% if controller?("admins") && action?("index") %>
 	        <li class="active">
+	        <% elsif controller?("trashcans") && action?("edit") %>
+	        <li class="active">
+	        <% elsif controller?("demands") && action?("edit") %>
+	        <li class="active">
 	        <%else%><li><% end %>
 	        <%=link_to '(Admin)', admins_path  %> </li>
 	    </ul>
@@ -61,28 +65,13 @@
 
 </div>
 
-    <footer>
-    
-    	<div id="zusammenarbeit">
-    		<h1> In Zusammenarbeit mit </h1>
-        	<p>  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet </p>
-        	<div id="sponsoren"> </div>
-        </div>
-        
-        <div id="kontakt">
-        	<ul> 
-            	<li> Daniel Blaichinger </li>
-            	<li> Kristina Fallenegger </li>
-				<li> Marta Janosz </li>
-				<li> Daniela Rieser </li>
-				<li> André Schweighofer </li>
-				<li> Francois Weber </li>		
-                <li> <a href="mailto:info@trashcanny.com">info@trashcanny.com</a> </li>
-			</ul>
-        </div>
-        
-    </footer>
-    
+	<% 	if(( !controller?("admins") && !action?("edit") ) and ( !controller?("trashcans") && !action?("index") )) %>
+		<%= render 'layouts/footer' %> 
+	 <% end %>
+	<% 	if controller?("demands") && !action?("edit") %>
+		<%= render 'layouts/footer' %> 
+	 <% end %>
+
+
 </body>
 </html>

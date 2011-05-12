@@ -195,7 +195,7 @@ nav {
 #nav_klein {
 	position: absolute;
 	bottom: 20px;
-	left: 42px;
+	left: 50px;
 	}
 
 #nav_klein li {
@@ -427,7 +427,7 @@ a:hover {
 	}
 
 #ranking ul {
-	overlflow: hidden;
+	overflow: hidden;
 	}
 
 #ranking li {
