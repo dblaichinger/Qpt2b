@@ -176,7 +176,7 @@ nav {
 #content {
 	width: 64%;
 	min-width: 660px;
-	max-width: 1100px;
+	max-width: 1000px;
 	margin-left: 300px;
 	position: relative;
 	height:100%;
@@ -190,7 +190,7 @@ nav {
 	}
 
 .schatten_l {
-	width:55%;
+	width:56%;
 	background-image:url('/images/media/infoblase_l_schatten.png');
 	background-position: bottom left;
 	background-repeat:no-repeat;
