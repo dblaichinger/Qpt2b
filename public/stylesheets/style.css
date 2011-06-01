@@ -381,8 +381,7 @@ iframe {
 /* footer */
 	
 footer {
-	position:relative;
-	height: 400px;
+	height: 100%;
 	padding: 70px 70px;
 	background-color:#CCC;
 	}
@@ -398,21 +397,4 @@ footer {
 	border: 2px solid #FFF;
 	float:right;
 	}
-	
-#kontakt ul {
-	position:absolute;
-	bottom:50px;
-	left: 80px;
-	}	
-	
-#kontakt li {
-	list-style-type:none;
-	font-size:14px;
-	line-height: 1.2em;
-	}
-	
-#kontakt li:last-child {
-	font-size:20px;
-	margin-top:20px;
-	}
-	
+
