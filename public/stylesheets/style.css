@@ -182,14 +182,12 @@ nav {
 	padding: 70px 0px;
 	position: relative;
 	height:100%;
+	overflow:hidden;
 	}
 
 .step {
 	margin-bottom: 50px;
-	min-height: 100%; /* Mindesthöhe für moderne Browser */
-	height:auto !important; /* Important Regel für moderne Browser */ 
-	height:100%; /* Mindesthöhe für den IE */ 
-	overflow: hidden !important; /* FF Scroll-leiste */ 
+	height:100%;
 	outline: 1px solid red;
 	}
 
