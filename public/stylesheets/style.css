@@ -197,12 +197,13 @@ nav {
 
 #hb01 img{
 	position: absolute;
-	right:70px;
+	right:0;
 	}
 
 h1 {
     font-family: 'TitilliumText22LRegular', Verdana, sans-serif;
 	font-size: 20px;
+	line-height:1.2em;
 	color: #fff;
 	padding:25px;
 	text-transform:uppercase;
@@ -212,7 +213,7 @@ h1 {
 	}
 
 .headblase_schatten {
-	width:30%;
+	width:40%;
 	background-image:url('/images/media/headblase_schatten.png');
 	background-position: bottom left;
 	background-repeat:no-repeat;
