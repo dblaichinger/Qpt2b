@@ -190,7 +190,7 @@ nav {
 	}
 
 .schatten_l {
-	width:55%;
+	width:45%;
 	background-image:url('/images/media/infoblase_l_schatten.png');
 	background-position: bottom left;
 	background-repeat:no-repeat;
@@ -266,7 +266,7 @@ a:hover {
 #ib02 {
 	position: absolute;
 	top:400px;
-	width:500px;
+	width:450px;
 }
 
 #ib03 {
