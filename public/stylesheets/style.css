@@ -251,7 +251,7 @@ a:hover {
 	}
 
 .toScroll {
-	margin-left: 500px;
+	margin-left: 35%;
 	position:absolute;
 	bottom:30px;
 }
@@ -273,19 +273,19 @@ a:hover {
 #ib02 {
 	position: absolute;
 	right:-65px;
-	top:200px;
+	top:180px;
 }
 
 #ib03 {
 	position: absolute;
 	top: 450px;
-	left: -180px;
+	left: -200px;
 }
 
 #ib04 {
 	position: absolute;
 	top: 410px;
-	right: 40px;
+	right: 30px;
 }
 
 
