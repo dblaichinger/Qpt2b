@@ -201,10 +201,9 @@ nav {
 .infoblase_l {
 	width: 80%; /*500px*/
 	/*height: 324px; /*349px*/
-	background-color: #fff;
 	outline: 1px solid green;
 	background-image:url('/images/media/infoblase_spitz.png');
-	background-position: 0 400px;
+	background-position: 0 0;
 	background-repeat:no-repeat;
 	overflow:visible;
 	}
