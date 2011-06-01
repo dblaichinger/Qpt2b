@@ -167,7 +167,7 @@ nav {
 /* content */
 
 #content {
-	width: 100%;
+	width: 64%;
 	min-width: 660px;
 	max-width: 1080px;
 	margin-left: 300px;
@@ -176,6 +176,7 @@ nav {
 	}
 
 .step {
+	margin-bottom: 50px;
 	}
 
 .infoblase_l {
@@ -239,7 +240,7 @@ a:hover {
 
 #ib01 {
 	position: relative; 
-	top: -30px;
+	top: -60px;
 }
 
 #ib02 {
