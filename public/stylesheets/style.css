@@ -168,11 +168,12 @@ nav {
 
 #content {
 	width: 75%;
-	min-width: 64%;
+	min-width: 660px;
 	max-width: 1080px;
 	margin-left: 300px;
 	outline: 1px solid red;
 	padding: 70px 0px;
+	position: relative;
 	}
 
 .step {
@@ -234,17 +235,17 @@ a:hover {
 	/* pate werden */
 	
 #hb01 {
-	position: relative;
-	left:50%;
+	position: absolute;
+	right:-20px;
 }
 
 #ib01 {
-	position: relative; 
-	top: -60px;
+	position: absolute;
+	top: 50px;
 }
 
 #ib02 {
-	position: relative; 
+	position: absolute;
 	left: 40%;
 }
 
