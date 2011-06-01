@@ -185,6 +185,7 @@ nav {
 
 .step {
 	height:100%;
+	min-height:600px;
 	outline: 1px solid red;
 	position:relative;
 	}
