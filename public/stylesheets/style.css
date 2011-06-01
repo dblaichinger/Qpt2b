@@ -174,9 +174,9 @@ nav {
 }
 
 #content {
-	width: 64%;
+	width: 65%;
 	min-width: 660px;
-	max-width: 950px;
+	max-width: 850px;
 	margin-left: 300px;
 	position: relative;
 	height:100%;
