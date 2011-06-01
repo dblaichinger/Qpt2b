@@ -30,7 +30,7 @@
        
        <div id="step3" class="step">
         	<h1 id="hb03"> Mülleimer auswählen </h1>
-         	<p> Hier kannst Du sehen, welche öffentliche Mülleimer bereits einen Paten haben. Wähle einen noch freien Mülleimer aus </p>
+         	<p>In dieser Karte sind alle öffentlichen Mülleimer eingezeichnet. Wenn du Pate werden willst, wähle einen noch freien Mülleimer aus. Jene Mülleimer, die bereits einen Paten haben, sind mit einem Herz in der Mitte gekennzeichnet.</p>
         	<div id="map">
             	<div id="map_wahl">
                 	<input type="text" name="suche" size="50" />
@@ -52,7 +52,7 @@
 
     	<div id="step4" class="step">
         	<h1 id="hb04"> Mülleimer gestalten </h1>
-         	<p> Erstelle mit Hilfe des Editors dein Wunschdesign, das auf dem Mülleimer angebracht werden soll. </p>
+         	<p>Wenn du einen Mülleimer ausgewählt hast, kannst du ihn mit Hilfe des Editors individuell gestalten. Sobald du mit deinem Design zufrieden bist, klicke auf "Design übernehmen" und dein Entwurf wird automatisch im nachfolgenden Formular gespeichert.</p>
 
            	<!--<div class="icons"> <img src="media/icons.png" alt="" title="" /> </div>-->
             <%= render 'editor' %>
@@ -63,9 +63,7 @@
         
   		<div id="step5" class="step">
         	<h1 id="hb05"> Pate werden </h1>
-         	<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit 
-            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+         	<p>Wenn du nun alle Schritte erledigt hast und eine Patenschaft übernehmen willst, musst du nur noch das Formular ausfüllen und "Pate werden". Schon bald wird dein Wunschdesign auf dem von dir ausgewählten Mülleimer zu bewundern sein. Yeah!</p>
             <div id="formular">
 				 <%= form_for @user, :url => orders_path do |f| %>
 					  <%= render 'shared/error_messages', :object => f.object %>
