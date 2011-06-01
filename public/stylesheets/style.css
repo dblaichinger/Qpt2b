@@ -189,6 +189,28 @@ nav {
 	position:relative;
 	}
 
+#hb01 {
+	position: absolute;
+	right:70px;
+	top: 30px;
+	}
+
+#hb01 img{
+	position: absolute;
+	right:70px;
+	}
+
+h1 {
+    font-family: 'TitilliumText22LRegular', Verdana, sans-serif;
+	font-size: 20px;
+	color: #fff;
+	padding:25px;
+	text-transform:uppercase;
+	text-shadow: -1px -1px #666, 1px 1px #fff;
+	background-color:#ff6600;
+	z-index:2;
+	}
+
 .headblase_schatten {
 	width:30%;
 	background-image:url('/images/media/headblase_schatten.png');
@@ -225,18 +247,7 @@ nav {
 	padding:25px;
 }
 
-h1 {
-    font-family: 'TitilliumText22LRegular', Verdana, sans-serif;
-	font-size: 20px;
-	color: #fff;
-	padding:25px;
-	text-transform:uppercase;
-	text-shadow: -1px -1px #666, 1px 1px #fff;
-	background-color:#ff6600;
-	width: 300px; 
-	height: 50px; 
-	z-index:2;
-	}
+
 
 h2 {
     font-family: 'TitilliumText22LRegular', Verdana, sans-serif;
@@ -267,11 +278,7 @@ a:hover {
 
 	/* pate werden */
 	
-#hb01 {
-	position: absolute;
-	right:70px;
-	top: 30px;
-}
+
 
 #ib01 {
 	position: absolute;
