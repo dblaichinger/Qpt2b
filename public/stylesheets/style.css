@@ -200,6 +200,10 @@ h1 {
 	padding: 40px 0 0 30px;
 	text-transform:uppercase;
 	text-shadow: -1px -1px #666, 1px 1px #fff;
+	background-image: url('(images/media/headblase.png');
+	background-repeat: no-repeat;
+	width: 520px; /*550px*/
+	height: 119px; /*159px*/
 	}
 
 h2 {
@@ -212,16 +216,16 @@ h2 {
 }
 
 a {
-	color: #f29526;
+	color: #003232;
 	text-decoration: none;
 	}
 
 a:hover {
-	color: #003232;
+	color: #ff6600;
 	}
 
 .toScroll {
-	margin-left: 20%;
+	margin-left: 65%;
 }
 
 
