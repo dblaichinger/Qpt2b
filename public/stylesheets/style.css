@@ -179,11 +179,8 @@ nav {
 	max-width: 1080px;
 	margin-left: 300px;
 	outline: 1px solid red;
-	padding: 70px 0px;
 	position: relative;
 	height:100%;
-	display:block;
-	overflow:visible;
 	}
 
 .step {
