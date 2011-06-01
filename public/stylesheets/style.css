@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* CSS Document */
 
 @font-face {
     font-family: 'CharisSILItalic';
@@ -9,35 +8,6 @@
          url('/fonts/Charis-SIL-fontfacekit/CharisSILI-webfont.ttf') format('truetype'),
          url('/fonts/Charis-SIL-fontfacekit/CharisSILI-webfont.svg#CharisSILItalic') format('svg');
 }
-
-@font-face {
-	font-family: 'DroidSansRegular';
-	src: url('/fonts/Droid-Sans-fontfacekit/DroidSans-webfont.eot');
-	src: local('☺'), url('/fonts/Droid-Sans-fontfacekit/DroidSans-webfont.woff') format('woff'), url('/fonts/Droid-Sans-fontfacekit/DroidSans-webfont.ttf') format('truetype'), url('/fonts/Droid-Sans-fontfacekit/DroidSans-webfont.svg#webfontbC7tRKrq') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'DroidSansBold';
-	src: url('/fonts/Droid-Sans-fontfacekit/DroidSans-Bold-webfont.eot');
-	src: local('☺'), url('/fonts/Droid-Sans-fontfacekit/DroidSans-Bold-webfont.woff') format('woff'), url('/fonts/Droid-Sans-fontfacekit/DroidSans-Bold-webfont.ttf') format('truetype'), url('/fonts/Droid-Sans-fontfacekit/DroidSans-Bold-webfont.svg#webfont5dL3IGk2') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-
-
-@font-face {
-    font-family: 'Folksolid';
-    src: url('/fonts/Folk-fontfacekit/Folksolid-webfont.eot');
-    src: url('/fonts/Folk-fontfacekit/Folksolid-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Folk-fontfacekit/Folksolid-webfont.woff') format('woff'),
-         url('/fonts/Folk-fontfacekit/Folksolid-webfont.ttf') format('truetype'),
-         url('/fonts/Folk-fontfacekit/Folksolid-webfont.svg#Folksolid') format('svg');
-}
-
-
 
 @font-face {
     font-family: 'TitilliumText22LThin';
@@ -117,16 +87,16 @@ html {
 
 body {
 	background-color: #f6f6f6;
-	font-family: 'CharisSILItalic';
-/*	text-rendering: optimizeLegibility; */
+	font-family: 'CharisSILItalic', Georgia, serif;
 	color: #000;
-	font-size: 24px;
+	font-size: 14px;
+	line-height: 1.3em;
+	background-image: url('../media/hg.png');
+	background-repeat: repeat;
 	}
 
-p {
-	line-height: 1.2em;
-	margin-bottom: 30px;
-	}
+
+/* navigation */
 
 nav {
 	position: fixed;
@@ -134,8 +104,10 @@ nav {
 	top: 0px;
 	width: 140px;
 	height: 260px;
-	background-color: #003232;
 	padding: 20px;
+	background-color: #003232;
+	background-image: url('../media/nav.png');
+	background-repeat: no-repeat;
 	z-index:2;
 	overflow: visible;
 	}
@@ -157,7 +129,7 @@ nav {
 
 #nav_haupt li{
 	color: #FFF;
-    font-family: 'TitilliumText22LRegular';
+    font-family: 'TitilliumText22LRegular', Verdana, Arial, sans-serif;
 	text-transform:uppercase;
 	list-style-type:none;
 	font-size: 14px;
@@ -166,93 +138,79 @@ nav {
 	overflow: visible;
 	width: 200px;
 	margin-left: -30px;
-	padding-top: 2px;
+	height: 25px;
 	}
 
 #nav_haupt a {
 	color: #FFF;
 	text-decoration:none;
 	overflow: visible;
+	display: block;
+	height:21px;
+	padding-top:4px;
 	}
 
+#nav_haupt a:hover {
+	color: #ff6600;
+	text-decoration:none;
+	}
+	
 #nav_haupt li.active {
-    font-family: 'TitilliumText22LBold';
+    font-family: 'TitilliumText22LBold', Verdana, Arial, sans-serif;
 	color: #FFF;
 	text-decoration:none;
-	background-color:#ff6600;
+	background-image: url('../media/balken.png');
+	background-repeat: no-repeat;
+	height: 36px;
+	width: 200px;
 	}
+	
+/* navigation ende */
 
-#nav_haupt li:hover {
-	background-color: #CCC;
-	overflow: visible;
-	}
 
-/*#nav_haupt a:hover {
-	color: #28827B;
-	text-decoration:none;
-	}*/
-
-#nav_klein {
-	position: absolute;
-	bottom: 20px;
-	left: 50px;
-	}
-
-#nav_klein li {
-	color: #FFF;
-    font-family: 'TitilliumText22LRegular';
-	text-transform:uppercase;
-	list-style-type:none;
-	font-size: 10px;
-	text-align: center;
-	margin-right: 5px;
-	float: left;
-	overflow:hidden;
-	}
-
-#nav_klein a {
-	color: #FFF;
-	text-decoration:none;
-	}
-
-#nav_klein a:hover {
-	color: #f29526;
-	text-decoration:none;
-	}
+/* content */
 
 #content {
-	width: 60%;
-	width:700px;
+	width: 100%;
+	min-width: 660px;
+	max-width: 1080px;
 	margin-left: 300px;
 	}
 
 .step {
-	min-height: 500px;
-	margin: 140px 0;
+	height: 800px;
+	padding: 70px 0;
 	}
 
-#step1 {
-	position: relative;
-	margin-top: 70px;
+h1 {
+    font-family: 'TitilliumText22LRegular', Verdana, sans-serif;
+	font-size: 32px;
+	color: #fff;
+	text-transform:uppercase;
+	text-shadow: -1px -1px #666, 1px 1px #fff;
 	}
 
-#step1 p {
-	font-size: 30px;
-	line-height: 1.2em;
+h2 {
+    font-family: 'TitilliumText22LRegular', Verdana, sans-serif;
+	font-size: 28px;
+	color: #ddd;
+	margin: 10px 0 20px 0;
+	text-transform:uppercase;
+	text-shadow: -1px -1px #999, 1px 1px #fff;	
+}
+
+a {
+	color: #f29526;
+	text-decoration: none;
 	}
 
-#step1 div.icons {
-	position: absolute;
-	top: 15px;
-	right: -180px;
+a:hover {
+	color: #003232;
 	}
-	
-#step2 {
-	position: relative;
-	}
-	
+
+	/* pate werden */
+
 #map {
-	margin: ;
 	padding: 20px;
 	width: 660px;
 	height: 400px;
@@ -293,44 +251,11 @@ iframe {
 	height: 20px;
 	background-color: transparent;
 	color: #fff;
-    font-family: 'TitilliumText22LRegular';
+    font-family: 'TitilliumText22LRegular', Verdana, Arial, sans-serif;
 	cursor: pointer;
 	text-transform: uppercase;
 	padding-top: 4px;
 	font-size: 10px;
-	}
-
-#step2 div.icons {
-	position: absolute;
-	top: 15px;
-	right: -180px;
-	}
-
-#step3 {
-	position: relative;
-	margin-left: ;
-	}
-
-#step3 p {
-	padding-left: x;
-	}
-	
-#step3 h1 {
-	}
-
-#editor {
-	margin: ;
-	}
-
-#step3 div.icons {
-	position: absolute;
-	top: 15px;
-	right: -180px;
-	}
-	
-#step4 {
-	position:relative;
-	margin-left: ;
 	}
 	
 #formular {
@@ -364,67 +289,10 @@ iframe {
 	right: -40px;
 	cursor: pointer;
 	}
-	
-#step4 div.icons {
-	position: absolute;
-	top: 15px;
-	right: -180px;	
-	}
-footer {
-	position:relative;
-	height: 400px;
-	padding: 70px 70px;
-	background-color:#CCC;
-	}
-	
-#zusammenarbeit {
-	margin-left: 240px;
-	}
-#sponsoren {
-	width:100%;
-	margin-top:30px;
-	height:200px;
-	border: 2px solid #FFF;
-	float:right;
-	}
-#kontakt ul {
-	position:absolute;
-	bottom:50px;
-	left: 80px;
-	}	
-	
-#kontakt li {
-	list-style-type:none;
-	font-size:14px;
-	line-height: 1.2em;
-/*	text-align:center;*/
-	}
-	
-#kontakt li:last-child {
-	font-size:20px;
-	margin-top:20px;
-	}
-	
 
-	
-h1 {
-    font-family: 'TitilliumText22LMedium';
-	font-size: 30px;
-	color: #003232;
-	margin-bottom: 20px;
-	text-transform:uppercase;
-/*	text-shadow: -1px -1px 0px #202020, 1px 1px 0px #fff;*/
+	/* ende pate werden */	
 
-	}
-
-a {
-	color: #f29526;
-	text-decoration: none;
-	}
-
-a:hover {
-	color: #003232;
-	}
+	/* mitbestimmen */
 
 #ranking ul {
 	overflow: hidden;
@@ -437,3 +305,47 @@ a:hover {
 	height: 180px;
 	background-image: url('/images/media/ranking.png');
 	}
+	
+	/* ende mitbestimmen */
+
+/* ende content */
+	
+	
+/* footer */
+	
+footer {
+	position:relative;
+	height: 400px;
+	padding: 70px 70px;
+	background-color:#CCC;
+	}
+	
+#zusammenarbeit {
+	margin-left: 240px;
+	}
+	
+#sponsoren {
+	width:100%;
+	margin-top:30px;
+	height:200px;
+	border: 2px solid #FFF;
+	float:right;
+	}
+	
+#kontakt ul {
+	position:absolute;
+	bottom:50px;
+	left: 80px;
+	}	
+	
+#kontakt li {
+	list-style-type:none;
+	font-size:14px;
+	line-height: 1.2em;
+	}
+	
+#kontakt li:last-child {
+	font-size:20px;
+	margin-top:20px;
+	}
+	
