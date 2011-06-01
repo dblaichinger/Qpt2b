@@ -86,7 +86,7 @@ html {
 }
 
 body {
-	background-color: #f6f6f6;
+	background-color: #eee;
 	font-family: 'CharisSILItalic', Georgia, serif;
 	color: #000;
 	font-size: 14px;
@@ -116,11 +116,6 @@ nav {
 	width: 140px;
 	height: 140px;
 	margin-bottom: 20px;
-	overflow:hidden;
-	}
-
-#logo img {
-	width: 100%;
 	}
 
 #nav_haupt ul {
@@ -137,8 +132,8 @@ nav {
 	line-height: 1.4em;
 	overflow: visible;
 	width: 200px;
+	height: 35px;
 	margin-left: -30px;
-	height: 25px;
 	}
 
 #nav_haupt a {
@@ -161,8 +156,8 @@ nav {
 	text-decoration:none;
 	background-image: url('/images/media/balken.png');
 	background-repeat: no-repeat;
-	height: 36px;
 	width: 200px;
+	height: 35px;
 	}
 	
 /* navigation ende */
