@@ -199,7 +199,6 @@ nav {
 
 .infoblase_l {
 	width: 75%; /*500px*/
-	/*height: 324px; /*349px*/
 	background-color: #fff;
 	padding:25px;
 	}
@@ -265,8 +264,8 @@ a:hover {
 
 #ib02 {
 	position: absolute;
-	top:400px;
-	width:450px;
+	right:0px;
+	top:200px;
 }
 
 #ib03 {
