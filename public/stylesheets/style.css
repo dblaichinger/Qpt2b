@@ -167,6 +167,10 @@ nav {
 
 /* content */
 
+#wrapper {
+	position:relative;
+}
+
 #content {
 	width: 60%;
 	min-width: 660px;
