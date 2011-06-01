@@ -189,13 +189,15 @@ nav {
 	position:relative;
 	}
 
+.schatten_l {
+	background-image:;
+	width:40%;
+	}
+
 .infoblase_l {
-	width: 30%; /*500px*/
+	width: 80%; /*500px*/
 	/*height: 324px; /*349px*/
-	background-image: url('/images/media/infoblase_l.png');
-	background-repeat: no-repeat;
-	padding: 25px 90px 0 25px;
-	background-size:100%;
+	background-color: #fff;
 }
 
 .infoblase_m {
