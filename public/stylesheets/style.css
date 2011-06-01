@@ -420,10 +420,10 @@ footer {
 	background-color:#d9dadb;
 	position:relative;
 	bottom:-400%;
-	padding:50px 0;
 	}
 	
 #zusammenarbeit {
+	margin-top:50px;
 	margin-left: 300px;
 	width:64%;
 	}
@@ -444,5 +444,6 @@ h3 {
 	background-image:url('/images/media/sponsoren_flaeche.png');
 	background-repeat:no-repeat;
 	background-size:100%;
+	margin-top:30px;
 	}
 
