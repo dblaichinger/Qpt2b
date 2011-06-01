@@ -39,7 +39,7 @@
 	       	<% if controller?("pages") && action?("galerie")  %> <!--vorher "info"-->
 	        <li class="active">
 	        <%else%><li><% end %>
-	        <%=link_to 'Bildergalerie', pages_info_path %></li>
+	        <%=link_to 'Bildergalerie', pages_galerie_path %></li>
 	        
 	        <% if controller?("admins") && action?("index") %>
 	        <li class="active">
