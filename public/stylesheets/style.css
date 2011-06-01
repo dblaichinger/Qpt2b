@@ -181,7 +181,7 @@ nav {
 	outline: 1px solid red;
 	padding: 70px 0px;
 	position: relative;
-	overflow:hidden;
+	height:100%;
 	}
 
 .step {
