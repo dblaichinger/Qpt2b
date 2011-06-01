@@ -230,6 +230,8 @@ a:hover {
 
 .toScroll {
 	margin-left: 500px;
+	position: absolute;
+	bottom: 30px;
 }
 
 
