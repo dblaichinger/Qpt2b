@@ -182,6 +182,7 @@ nav {
 	padding: 70px 0px;
 	position: relative;
 	height:100%;
+	display:block;
 	}
 
 .step {
