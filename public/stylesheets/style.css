@@ -91,7 +91,7 @@ body {
 	color: #000;
 	font-size: 14px;
 	line-height: 1.3em;
-	background-image: url('../media/hg.png');
+	background-image: url('/images/media/hg.png');
 	background-repeat: repeat;
 	}
 
@@ -106,7 +106,7 @@ nav {
 	height: 260px;
 	padding: 20px;
 	background-color: #003232;
-	background-image: url('../media/nav.png');
+	background-image: url('/images/media/nav.png');
 	background-repeat: no-repeat;
 	z-index:2;
 	overflow: visible;
@@ -159,7 +159,7 @@ nav {
     font-family: 'TitilliumText22LBold', Verdana, Arial, sans-serif;
 	color: #FFF;
 	text-decoration:none;
-	background-image: url('../media/balken.png');
+	background-image: url('/images/media/balken.png');
 	background-repeat: no-repeat;
 	height: 36px;
 	width: 200px;
