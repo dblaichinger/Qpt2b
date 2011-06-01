@@ -180,6 +180,7 @@ nav {
 	margin-left: 300px;
 	position: relative;
 	height:100%;
+	outline: 1px solid red;
 	}
 
 .step {
