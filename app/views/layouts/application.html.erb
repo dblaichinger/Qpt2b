@@ -36,10 +36,10 @@
 	        <%else%><li><% end %>
 	        <%= link_to 'Mitbestimmen', demands_path %></li>
 
-	       	<% if controller?("pages") && action?("galerie")  %> <!--vorher "info"-->
+	       	<% if controller?("pages") && action?("info")  %>
 	        <li class="active">
 	        <%else%><li><% end %>
-	        <%=link_to 'Bildergalerie', pages_galerie_path %></li>
+	        <%=link_to 'Bildergalerie', pages_info_path %></li>
 	        
 	        <% if controller?("admins") && action?("index") %>
 	        <li class="active">
