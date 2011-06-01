@@ -177,10 +177,18 @@ nav {
 	padding: 70px 0;
 	}
 
-.infoblase {
+.infoblase_l {
 	width: 364px; /*484px*/
 	height: 289px; /*349px*/
-	background-image: url('/images/media/infoblase.png');
+	background-image: url('/images/media/infoblase_l.png');
+	background-repeat: no-repeat;
+	padding: 30px 90px 30px 30px;
+}
+
+.infoblase_m {
+	width: 299px; /*419px*/
+	height: 122px; /*182px*/
+	background-image: url('/images/media/infoblase_m.png');
 	background-repeat: no-repeat;
 	padding: 30px 90px 30px 30px;
 }
@@ -211,6 +219,11 @@ a {
 a:hover {
 	color: #003232;
 	}
+
+.toScroll {
+	margin-left: 20%;
+}
+
 
 	/* pate werden */
 
