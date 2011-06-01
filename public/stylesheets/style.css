@@ -174,9 +174,9 @@ nav {
 }
 
 #content {
-	width: 60%;
+	width: 64%;
 	min-width: 660px;
-	max-width: 1080px;
+	max-width: 1680px;
 	margin-left: 300px;
 	position: relative;
 	height:100%;
@@ -190,11 +190,10 @@ nav {
 
 .infoblase_l {
 	width: 385px; /*500px*/
-	height: 224px; /*349px*/
+	height: 324px; /*349px*/
 	background-image: url('/images/media/infoblase_l.png');
 	background-repeat: no-repeat;
-	padding: 25px 90px 100px 25px;
-	vertical-align: middle;
+	padding: 25px 90px 0 25px;
 }
 
 .infoblase_m {
