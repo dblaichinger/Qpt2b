@@ -111,6 +111,7 @@ nav {
 	background-image: url('/images/media/nav.png');
 	background-repeat: no-repeat;
 	overflow: visible;
+	z-index:2;
 	}
 
 #logo {
