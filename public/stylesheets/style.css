@@ -384,7 +384,7 @@ footer {
 	padding: 70px 70px;
 	background-color:#CCC;
 	position:relative;
-	bottom:0px;
+	bottom:-400%;
 	}
 	
 #zusammenarbeit {
