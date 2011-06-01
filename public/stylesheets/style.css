@@ -377,7 +377,7 @@ iframe {
 	
 footer {
 	height: 100%;
-	padding: 70px 70px;
+	padding: 0 70px;
 	background-color:#CCC;
 	position:relative;
 	bottom:-400%;
