@@ -157,10 +157,9 @@ nav {
 	background-image: url('/images/media/balken.png');
 	background-repeat: no-repeat;
 	width: 200px;
-	height: 26px;
-	overflow:visible;
-	margin: 10px 0;
-	}
+	height: 35px;
+	margin-top: 9px;
+}
 	
 /* navigation ende */
 
