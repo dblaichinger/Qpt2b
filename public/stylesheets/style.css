@@ -225,11 +225,15 @@ a:hover {
 	}
 
 .toScroll {
-	margin-left: 65%;
+	margin-left: 300px;
 }
 
 
 	/* pate werden */
+
+.ib01 {
+	position: relative; 
+}
 
 #map {
 	padding: 20px;
