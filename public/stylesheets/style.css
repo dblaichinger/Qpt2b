@@ -203,7 +203,7 @@ nav {
 	/*height: 324px; /*349px*/
 	outline: 1px solid green;
 	background-image:url('/images/media/infoblase_spitz.png');
-	background-position: left 50px;
+	background-position: left 120%;
 	background-repeat:no-repeat;
 	overflow:visible;
 	}
