@@ -167,8 +167,8 @@ nav {
 /* content */
 
 #content {
-	width: 64%;
-	min-width: 660px;
+	width: 75%;
+	min-width: 64%;
 	max-width: 1080px;
 	margin-left: 300px;
 	outline: 1px solid red;
