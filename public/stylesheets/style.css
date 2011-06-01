@@ -94,6 +94,7 @@ body {
 	line-height: 1.3em;
 	background-image: url('/images/media/hg.png');
 	background-repeat: repeat;
+	height: 100%;
 	}
 
 
@@ -169,6 +170,7 @@ nav {
 
 #wrapper {
 	position:relative;
+	height: 100%;
 }
 
 #content {
