@@ -129,10 +129,9 @@ nav {
 	list-style-type:none;
 	font-size: 14px;
 	text-align: center;
-	line-height: 1.4em;
 	overflow: visible;
 	width: 200px;
-	height: 35px;
+	height: 26px;
 	margin-left: -30px;
 	}
 
@@ -141,13 +140,14 @@ nav {
 	text-decoration:none;
 	overflow: visible;
 	display: block;
-	height:21px;
-	padding-top:4px;
+	height: 21px;
+	padding-top: 5px;
 	}
 
-#nav_haupt a:hover {
-	color: #ff6600;
+#nav_haupt a:hover, a:visited, a:active {
+	color: #fff;
 	text-decoration:none;
+    font-family: 'TitilliumText22LBold', Verdana, Arial, sans-serif;
 	}
 	
 #nav_haupt li.active {
@@ -157,7 +157,7 @@ nav {
 	background-image: url('/images/media/balken.png');
 	background-repeat: no-repeat;
 	width: 200px;
-	height: 35px;
+	height: 26px;
 	}
 	
 /* navigation ende */
