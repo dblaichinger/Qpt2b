@@ -110,7 +110,6 @@ nav {
 	background-color: #003232;
 	background-image: url('/images/media/nav.png');
 	background-repeat: no-repeat;
-	z-index:2;
 	overflow: visible;
 	}
 
@@ -181,6 +180,7 @@ nav {
 	position: relative;
 	height:100%;
 	outline: 1px solid red;
+	z-index:1;
 	}
 
 .step {
@@ -228,6 +228,7 @@ h1 {
 	background-repeat: no-repeat;
 	width: 520px; /*550px*/
 	height: 119px; /*159px*/
+	z-index:2;
 	}
 
 h2 {
@@ -261,7 +262,7 @@ a:hover {
 #hb01 {
 	position: absolute;
 	right:0px;
-	top: 40px;
+	top: 30px;
 }
 
 #ib01 {
@@ -271,20 +272,20 @@ a:hover {
 
 #ib02 {
 	position: absolute;
-	right:-60px;
-	top:220px;
+	right:-65px;
+	top:200px;
 }
 
 #ib03 {
 	position: absolute;
 	top: 450px;
-	left: -100px;
+	left: -180px;
 }
 
 #ib04 {
 	position: absolute;
-	top: 500px;
-	right: 50px;
+	top: 410px;
+	right: 40px;
 }
 
 
