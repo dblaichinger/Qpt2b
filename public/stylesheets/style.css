@@ -186,6 +186,7 @@ nav {
 .step {
 	height:100%;
 	outline: 1px solid red;
+	position:relative;
 	}
 
 .infoblase_l {
@@ -237,8 +238,8 @@ a:hover {
 
 .toScroll {
 	margin-left: 500px;
-	position:relative;
-	bottom: 30px;
+	position:absolute;
+	bottom:30px;
 }
 
 
