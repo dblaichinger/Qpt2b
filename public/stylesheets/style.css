@@ -177,6 +177,13 @@ nav {
 	padding: 70px 0;
 	}
 
+.infoblase {
+	width: 484px;
+	height: 349px;
+	background-image: url('/images/media/infoblase.png');
+	background-repeat: no-repeat;
+}
+
 h1 {
     font-family: 'TitilliumText22LRegular', Verdana, sans-serif;
 	font-size: 32px;
