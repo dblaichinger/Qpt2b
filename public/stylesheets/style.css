@@ -197,11 +197,11 @@ nav {
 #hb01 img{
 	position: absolute;
 	right:25%;
-	bottom:0;
+	bottom:-64px;
 	}
 
 .headblase_schatten {
-	width:50%;
+	width:55%;
 	background-image:url('/images/media/headblase_schatten.png');
 	background-position: bottom right;
 	background-repeat:no-repeat;
