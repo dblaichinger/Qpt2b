@@ -174,9 +174,9 @@ nav {
 }
 
 #content {
-	width: 64%;
+	width: 65%;
 	min-width: 660px;
-	max-width: 1900px;
+	max-width: 1400px;
 	margin-left: 300px;
 	position: relative;
 	height:100%;
@@ -246,7 +246,7 @@ a:hover {
 	
 #hb01 {
 	position: absolute;
-	right:-30px;
+	right:0px;
 	top: 40px;
 }
 
@@ -257,7 +257,7 @@ a:hover {
 
 #ib02 {
 	position: absolute;
-	right: 0px;
+	right: -30px;
 	top:100px;
 }
 
