@@ -93,6 +93,7 @@ body {
 	line-height: 1.3em;
 	background-image: url('/images/media/hg.png');
 	background-repeat: repeat;
+	height: 100%;
 	}
 
 
@@ -174,12 +175,13 @@ nav {
 	outline: 1px solid red;
 	padding: 70px 0px;
 	position: relative;
+	height:100%;
 	}
 
 .step {
 	margin-bottom: 50px;
-	height: 900px;
 	position: relative;
+	height:100%;
 	}
 
 .infoblase_l {
