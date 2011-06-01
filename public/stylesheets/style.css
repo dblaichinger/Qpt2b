@@ -183,7 +183,7 @@ nav {
 	}
 
 .infoblase_l {
-	width: 364px; /*484px*/
+	width: 380px; /*500px*/
 	height: 289px; /*349px*/
 	background-image: url('/images/media/infoblase_l.png');
 	background-repeat: no-repeat;
@@ -191,8 +191,8 @@ nav {
 }
 
 .infoblase_m {
-	width: 299px; /*419px*/
-	height: 122px; /*182px*/
+	width: 460px; /*580px*/
+	height: 146px; /*206px*/
 	background-image: url('/images/media/infoblase_m.png');
 	background-repeat: no-repeat;
 	padding: 30px 90px 30px 30px;
