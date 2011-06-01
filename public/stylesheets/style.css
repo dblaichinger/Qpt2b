@@ -167,7 +167,7 @@ nav {
 /* content */
 
 #content {
-	width: 64%;
+	width: 60%;
 	min-width: 660px;
 	max-width: 1080px;
 	margin-left: 300px;
@@ -246,9 +246,20 @@ a:hover {
 
 #ib02 {
 	position: absolute;
-	left: 40%;
+	left: 40px;
 }
 
+#ib03 {
+	position: absolute;
+	top: 300px;
+	left: 20px;
+}
+
+#ib04 {
+	position: absolute;
+	top: 400px;
+	right: 100px;
+}
 
 
 #map {
