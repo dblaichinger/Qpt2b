@@ -210,12 +210,13 @@ h1 {
 	text-shadow: -1px -1px #666, 1px 1px #fff;
 	background-color:#ff6600;
 	z-index:2;
+	text-align:center;
 	}
 
 .headblase_schatten {
-	width:40%;
+	width:50%;
 	background-image:url('/images/media/headblase_schatten.png');
-	background-position: bottom left;
+	background-position: bottom right;
 	background-repeat:no-repeat;
 	background-size:100%;	
 }
