@@ -93,7 +93,6 @@ body {
 	line-height: 1.3em;
 	background-image: url('/images/media/hg.png');
 	background-repeat: repeat;
-	height: 100%;
 	}
 
 
@@ -169,7 +168,6 @@ nav {
 
 #wrapper {
 	position:relative;
-	height: 100%;
 }
 
 #content {
@@ -189,6 +187,7 @@ min-height: 100%; /* Mindesthöhe für moderne Browser */
 height:auto !important; /* Important Regel für moderne Browser */ 
 height:100%; /* Mindesthöhe für den IE */ 
 overflow: hidden !important; /* FF Scroll-leiste */ 
+outline: 1px solid red;
 	}
 
 .infoblase_l {
