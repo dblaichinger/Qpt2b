@@ -424,14 +424,14 @@ footer {
 	}
 	
 #zusammenarbeit {
-	margin-left: 240px;
+	margin-left: 300px;
+	width:64%;
 	}
 	
 #sponsoren {
 	width:100%;
-	margin-top:30px;
-	height:200px;
-	border: 2px solid #FFF;
-	float:right;
+	background-image:url('/images/media/sponsoren_flaeche.png');
+	background-repeat:no-repeat;
+	background-size:100%;
 	}
 
