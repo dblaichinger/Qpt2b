@@ -190,10 +190,11 @@ nav {
 
 .infoblase_l {
 	width: 385px; /*500px*/
-	height: 324px; /*349px*/
+	height: 224px; /*349px*/
 	background-image: url('/images/media/infoblase_l.png');
 	background-repeat: no-repeat;
-	padding: 25px 90px 0 25px;
+	padding: 25px 90px 100px 25px;
+	vertical-align: middle;
 }
 
 .infoblase_m {
