@@ -171,10 +171,11 @@ nav {
 	min-width: 660px;
 	max-width: 1080px;
 	margin-left: 300px;
+	outline: 1px solid red;
+	padding: 70px 0px;
 	}
 
 .step {
-	padding: 70px 0;
 	}
 
 .infoblase_l {
@@ -225,7 +226,7 @@ a:hover {
 	}
 
 .toScroll {
-	margin-left: 300px;
+	margin-left: 500px;
 }
 
 
@@ -238,6 +239,7 @@ a:hover {
 
 #ib01 {
 	position: relative; 
+	top: -30px;
 }
 
 #ib02 {
