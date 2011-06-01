@@ -195,6 +195,7 @@ nav {
 	background-position: bottom left;
 	background-repeat:no-repeat;
 	background-size:100%;
+	padding-bottom:80px;
 	}
 
 .infoblase_l {
@@ -205,6 +206,7 @@ nav {
 	background-image:url('/images/media/infoblase_spitz.png');
 	background-position: 100% 0;
 	background-repeat:no-repeat;
+	overflow:visible;
 	}
 
 .infoblase_m {
