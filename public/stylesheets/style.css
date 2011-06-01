@@ -230,10 +230,22 @@ a:hover {
 
 
 	/* pate werden */
+	
+#hb01 {
+	position: relative;
+	left:50%;
+}
 
-.ib01 {
+#ib01 {
 	position: relative; 
 }
+
+#ib02 {
+	position: relative; 
+	left: 40%;
+}
+
+
 
 #map {
 	padding: 20px;
