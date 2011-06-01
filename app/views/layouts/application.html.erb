@@ -30,17 +30,17 @@
 	        <% if controller?("pages") && action?("home")  %>
 	        <li class="active">
 	        <%else%><li><% end %>
-	        <%=link_to 'Patenschaft', pages_home_path %></li>
-	        
-	       	<% if controller?("pages") && action?("info")  %>
-	        <li class="active">
-	        <%else%><li><% end %>
-	        <%=link_to 'Information', pages_info_path %></li>
-	        
+	        <%=link_to 'Pate werden', pages_home_path %></li>
+	    
 	        <% if controller?("demands") && action?("index")  %>
 	        <li class="active">
 	        <%else%><li><% end %>
-	        <%= link_to 'Voting', demands_path %></li>
+	        <%= link_to 'Mitbestimmen', demands_path %></li>
+
+	       	<% if controller?("pages") && action?("galerie")  %> <!--vorher "info"-->
+	        <li class="active">
+	        <%else%><li><% end %>
+	        <%=link_to 'Bildergalerie', pages_info_path %></li>
 	        
 	        <% if controller?("admins") && action?("index") %>
 	        <li class="active">
@@ -51,12 +51,7 @@
 	        <%else%><li><% end %>
 	        <%=link_to '(Admin)', admins_path  %> </li>
 	    </ul>
-	        
-	    <ul id="nav_klein">
-	        <li><%=link_to 'Kontakt', pages_home_path %></li>
-	        <li>|</li>
-	        <li> <%=link_to 'FAQs', pages_home_path %> </li>
-	   </ul>
+
 	</nav>
 
 
