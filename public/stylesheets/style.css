@@ -257,7 +257,8 @@ a:hover {
 
 #ib02 {
 	position: absolute;
-	right: -50px;
+	right: 0px;
+	top:100px;
 }
 
 #ib03 {
