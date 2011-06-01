@@ -196,7 +196,15 @@ nav {
 	background-repeat:no-repeat;
 	background-size:100%;
 	}
-
+	
+.schatten_m {
+	width:80%;
+	background-image:url('/images/media/infoblase_l_schatten.png');
+	background-position: bottom left;
+	background-repeat:no-repeat;
+	background-size:100%;
+	}
+	
 .infoblase_l {
 	width: 75%; /*500px*/
 	background-color: #fff;
@@ -204,11 +212,9 @@ nav {
 	}
 
 .infoblase_m {
-	width: 475px; /*580px*/
-	height: 181px; /*206px*/
-	background-image: url('/images/media/infoblase_m.png');
-	background-repeat: no-repeat;
-	padding: 25px 80px 0 25px;
+	width: 75%; /*500px*/
+	background-color: #fff;
+	padding:25px;
 }
 
 h1 {
