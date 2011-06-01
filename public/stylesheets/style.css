@@ -179,6 +179,7 @@ nav {
 .step {
 	margin-bottom: 50px;
 	height: 900px;
+	position: relative;
 	}
 
 .infoblase_l {
