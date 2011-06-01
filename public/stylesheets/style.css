@@ -200,7 +200,7 @@ h1 {
 	padding: 40px 0 0 30px;
 	text-transform:uppercase;
 	text-shadow: -1px -1px #666, 1px 1px #fff;
-	background-image: url('(images/media/headblase.png');
+	background-image: url('/images/media/headblase.png');
 	background-repeat: no-repeat;
 	width: 520px; /*550px*/
 	height: 119px; /*159px*/
