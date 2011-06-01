@@ -383,6 +383,8 @@ footer {
 	height: 100%;
 	padding: 70px 70px;
 	background-color:#CCC;
+	position:relative;
+	top:0px;
 	}
 	
 #zusammenarbeit {
