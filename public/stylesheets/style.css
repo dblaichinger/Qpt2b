@@ -198,7 +198,7 @@ nav {
 	}
 	
 .schatten_m {
-	width:70%;
+	width:65%;
 	background-image:url('/images/media/infoblase_m_schatten.png');
 	background-position: bottom left;
 	background-repeat:no-repeat;
@@ -206,13 +206,13 @@ nav {
 	}
 	
 .infoblase_l {
-	width: 75%; /*500px*/
+	width: 75%; 
 	background-color: #fff;
 	padding:25px;
 	}
 
 .infoblase_m {
-	width: 75%; /*500px*/
+	width: 80%;
 	background-color: #fff;
 	padding:25px;
 }
