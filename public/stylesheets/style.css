@@ -178,7 +178,6 @@ nav {
 	min-width: 660px;
 	max-width: 1080px;
 	margin-left: 300px;
-	outline: 1px solid red;
 	position: relative;
 	height:100%;
 	}
@@ -190,11 +189,11 @@ nav {
 	}
 
 .infoblase_l {
-	width: 380px; /*500px*/
-	height: 289px; /*349px*/
+	width: 385px; /*500px*/
+	height: 324px; /*349px*/
 	background-image: url('/images/media/infoblase_l.png');
 	background-repeat: no-repeat;
-	padding: 30px 90px 30px 30px;
+	padding: 25px 90px 0 25px;
 }
 
 .infoblase_m {
@@ -220,9 +219,9 @@ h1 {
 
 h2 {
     font-family: 'TitilliumText22LRegular', Verdana, sans-serif;
-	font-size: 28px;
+	font-size: 24px;
 	color: #ddd;
-	margin: 10px 0 20px 0;
+	margin: 0 0 10px 0;
 	text-transform:uppercase;
 	text-shadow: -1px -1px #999, 1px 1px #fff;	
 }
