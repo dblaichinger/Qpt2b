@@ -104,7 +104,7 @@ nav {
 	position: fixed;
 	left: 5%;
 	top: 0px;
-	width: 10%;
+	width: 12%;
 	max-width:140px;
 	min-width:120px;
 	background-color: #003232;
@@ -127,6 +127,7 @@ nav {
 	overflow: visible;
 	width: 120%;
 	outline: 1px solid yellow;
+	margin-left:-2%;
 	}
 
 #nav_haupt li{
