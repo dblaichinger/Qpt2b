@@ -442,26 +442,21 @@ a:hover {
 	background-repeat: no-repeat;
 	}
 	
+	
 /*#form_info {
 	padding: 10px;
 	margin:10px 0 10px 0;
 	font-size:16px;
 	}*/
 
-/*#pate_werden {
-	background-color: transparent;
-	background-image: url('/images/media/pate_btn2.png');
+#pate_werden {
+	background-image: url('/images/media/pate_werden.png');
 	background-repeat:no-repeat;
-	background-position:top left;
-	background-size: 100%;
+	width: 150px,
+	height: 27px;
 	border: none;
-	width: 100px;
-	height: 100px;
-	position: absolute;
-	bottom: -20px;
-	right: -40px;
 	cursor: pointer;
-	}*/
+	}
 
 	/* ende pate werden */	
 
