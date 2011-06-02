@@ -589,6 +589,7 @@ footer {
 	display:block;
 	outline: 1px solid red;
 	position: relative;
+	bottom: -100%;
 	}
 	
 #zusammenarbeit {
