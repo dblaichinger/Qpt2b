@@ -416,20 +416,16 @@ a:hover {
 
 			/* step5 */	
 
-	
 #hb05 {
 	position: absolute;
-	top:50px;
-	left:-5%;
-	z-index:2000;
+	top:30%;
+	left: 10%;
 }
 
 #ib_05_01 {
 	position: absolute;
-	top: 475px;	
-	left: -20%;
+	top: 40%;	
 	width:50%;
-	z-index:2000;
 }
 
 
