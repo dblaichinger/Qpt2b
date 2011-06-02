@@ -70,26 +70,26 @@ table.trashcan td {
 /* EDITOR */
 #editorWrapper {
 	overflow:hidden;
-	padding:1em;
 	width:660px;
 	font-size:0.8em;
 }
 
 #canvas {
-	background:#ffffff url("images/grid.png");
-	width:580px;
+	background-color:#fff;
+	width:600px;
 	height:200px;
-	margin-bottom:1em;
+	margin-bottom:10px;
 }
 
-.innerPadding { padding:0.5em; }
+.innerPadding { padding:5px; }
 
 #editorText, #editorInfo, #imageList {
-	width:180px; border:1px solid #FFFFFF; margin-right:1em;
+	width:210px; border:1px solid #FFFFFF; margin-right:15px;
 }
 
 #editorText {
 	float:left;	
+	margin-right: 0px;
 }
 
 #editorInfo {
