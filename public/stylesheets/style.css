@@ -114,21 +114,21 @@ nav {
 	background-size: 100%;
 	overflow: visible;
 	z-index:2;
+	outline: 1px solid red;
 	}
 
-#logo {
-	margin-bottom: 20px;
-	}
 	
 #logo img {
 	width: 100%;
 	margin-bottom: 20px;
+	outline: 1px solid green;
 	}
 
 
 #nav_haupt ul {
 	overflow: visible;
 	width: 110%;
+	outline: 1px solid blue;
 	}
 
 #nav_haupt li{
@@ -140,6 +140,7 @@ nav {
 	text-align: center;
 	overflow: visible;
 	margin-left: -30px;
+	outline: 1px solid yellow;
 	}
 
 #nav_haupt a {
