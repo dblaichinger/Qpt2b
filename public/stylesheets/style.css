@@ -177,6 +177,7 @@ nav {
 #wrapper {
 	position:relative;
 	height: 100%;
+	max-width:1380px;
 }
 
 #content {
