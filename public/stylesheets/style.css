@@ -177,14 +177,13 @@ nav {
 #wrapper {
 	position:relative;
 	height: 100%;
-	max-width:1380px;
 }
 
 #content {
-	width: 65%;
+	width: 66%;
 	min-width: 660px;
 	max-width: 900px;
-	margin-left: 20%;
+	margin-left: 25%;
 	position: relative;
 	height:100%;
 	z-index:1;
