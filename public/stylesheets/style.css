@@ -486,14 +486,20 @@ a:hover {
 	overflow: hidden;
 	}
 
-#ranking li {
+#top_votes ul li {
 	list-style-type:none;
 	float: left;
 	width: 180px;
 	height: 180px;
-	background-image: url('/images/media/ranking.png');
+	padding: 20px;
+	background-image: url('/images/media/praegeflaeche_ranking.png');
+	margin-right: 20px;
 	}
-	
+
+#top_votes ul li:last-child {
+	margin-right: 0px;
+}
+
 	/* ende mitbestimmen */
 
 /* ende content */
