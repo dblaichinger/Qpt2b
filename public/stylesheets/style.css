@@ -323,6 +323,11 @@ a:hover {
 
 			/* step 2 */
 
+#step2 {
+	position: relative;
+	height: 100%;
+}
+
 #video {
 	background-image: url('/images/media/praegeflaeche.png');
 	background-repeat: no-repeat;
