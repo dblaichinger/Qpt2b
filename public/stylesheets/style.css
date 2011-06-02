@@ -588,12 +588,14 @@ footer {
 	background-color:#d9dadb;
 	display:block;
 	outline: 1px solid red;
+	position: relative;
 	}
 	
 #zusammenarbeit {
-	margin-top:50px;
-	margin-left: 300px;
-	width:64%;
+	top:50px;
+	margin-left: 22%;
+	width:72%;
+	position: absolute;
 	}
 
 h3 {
