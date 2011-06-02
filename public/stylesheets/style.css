@@ -418,14 +418,14 @@ a:hover {
 
 #hb05 {
 	position: absolute;
-	top:30%;
+	top:27%;
 	left: 10%;
 }
 
 #ib_05_01 {
 	position: absolute;
-	top: 40%;	
-	width:50%;
+	top: 45%;	
+	width:30%;
 }
 
 
@@ -436,7 +436,6 @@ a:hover {
 	position: absolute;
 	right: 0;
 	top: 10%;
-	outline: 1px solid red;
 	background-image:url('/images/media/praegeflaeche_formular.png');
 	background-repeat: no-repeat;
 	}
