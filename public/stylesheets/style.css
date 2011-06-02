@@ -352,7 +352,7 @@ a:hover {
 
 #map {
 	position: relative;
-	top:15%;
+	top:100px;
 }
 
 #map_container {
@@ -369,14 +369,14 @@ a:hover {
 
 #hb03 {
 	position: absolute;
-	top:7%;
+	top:50px;;
 	right:-5%;
 	z-index:2000;
 }
 
 #ib_03_01 {
 	position: absolute;
-	top: 68%;	
+	bottom: 50px;	
 	left: -15%;
 	width:40%;
 	z-index:2000;
