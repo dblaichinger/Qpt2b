@@ -510,6 +510,7 @@ a:hover {
 	left: 35px;
 	display:block;
 	border: 1px solid #d9dadb;
+	cursor: pointer;
 }
 
 .top_address {
@@ -518,6 +519,7 @@ a:hover {
 	font-size: 14px;
 	display: block;
 	outline: 1px solid red;
+	height: 40px;
 }
 
 .top_counter {
