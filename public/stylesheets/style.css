@@ -568,7 +568,7 @@ a:hover {
 footer {
 	height: 100%;
 	background-color:#d9dadb;
-	display:block;
+	display:run-in;
 	outline: 1px solid red;
 	}
 	
