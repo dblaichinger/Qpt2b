@@ -51,12 +51,13 @@
 	        <%else%><li><% end %>
 	        <%=link_to '(Admin)', admins_path  %> </li>
 	        -->
+
+	        <%=link_to 'Kontakt', {:controller => "pages", :action => "contact"} %>
 	    </ul>
 
 	</nav>
 	
-	<!-- HILFEEE! Lieber Daniel, wir brauchen hier bitte einen Link zur Kontakt Seite, weil selber schaffen wirs ned :( -->
-	<div id="kontakt"><a href="contact.html"></a></div>
+
 
 
 <%= yield %>
