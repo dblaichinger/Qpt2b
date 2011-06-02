@@ -419,13 +419,14 @@ a:hover {
 #hb05 {
 	position: absolute;
 	top:27%;
-	left: 10%;
+	width: 30%;
 }
 
 #ib_05_01 {
 	position: absolute;
-	top: 45%;	
-	width:30%;
+	top: 40%;	
+	left: -10%;
+	width:35%;
 }
 
 
