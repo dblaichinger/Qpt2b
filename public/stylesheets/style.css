@@ -567,9 +567,8 @@ a:hover {
 footer {
 	height: 100%;
 	background-color:#d9dadb;
-	position:absolute;
-	bottom:0;
 	display:block;
+	clear:both;
 	}
 	
 #zusammenarbeit {
