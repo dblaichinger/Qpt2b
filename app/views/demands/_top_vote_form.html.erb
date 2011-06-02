@@ -6,7 +6,7 @@
     <%= submit_tag "Vote", :disabled => false, :class => "vote_button", :id => "#{demand.id}" %>
 
   <% else %>
-    <%= submit_tag "Vote", :disabled => true, :class => "vote_button"  %>
+    <%= submit_tag "", :disabled => true, :class => "vote_button"  %>
     <p>Du kannst nur alle 24h abstimmen!</p>
   <% end %>
 <% end %>

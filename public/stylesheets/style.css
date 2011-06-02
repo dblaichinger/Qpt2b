@@ -507,7 +507,7 @@ a:hover {
 	height: 27px;
 	position: absolute;
 	bottom: 20px;
-	right: 15px;
+	left: 35px;
 	border: none;
 }
 
@@ -525,6 +525,7 @@ a:hover {
 	text-align:center;
 	display: block;
 	outline: 1px solid green;
+	margin-top: 50px;
 }
 
 	/* ende mitbestimmen */
