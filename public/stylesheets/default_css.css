@@ -18,7 +18,8 @@ table.trashcan {
 table.trashcan th {
 	border: 1px solid #d9dadb;
 	padding:5px;
-
+	vertical-align: middle;
+	text-transform: uppercase;
 }
 
 table.trashcan td {
@@ -27,7 +28,7 @@ table.trashcan td {
 	vertical-align: middle;
 }
 
-.30px {
+.gleichbreit {
 	width: 30px;
 }
 
