@@ -106,8 +106,8 @@ nav {
 	top: 0px;
 	width: 10%;
 	max-width:140px;
-	min-width:100px;
-	padding: 2%;
+	min-width:120px;
+	padding: 1%;
 	background-color: #003232;
 	background-image: url('/images/media/nav.png');
 	background-repeat: no-repeat;
@@ -128,6 +128,7 @@ nav {
 
 #nav_haupt ul {
 	overflow: visible;
+	width: 110%;
 	}
 
 #nav_haupt li{
@@ -138,8 +139,6 @@ nav {
 	font-size: 14px;
 	text-align: center;
 	overflow: visible;
-	width: 110%;
-	height: 26px;
 	margin-left: -30px;
 	}
 
@@ -148,7 +147,6 @@ nav {
 	text-decoration:none;
 	overflow: visible;
 	display: block;
-	height: 21px;
 	padding-top: 5px;
 	}
 
