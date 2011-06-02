@@ -569,7 +569,7 @@ footer {
 	background-color:#d9dadb;
 	display:block;
 	clear:both;
-	position: relative;
+	position: static;
 	top: 0px;
 	}
 	
