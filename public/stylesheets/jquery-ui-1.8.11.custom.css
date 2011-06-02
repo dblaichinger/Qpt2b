@@ -443,10 +443,9 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
 .ui-dialog { position: absolute; padding: .2em; width: 300px; overflow: hidden; }
 .ui-dialog .ui-dialog-titlebar { padding: .4em 1em; position: relative;  }
 .ui-dialog .ui-dialog-title { float: left; font-family: 'TitilliumText22LRegular', Verdana, sans-serif;
-	font-size: 14px;
-	line-height:1.2em;
+	font-size: 20px;
 	color: #003232;
-	margin: 0 0 10px 0;
+	margin: 10px 0;
 	text-transform:uppercase;
 	text-shadow: -1px -1px #999, 1px 1px #fff;	
 } } 
