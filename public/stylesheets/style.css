@@ -330,6 +330,13 @@ a:hover {
 	width:64%;
 }
 
+#video {
+	background-image: url('/images/media/praegeflaeche.png');
+	background-repeat: no-repeat;
+	width: 660px;
+	height: 358px;
+	padding: 20px;
+}
 
 #map {
 	padding: 20px;
