@@ -355,8 +355,6 @@ a:hover {
 	top:120px;
 }
 
-#map_container {
-}
 
 #gmaps4rails_map {
 	width: 660px;
@@ -376,12 +374,33 @@ a:hover {
 
 #ib_03_01 {
 	position: absolute;
-	top: 500px;	
+	top: 475px;	
 	left: -15%;
 	width:40%;
 	z-index:2000;
 }
 
+/* step3 */
+
+#editor {
+	position: relative;
+	top:120px;
+}
+
+#hb04 {
+	position: absolute;
+	top:50px;;
+	right:-5%;
+	z-index:2000;
+}
+
+#ib_04_01 {
+	position: absolute;
+	top: 475px;	
+	left: -15%;
+	width:40%;
+	z-index:2000;
+}
 
 .button {
 	width: 150px;
