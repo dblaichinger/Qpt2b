@@ -354,7 +354,7 @@ a:hover {
 	position: relative;
 }
 
-#gmaps4rails_map {
+#map_container {
 	width: 660px;
 	height:300px;
 	position: absolute;
