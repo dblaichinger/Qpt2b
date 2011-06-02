@@ -108,10 +108,10 @@ nav {
 	max-width:140px;
 	min-width:120px;
 	padding: 1%;
-	background-color: #003232;
+	/*background-color: #003232;
 	background-image: url('/images/media/nav.png');
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100%;*/
 	overflow: visible;
 	z-index:2;
 	outline: 1px solid red;
