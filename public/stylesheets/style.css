@@ -366,14 +366,16 @@ a:hover {
 	top: 58px;
 	}
 
-#map_wahl {
-	}
-
+#hb03 {
+	position: absolute;
+	top:10%;
+	right:-5%;
+}
 
 #ib_03_01 {
 	position: absolute;
-	top: 7%;	
-	right: -5%;
+	top: 70%;	
+	left: -10%;
 	width:30%;
 }
 
