@@ -234,11 +234,6 @@ h1 {
 	padding:25px;
 	}
 	
-#hb01 {
-	position: absolute;
-	right:10%;
-	top: 5%;
-	}
 	
 #hb02 {
 	position: absolute;
@@ -304,7 +299,11 @@ a:hover {
 
 	/* pate werden */
 	
-
+#hb01 {
+	position: absolute;
+	right:10%;
+	top: 3%;
+	}
 
 #ib01 {
 	position: absolute;
@@ -314,19 +313,19 @@ a:hover {
 #ib02 {
 	position: absolute;
 	right:-5%;
-	top:25%;
+	top:20%;
 }
 
 #ib03 {
 	position: absolute;
-	top: 70%;
-	left: -30%;
+	top: 65%;
+	left: -15%;
 }
 
 #ib04 {
 	position: absolute;
 	top: 60%;
-	right: 10%;
+	right: 5%;
 }
 
 
