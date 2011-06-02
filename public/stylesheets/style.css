@@ -198,7 +198,8 @@ nav {
 #hb01 img{
 	position: relative;
 	right:0px;
-
+	display:block;
+	width:55%,
 	}
 
 .headblase_schatten {
