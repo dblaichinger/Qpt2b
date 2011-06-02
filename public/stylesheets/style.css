@@ -196,16 +196,6 @@ nav {
 	top: 30px;
 	}
 
-#hb01 img{
-	position: absolute;
-	right:0px;
-	}
-
-.headblase div {
-	position:relative;
-	height:64px;
-}
-
 .headblase_schatten {
 	width:55%;
 	background-image:url('/images/media/headblase_schatten.png');
@@ -214,10 +204,19 @@ nav {
 	background-size:100%;	
 	z-index:2;
 	}
-	
+
+.headblase_schatten img{
+	position: absolute;
+	right:0px;
+	}
+
+.headblase div {
+	position:relative;
+	height:50px;
+}
+
 .headblase {
 	width:92%;
-	position:relative;
 	}
 	
 h1 {
