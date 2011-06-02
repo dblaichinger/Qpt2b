@@ -127,7 +127,7 @@ nav {
 #nav_haupt ul {
 	overflow: visible;
 	width: 120%;
-	outline: 1px solid blue;
+	outline: 1px solid yellow;
 	}
 
 #nav_haupt li{
@@ -135,7 +135,7 @@ nav {
     font-family: 'TitilliumText22LRegular', Verdana, Arial, sans-serif;
 	text-transform:uppercase;
 	list-style-type:none;
-	font-size: 14px;
+	font-size: 12px;
 	text-align: center;
 	}
 
