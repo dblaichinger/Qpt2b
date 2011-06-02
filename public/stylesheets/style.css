@@ -508,8 +508,8 @@ a:hover {
 	position: absolute;
 	bottom: 20px;
 	left: 35px;
-	border: none;
 	display:block;
+	border: 1px solid #d9dadb;
 }
 
 .top_address {
