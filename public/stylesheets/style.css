@@ -380,7 +380,7 @@ a:hover {
 	z-index:2000;
 }
 
-/* step3 */
+			/* step4 */
 
 #editor {
 	position: relative;
@@ -413,25 +413,41 @@ a:hover {
 	padding-top: 4px;
 	font-size: 10px;
 	}
+
+			/* step5 */	
+
 	
+#hb05 {
+	position: absolute;
+	top:50px;;
+	right:-5%;
+	z-index:2000;
+}
+
+#ib_05_01 {
+	position: absolute;
+	top: 475px;	
+	left: -20%;
+	width:50%;
+	z-index:2000;
+}
+
+
 #formular {
-	background-color:#CCC;
 	margin-top:20px;
 	width: 350px;
 	padding: 20px;
-	border: 2px solid #FFF;
-	font-size:14px;
-	position: relative;
+	position: absolute;
+	right: 0;
 	}
 	
-#form_info {
-	border: 1px solid #FFF;
+/*#form_info {
 	padding: 10px;
 	margin:10px 0 10px 0;
 	font-size:16px;
-	}
+	}*/
 
-#pate_werden {
+/*#pate_werden {
 	background-color: transparent;
 	background-image: url('/images/media/pate_btn2.png');
 	background-repeat:no-repeat;
@@ -444,7 +460,7 @@ a:hover {
 	bottom: -20px;
 	right: -40px;
 	cursor: pointer;
-	}
+	}*/
 
 	/* ende pate werden */	
 
