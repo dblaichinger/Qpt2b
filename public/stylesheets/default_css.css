@@ -20,6 +20,8 @@ table.trashcan th {
 	padding:5px;
 	vertical-align: middle;
 	text-transform: uppercase;
+	font-weight: normal;
+    font-family: 'TitilliumText22LBold', Verdana, Arial, sans-serif;
 }
 
 table.trashcan td {
@@ -30,6 +32,7 @@ table.trashcan td {
 
 .gleichbreit {
 	width: 30px;
+	text-align: center;
 }
 
 #error_explanation {
