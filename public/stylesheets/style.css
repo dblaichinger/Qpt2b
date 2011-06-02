@@ -169,6 +169,23 @@ nav {
 	background-position: 0 center;
 }
 
+#kontakt {
+	position: fixed;
+	bottom: 10px;
+	left:8%;
+}
+
+#kontakt a:link, a:visited {
+	width: 50px;
+	height: 35px;
+	display:block;
+	background-image: url('/images/media/kontakt.png');
+}
+	
+#kontakt a:hover, a:active {
+	background-image: url('/images/media/kontakt_hover.png');
+}
+
 /* navigation ende */
 
 
