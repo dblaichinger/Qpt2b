@@ -128,6 +128,7 @@ nav {
 	overflow: visible;
 	width: 110%;
 	outline: 1px solid blue;
+	overflow:visible;
 	}
 
 #nav_haupt li{
@@ -137,7 +138,6 @@ nav {
 	list-style-type:none;
 	font-size: 14px;
 	text-align: center;
-	overflow: visible;
 	outline: 1px solid yellow;
 	}
 
