@@ -117,8 +117,8 @@ nav {
 	}
 
 #logo {
-	margin: 10px 5%;
-	width: 90%;
+	margin: 10px 7%;
+	width: 86%;
 }
 
 #logo img {
@@ -167,6 +167,7 @@ nav {
 	background-repeat: no-repeat;
 	background-size: 100%;
 	overflow:visible;
+	height: 35px;
 }
 	
 /* navigation ende */
