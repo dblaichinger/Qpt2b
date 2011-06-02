@@ -188,6 +188,7 @@ nav {
 	position: relative;
 	height:100%;
 	z-index:1;
+	min-height: 3300px;
 	}
 
 .step {
