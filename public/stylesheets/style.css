@@ -442,7 +442,10 @@ a:hover {
 	background-repeat: no-repeat;
 	}
 	
-	
+#formular .text_field {
+	size: 50;
+}	
+
 /*#form_info {
 	padding: 10px;
 	margin:10px 0 10px 0;
@@ -456,8 +459,8 @@ a:hover {
 	height: 27px;
 	border: none;
 	cursor: pointer;
-	right: 10px;
-	bottom: 10px;
+	right: 20px;
+	bottom: 20px;
 	position: absolute;
 	}
 
