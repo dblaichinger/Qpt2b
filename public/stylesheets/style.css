@@ -353,6 +353,7 @@ a:hover {
 #map {
 	position: relative;
 	outline: 1px solid green;
+	height: 398px;
 }
 
 #map_container {
