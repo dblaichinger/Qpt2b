@@ -186,7 +186,7 @@ nav {
 	width: 72%;
 	margin-left: 22%;
 	position: relative;
-	height:100%;
+	outline: 1px solid blue;
 	z-index:1;
 	}
 
@@ -569,8 +569,7 @@ footer {
 	background-color:#d9dadb;
 	display:block;
 	clear:both;
-	position: static;
-	top: 0px;
+	outline: 1px solid red;
 	}
 	
 #zusammenarbeit {
