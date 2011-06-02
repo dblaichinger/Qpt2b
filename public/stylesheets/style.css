@@ -199,6 +199,9 @@ nav {
 	position: absolute;
 	right:0;
 	bottom:-64px;
+	display:block;
+	width:55%,
+	
 	}
 
 .headblase_schatten {
