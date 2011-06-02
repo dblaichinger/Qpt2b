@@ -117,11 +117,12 @@ nav {
 	}
 
 #logo {
-	margin: 10px auto;
+	margin: 10px 5%;
+	width: 90%;
 }
 
 #logo img {
-	width: 90%;
+	width: 100%;
 	outline: 1px solid green;
 	}
 
@@ -131,6 +132,7 @@ nav {
 	width: 120%;
 	outline: 1px solid yellow;
 	margin-left:-10%;
+	margin-bottom: 10px;
 	}
 
 #nav_haupt li{
@@ -164,6 +166,7 @@ nav {
 	background-image: url('/images/media/balken.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
+	overflow:visible;
 }
 	
 /* navigation ende */
