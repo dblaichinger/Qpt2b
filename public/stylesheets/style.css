@@ -164,7 +164,7 @@ nav {
 	background-size: 100%;
 	overflow:visible;
 	display:block;
-	height:auto;
+	padding-bottom:5px;
 }
 	
 /* navigation ende */
