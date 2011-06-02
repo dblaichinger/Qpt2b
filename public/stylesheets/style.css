@@ -198,7 +198,6 @@ nav {
 	position:relative;
 	}
 
-
 .headblase_schatten {
 	width:55%;
 	background-image:url('/images/media/headblase_schatten.png');
@@ -234,13 +233,6 @@ h1 {
 	padding:25px;
 	}
 	
-	
-#hb02 {
-	position: absolute;
-	right:70px;
-	top: 30px;
-	}
-	
 .schatten_l {
 	background-image:url('/images/media/infoblase_l_schatten.png');
 	background-position: bottom left;
@@ -266,8 +258,6 @@ h1 {
 	background-color: #fff;
 	padding:25px;
 }
-
-
 
 h2 {
     font-family: 'TitilliumText22LRegular', Verdana, sans-serif;
@@ -303,32 +293,35 @@ a:hover {
 	top: 3%;
 	}
 
-#ib01 {
+
+#ib_01_01 {
 	position: absolute;
 	top: 15%;
 	width: 56%;
 }
 
-#ib02 {
+#ib_01_02 {
 	position: absolute;
 	right:-8%;
 	top:22%;
 	width:52%;
 }
 
-#ib03 {
+#ib_01_03 {
 	position: absolute;
 	top: 58%;
 	left: -20%;
 	width:60%;
 }
 
-#ib04 {
+#ib_01_04 {
 	position: absolute;
 	top: 65%;
 	right: -2%;
 	width:64%;
-}
+	}
+
+			/* step 2 */
 
 #video {
 	background-image: url('/images/media/praegeflaeche.png');
@@ -336,7 +329,24 @@ a:hover {
 	width: 660px;
 	height: 358px;
 	padding: 20px;
+	margin-top:15%;
+	}
+
+#hb02 {
+	position: absolute;
+	right:-5%;
+	top: 5%;
+	}
+	
+
+#ib_02_01 {
+	position: absolute;
+	top: 65%	
+	left: -2%;
+	width:30%;
 }
+
+			/* step 3 */
 
 #map {
 	padding: 20px;
@@ -344,10 +354,6 @@ a:hover {
 	height: 400px;
 	background-color: #CCC;
 	border: 2px solid #FFF;
-	}
-
-iframe {
-	border: 1px solid #FFF;
 	}
 
 #map_wahl {
