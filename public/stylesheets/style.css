@@ -105,18 +105,26 @@ nav {
 	left: 5%;
 	top: 0px;
 	width: 10%;
+	max-width:140px;
+	min-width:100px;
 	padding: 2%;
 	background-color: #003232;
 	background-image: url('/images/media/nav.png');
 	background-repeat: no-repeat;
+	background-size: 100%;
 	overflow: visible;
 	z-index:2;
 	}
 
 #logo {
+	margin-bottom: 20px;
+	}
+	
+#logo img {
 	width: 100%;
 	margin-bottom: 20px;
 	}
+
 
 #nav_haupt ul {
 	overflow: visible;
@@ -130,7 +138,7 @@ nav {
 	font-size: 14px;
 	text-align: center;
 	overflow: visible;
-	width: 200px;
+	width: 110%;
 	height: 26px;
 	margin-left: -30px;
 	}
@@ -156,7 +164,8 @@ nav {
 	text-decoration:none;
 	background-image: url('/images/media/balken.png');
 	background-repeat: no-repeat;
-	width: 200px;
+	background-size: 100%;
+	width: 110%;
 	height: 35px;
 	margin-top: 9px;
 }
