@@ -552,6 +552,11 @@ a:hover {
 	text-shadow: -1px -1px #999, 1px 1px #fff;	
 }
 
+#top_votes p {
+	text-align: center;
+	margin-top: 10px;
+}
+
 	/* ende mitbestimmen */
 
 /* ende content */
