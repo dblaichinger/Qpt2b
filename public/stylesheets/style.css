@@ -204,6 +204,7 @@ nav {
 .headblase div {
 	position:relative;
 	outline: 1px solid blue;
+	height:64px;
 }
 
 .headblase_schatten {
