@@ -196,7 +196,7 @@ nav {
 	}
 
 #hb01 img{
-	position: absolute;
+	position: relative;
 	right:0;
 	display:block;
 	width:55%,
@@ -210,7 +210,6 @@ nav {
 	background-size:100%;	
 	z-index:2;
 	outline: 1px solid red;
-	overflow:hidden;
 	}
 	
 .headblase {
