@@ -215,8 +215,6 @@ nav {
 	
 .headblase {
 	width:75%;
-	background-color:#ff6600;
-	padding:25px;
 	position:relative;
 	}
 	
@@ -228,6 +226,8 @@ h1 {
 	text-transform:uppercase;
 	text-shadow: -1px -1px #666, 1px 1px #fff;
 	text-align:center;
+	background-color:#ff6600;
+	padding:25px;
 	}
 	
 .schatten_l {
