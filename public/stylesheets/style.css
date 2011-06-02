@@ -101,7 +101,6 @@ body {
 /* navigation */
 
 nav {
-	position: fixed;
 	left: 5%;
 	top: 0px;
 	width: 12%;
@@ -180,6 +179,7 @@ nav {
 	width: 90%;
 	min-width: 960px;
 	max-width: 1380px;
+	outline: 1px solid blue;
 }
 
 #content {
