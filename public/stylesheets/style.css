@@ -486,7 +486,6 @@ a:hover {
 
 #top_votes {
 	overflow: hidden;
-	position: relative;
 	}
 
 #top_votes li {
@@ -497,7 +496,9 @@ a:hover {
 	padding: 20px;
 	background-image: url('/images/media/praegeflaeche_ranking.png');
 	margin: 0 20px 20px 0;
+	position: relative;
 	}
+	
 	
 .vote_button {
 	background-image: url('/images/media/vote.png');
@@ -514,12 +515,16 @@ a:hover {
 	width: 100%;
 	text-align: center;
 	font-size: 14px;
+	display: block;
+	outline: 1px solid red;
 }
 
 .top_counter {
-	font-size: 30px;
+	font-size: 60px;
 	width: 100%;
 	text-align:center;
+	display: block;
+	outline: 1px solid green;
 }
 
 	/* ende mitbestimmen */
