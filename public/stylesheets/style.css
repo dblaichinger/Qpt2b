@@ -323,11 +323,6 @@ a:hover {
 
 			/* step 2 */
 
-#step2 {
-	position: relative;
-	height: 100%;
-}
-
 #video {
 	background-image: url('/images/media/praegeflaeche.png');
 	background-repeat: no-repeat;
@@ -346,7 +341,7 @@ a:hover {
 
 #ib_02_01 {
 	position: absolute;
-	top: 65%	
+	top: 65%;	
 	left: -2%;
 	width:30%;
 }
