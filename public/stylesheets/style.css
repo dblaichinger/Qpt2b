@@ -322,6 +322,9 @@ a:hover {
 	}
 
 			/* step 2 */
+#step2 {
+	outline: 1px solid green;
+}
 
 #video {
 	background-image: url('/images/media/praegeflaeche.png');
