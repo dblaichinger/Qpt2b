@@ -13,7 +13,6 @@ table.trashcan {
     font-family: 'TitilliumText22LRegular', Verdana, Arial, sans-serif;
 	width: 900px;
 	margin-bottom: 20px;
-	vertical-align: middle;
 }
 
 table.trashcan th {
@@ -25,10 +24,11 @@ table.trashcan th {
 table.trashcan td {
 	border: 1px solid #d9dadb;
 	padding-left:10px;
+	vertical-align: middle;
 }
 
-.icons {
-	width: 50px;
+.30px {
+	width: 30px;
 }
 
 #error_explanation {
