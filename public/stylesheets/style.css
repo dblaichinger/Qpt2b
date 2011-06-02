@@ -322,11 +322,6 @@ a:hover {
 	}
 
 			/* step 2 */
-#step2 {
-	outline: 1px solid green;
-	height: 100%;
-	display:block;
-}
 
 #video {
 	background-image: url('/images/media/praegeflaeche.png');
@@ -334,7 +329,8 @@ a:hover {
 	width: 660px;
 	height: 358px;
 	padding: 20px;
-	margin-top:15%;
+	position: absolute;
+	top: 15%;
 	}
 
 #hb02 {
