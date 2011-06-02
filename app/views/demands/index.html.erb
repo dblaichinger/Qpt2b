@@ -14,9 +14,9 @@
             	</div>   
             	<img src="/images/media/infoblase_spitz.png" />
 			</div>        	
-        	<div id="map">
+			<div id="map" class="praegeflaeche">
             	<div id="map_wahl">
-                	<input type="text" name="suche" size="50" />
+                	<input type="text" name="suche" size="65" />
 				</div>
 
 				<%= gmaps("markers" => {"data" => @markers},"circles" => {"data" => @circles}, "map_options" => {"map_container_id" => "map_box", "auto_adjust" => "true"}) %>

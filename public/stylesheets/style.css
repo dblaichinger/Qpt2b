@@ -465,10 +465,20 @@ a:hover {
 
 	/* mitbestimmen */
 
-#dialog {
-	width: 200px;
-	height: 200px;
+#hb21 {
+	position: absolute;
+	right:10%;
+	top: 3%;
+	}
+
+
+#ib_21_01 {
+	position: absolute;
+	top: 50%;
+	left: -10%;
+	width: 56%;
 }
+
 
 #ranking ul {
 	overflow: hidden;
