@@ -112,7 +112,12 @@
             		<div><img src="/images/media/headblase_spitz.png" /></div>
             	</div>
         	</div>         	
-        	<p>Wenn du nun alle Schritte erledigt hast und eine Patenschaft übernehmen willst, musst du nur noch das Formular ausf&uuml;llen und "Pate werden". Schon bald wird dein Wunschdesign auf dem von dir ausgewählten M&uuml;lleimer zu bewundern sein. Yeah!</p>
+         	<div class="schatten_l" id="ib_05_01">
+            	<div class="infoblase_l">
+				<p>Wenn du nun alle Schritte erledigt hast und eine Patenschaft übernehmen willst, musst du nur noch das Formular ausf&uuml;llen und "Pate werden". Schon bald wird dein Wunschdesign auf dem von dir ausgewählten M&uuml;lleimer zu bewundern sein. Yeah!</p>
+            	</div>   
+            	<img src="/images/media/infoblase_spitz.png" />
+			</div>
             <div id="formular">
 				 <%= form_for @user, :url => orders_path do |f| %>
 					  <%= render 'shared/error_messages', :object => f.object %>
@@ -124,18 +129,20 @@
 						<%= t.text_field :trashcan_id %>
 					<% end %>
 
+					<%= f.label :name %>
+					<%= f.text_field :name %>
+					
 					<%= f.label :email %>
 					<%= f.text_field :email %>
 
-					<%= f.label :name %>
-					<%= f.text_field :name %>
+<!-- unnötig, weg damit
 
 					<%= f.label "Strasse:" %>
 					<%= f.text_field :street %>
 
 					<%= f.label "Stadt:" %>
 					<%= f.text_field :city %>
-
+-->
 					<%= f.submit "", :id => "pate_werden" %>
 				<% end %>
             </div>
