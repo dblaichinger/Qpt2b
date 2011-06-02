@@ -84,7 +84,7 @@ table.trashcan td {
 .innerPadding { padding:5px; }
 
 #editorText, #editorInfo, #imageList {
-	width:200px; 
+	width:205px; 
 	border:1px solid #FFFFFF; 
 	height:138px;
 }
@@ -95,14 +95,14 @@ table.trashcan td {
 
 #editorInfo {
 	float:left;
-	margin-right: 15px;
+	margin-right: 10px;
 }
 
 
 #imageList {
 	overflow:hidden;
 	float:left;
-	margin-right: 15px;
+	margin-right: 10px;
 }
 
 .motiveIn { border:1px dotted #000000; }
