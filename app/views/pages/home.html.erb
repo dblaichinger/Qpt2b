@@ -45,14 +45,24 @@
         </div>
 
        <div id="step2" class="step">
-        	<h1 id="hb02">Mogra Video</h1>
+         	<div class="headblase_schatten" id="hb02">
+        		<div class="headblase">
+        			<h1>Informationsvideo</h1>
+            		<div><img src="/images/media/headblase_spitz.png" /></div>
+            	</div>
+        	</div>
         	<div><%= image_tag "/images/media/player.png" %></div>
             <a class="toScroll" rel="step3"><img src="/images/media/pfeil.png" alt="Schritt 3"/></a>
        </div>
        
        <div id="step3" class="step">
-        	<h1 id="hb03"> M&uuml;lleimer auswählen </h1>
-         	<p>In dieser Karte sind alle öffentlichen M&uuml;lleimer eingezeichnet. Wenn du Pate werden willst, wähle einen noch freien M&uuml;lleimer aus. Jene M&uuml;lleimer, die bereits einen Paten haben, sind mit einem Herz in der Mitte gekennzeichnet.</p>
+         	<div class="headblase_schatten" id="hb03">
+        		<div class="headblase">
+        			<h1>Mülleimer auswählen</h1>
+            		<div><img src="/images/media/headblase_spitz.png" /></div>
+            	</div>
+        	</div>         	
+        	<p>In dieser Karte sind alle öffentlichen M&uuml;lleimer eingezeichnet. Wenn du Pate werden willst, wähle einen noch freien M&uuml;lleimer aus. Jene M&uuml;lleimer, die bereits einen Paten haben, sind mit einem Herz in der Mitte gekennzeichnet.</p>
         	<div id="map">
             	<div id="map_wahl">
                 	<input type="text" name="suche" size="50" />
@@ -72,8 +82,13 @@
         </div>
 
     	<div id="step4" class="step">
-        	<h1 id="hb04"> M&uuml;lleimer gestalten </h1>
-         	<p>Wenn du einen Mülleimer ausgewählt hast, kannst du ihn mit Hilfe des Editors individuell gestalten. Sobald du mit deinem Design zufrieden bist, klicke auf "Design übernehmen" und dein Entwurf wird automatisch im nachfolgenden Formular gespeichert.</p>
+         	<div class="headblase_schatten" id="hb04">
+        		<div class="headblase">
+        			<h1>Mülleimer gestalten</h1>
+            		<div><img src="/images/media/headblase_spitz.png" /></div>
+            	</div>
+        	</div>         	
+        	<p>Wenn du einen Mülleimer ausgewählt hast, kannst du ihn mit Hilfe des Editors individuell gestalten. Sobald du mit deinem Design zufrieden bist, klicke auf "Design übernehmen" und dein Entwurf wird automatisch im nachfolgenden Formular gespeichert.</p>
 
             <%= render 'editor' %>
 
@@ -82,8 +97,13 @@
         </div>    
         
   		<div id="step5" class="step">
-        	<h1 id="hb05"> Pate werden </h1>
-         	<p>Wenn du nun alle Schritte erledigt hast und eine Patenschaft übernehmen willst, musst du nur noch das Formular ausf&uuml;llen und "Pate werden". Schon bald wird dein Wunschdesign auf dem von dir ausgewählten M&uuml;lleimer zu bewundern sein. Yeah!</p>
+         	<div class="headblase_schatten" id="hb05">
+        		<div class="headblase">
+        			<h1>Pate werden</h1>
+            		<div><img src="/images/media/headblase_spitz.png" /></div>
+            	</div>
+        	</div>         	
+        	<p>Wenn du nun alle Schritte erledigt hast und eine Patenschaft übernehmen willst, musst du nur noch das Formular ausf&uuml;llen und "Pate werden". Schon bald wird dein Wunschdesign auf dem von dir ausgewählten M&uuml;lleimer zu bewundern sein. Yeah!</p>
             <div id="formular">
 				 <%= form_for @user, :url => orders_path do |f| %>
 					  <%= render 'shared/error_messages', :object => f.object %>
