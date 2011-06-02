@@ -367,14 +367,14 @@ a:hover {
 
 #hb03 {
 	position: absolute;
-	top:50px;;
+	top:60px;
 	right:-5%;
 	z-index:2000;
 }
 
 #ib_03_01 {
 	position: absolute;
-	top: 475px;	
+	top: 465px;	
 	left: -15%;
 	width:40%;
 	z-index:2000;
@@ -467,7 +467,7 @@ a:hover {
 
 #hb21 {
 	position: absolute;
-	top:50px;;
+	top:60px;
 	right:-5%;
 	z-index:2000;
 	}
@@ -475,7 +475,7 @@ a:hover {
 
 #ib_21_01 {
 	position: absolute;
-	top: 475px;	
+	top: 465px;	
 	left: -15%;
 	width: 56%;
 	z-index:2000;
