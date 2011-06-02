@@ -128,6 +128,7 @@ nav {
 	overflow: visible;
 	width: 120%;
 	outline: 1px solid yellow;
+	background-color: blue;
 	}
 
 #nav_haupt li{
