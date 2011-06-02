@@ -352,14 +352,20 @@ a:hover {
 
 #map {
 	position: relative;
+	outline: 1px solid green;
 }
 
 #map_container {
+	outline: 1px solid red;
+}
+
+#gmaps4rails_map {
 	width: 660px;
 	height:300px;
 	position: absolute;
 	bottom: 20px;
 	left: 20px;
+	outline: 1px solid blue;
 	}
 
 #map_wahl {
