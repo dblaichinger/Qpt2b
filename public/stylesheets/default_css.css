@@ -84,7 +84,7 @@ table.trashcan td {
 .innerPadding { padding:5px; }
 
 #editorText, #editorInfo, #imageList {
-	width:210px; border:1px solid #FFFFFF; margin-right:15px;
+	width:200px; border:1px solid #FFFFFF; margin-right:15px;
 }
 
 #editorText {
