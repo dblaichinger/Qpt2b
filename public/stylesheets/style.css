@@ -107,7 +107,6 @@ nav {
 	width: 12%;
 	max-width:140px;
 	min-width:120px;
-	background-color: #003232;
 	background-image: url('/images/media/nav.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -140,6 +139,7 @@ nav {
 	font-size: 12px;
 	text-align: center;
 	overflow:visible;
+	padding-top:2px;
 	}
 
 #nav_haupt a {
