@@ -335,15 +335,15 @@ a:hover {
 
 #hb02 {
 	position: absolute;
-	right:-5%;
-	top: 5%;
+	left:-5%;
+	top: 65%;
 	}
 	
 
 #ib_02_01 {
 	position: absolute;
-	top: 65%;	
-	left: -2%;
+	top: 3%;	
+	right: -8%;
 	width:30%;
 }
 
