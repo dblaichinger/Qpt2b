@@ -139,7 +139,6 @@ nav {
 	font-size: 12px;
 	text-align: center;
 	overflow:visible;
-	padding-top:1px;
 	}
 
 #nav_haupt a {
@@ -164,8 +163,8 @@ nav {
 	background-size: 100%;
 	overflow:visible;
 	display:block;
-	padding-bottom:8px;
-	padding-top: 8px;
+	padding-bottom:7px;
+	padding-top: 7px;
 	background-position: 0 center;
 }
 	
