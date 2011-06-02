@@ -189,6 +189,7 @@ nav {
 	outline: 1px solid blue;
 	z-index:1;
 	height: 100%;
+	display:block;
 	}
 
 .step {
@@ -568,7 +569,7 @@ a:hover {
 footer {
 	height: 100%;
 	background-color:#d9dadb;
-	display:run-in;
+	display:block;
 	outline: 1px solid red;
 	}
 	
