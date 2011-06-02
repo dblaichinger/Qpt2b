@@ -350,14 +350,12 @@ a:hover {
 
 			/* step 3 */
 
-#map {
-
+#map_box {
+	width: 660px;
+	height:300px;
 	}
 
 #map_wahl {
-	margin-bottom: 15px;
-	padding: 10px;
-	border: 1px solid #FFF;
 	}
 
 
