@@ -359,11 +359,11 @@ a:hover {
 
 #gmaps4rails_map {
 	width: 660px;
-	height:300px;
+	height:310px;
 	position: absolute;
 	bottom: 20px;
 	left: 20px;
-	top: 98px;
+	top: 68px;
 	}
 
 #map_wahl {
