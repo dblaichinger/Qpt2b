@@ -502,8 +502,9 @@ a:hover {
 }
 
 #top_votes {
-	overflow: hidden;
-	margin-top:100px;
+
+	position: relative;
+	top:120px;
 	}
 
 #top_votes li {
