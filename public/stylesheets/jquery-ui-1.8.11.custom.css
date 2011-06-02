@@ -2,11 +2,15 @@
 	width: 200px;
 	height: 200px;
 	background-color: #d9dadb;
+	padding: 20px;
 }
 
 .ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 .ui-widget-overlay { background: #000; opacity: .30;filter:Alpha(Opacity=30); }
 
+.ui-dialog-titlebar {
+	height: 50px:
+}
 
 .ui-dialog-title {
 	font-family: 'TitilliumText22LRegular', Verdana, sans-serif;
@@ -29,4 +33,8 @@
 .ui-icon {
 	background-image: url('/images/media/close.png');
 	background-repeat: no-repeat;
+	text-indent: -10000px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
 }
