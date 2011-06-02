@@ -301,7 +301,7 @@
  *
  * http://docs.jquery.com/UI/Resizable#theming
  */
-.ui-resizable { position: relative;}
+.ui-resizable { position: relative; width:200px; height:200px;}
 .ui-resizable-handle { position: absolute;font-size: 0.1px;z-index: 99999; display: block;}
 .ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
 .ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
