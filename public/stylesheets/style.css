@@ -569,6 +569,8 @@ footer {
 	background-color:#d9dadb;
 	display:block;
 	clear:both;
+	position: relative;
+	top: 0px;
 	}
 	
 #zusammenarbeit {
