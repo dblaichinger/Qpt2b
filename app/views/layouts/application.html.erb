@@ -54,15 +54,6 @@
 	    </ul>
 
 	</nav>
-	
-	<div id="kontakt">
-	     <ul>
-	     	<% if controller?("pages") && action?("contact")  %>
-	        <li class="active">
-	        <%else%><li><% end %>
-	        <%=link_to 'Kontakt', pages_contact_path %></li>
-	      </ul>  	
-	</div>
 
 
 <%= yield %>
