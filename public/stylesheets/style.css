@@ -467,15 +467,15 @@ a:hover {
 
 #hb21 {
 	position: absolute;
-	right:10%;
-	top: 3%;
+	right:0;
+	top: 5%;
 	}
 
 
 #ib_21_01 {
 	position: absolute;
 	top: 70%;
-	left: -10%;
+	left: -15%;
 	width: 56%;
 	z-index:2000;
 }
