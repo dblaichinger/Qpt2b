@@ -441,10 +441,7 @@ a:hover {
 	background-image:url('/images/media/praegeflaeche_formular.png');
 	background-repeat: no-repeat;
 	}
-	
-#formular input {
-	size: 50;
-}	
+		
 
 /*#form_info {
 	padding: 10px;
@@ -467,6 +464,11 @@ a:hover {
 	/* ende pate werden */	
 
 	/* mitbestimmen */
+
+#dialog {
+	width: 200px;
+	height: 200px;
+}
 
 #ranking ul {
 	overflow: hidden;
