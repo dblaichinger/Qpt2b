@@ -69,17 +69,16 @@ table.trashcan td {
 /* -------------------------------------------- */
 /* EDITOR */
 #editorWrapper {
-	background:#cccccc;
 	overflow:hidden;
 	padding:1em;
-	width:620px;
+	width:660px;
 	font-size:0.8em;
 }
 
 #canvas {
 	background:#ffffff url("images/grid.png");
 	width:580px;
-	height:300px;
+	height:200px;
 	margin-bottom:1em;
 }
 
@@ -127,12 +126,6 @@ table.trashcan td {
 
 /* -------------------------------------------- */
 
-#gmaps4rails_map {
-  	height: 445px;
-    left: -20px;
-    top: -114px;
-    width: 700px;
-}
 
 .flash {
     text-align: center;
