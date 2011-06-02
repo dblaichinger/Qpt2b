@@ -55,14 +55,8 @@
 
 	</nav>
 	
-	<div id="kontakt">
-	    <ul>
-	    	<% if controller?("pages") && action?("contact")  %>
-	        <li>
-	        <%else%><li><% end %>
-	        <%=link_to 'Kontakt', pages_contact_path %></li>
-	    </ul>   	
-	</div>
+	<!-- HILFEEE! Lieber Daniel, wir brauchen hier bitte einen Link zur Kontakt Seite, weil selber schaffen wirs ned :( -->
+	<div id="kontakt"><a href="contact.html"></a></div>
 
 
 <%= yield %>
