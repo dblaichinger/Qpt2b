@@ -503,6 +503,7 @@ a:hover {
 
 #top_votes {
 	overflow: hidden;
+	margin-top:100px;
 	}
 
 #top_votes li {
