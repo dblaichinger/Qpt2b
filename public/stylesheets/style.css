@@ -211,6 +211,7 @@ nav {
 	background-repeat:no-repeat;
 	background-size:100%;	
 	z-index:2;
+	outline: 1px solid red;
 	}
 	
 .headblase {
