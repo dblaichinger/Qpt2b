@@ -280,6 +280,8 @@ a:hover {
 	margin-left: 40%;
 	position:absolute;
 	bottom:10px;
+	clear: both,
+	float: none;
 }
 
 
@@ -482,8 +484,9 @@ a:hover {
 }
 
 
-#ranking ul {
+#top_votes {
 	overflow: hidden;
+	position: relative;
 	}
 
 #top_votes li {
@@ -501,9 +504,10 @@ a:hover {
 	background-repeat:no-repeat;
 	width: 150px;
 	height: 27px;
-	position: relative;
+	position: absolute;
 	bottom: 20px;
 	right: 15px;
+	border: none;
 }
 
 .top_address {
