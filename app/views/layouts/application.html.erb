@@ -59,7 +59,6 @@
 <%= yield %>
 <%= yield :scripts %>
 
-</div>
 
 	<% 	if(( !controller?("admins") && !action?("edit") ) and ( !controller?("trashcans") && !action?("index") )) %>
 		<%= render 'layouts/footer' %> 
@@ -67,6 +66,9 @@
 	<% 	if controller?("demands") && !action?("edit") %>
 		<%= render 'layouts/footer' %> 
 	 <% end %>
+
+
+</div>
 
 
 </body>
