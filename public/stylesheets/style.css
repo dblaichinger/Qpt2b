@@ -175,14 +175,14 @@ nav {
 	left:8%;
 }
 
-#kontakt a:link, a:visited {
+#kontakt li {
 	width: 50px;
 	height: 35px;
 	display:block;
 	background-image: url('/images/media/kontakt.png');
 }
 	
-#kontakt a:hover, a:active {
+#kontakt li:hover {
 	background-image: url('/images/media/kontakt_hover.png');
 }
 

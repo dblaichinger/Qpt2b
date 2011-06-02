@@ -56,11 +56,12 @@
 	</nav>
 	
 	<div id="kontakt">
-	       	<% if controller?("pages") && action?("contact")  %>
-	        <a>
-	        <%else%><a><% end %>
-	        <%=link_to 'Kontakt', pages_contact_path %></a>
-	        	
+	    <ul>
+	    	<% if controller?("pages") && action?("contact")  %>
+	        <li>
+	        <%else%><li><% end %>
+	        <%=link_to 'Kontakt', pages_contact_path %></li>
+	    </ul>   	
 	</div>
 
 
