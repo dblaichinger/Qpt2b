@@ -120,7 +120,6 @@ nav {
 	
 #logo img {
 	width: 100%;
-	margin-bottom: 20px;
 	outline: 1px solid green;
 	}
 
@@ -163,7 +162,6 @@ nav {
 	background-image: url('/images/media/balken.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
-	margin-top: 9px;
 }
 	
 /* navigation ende */
