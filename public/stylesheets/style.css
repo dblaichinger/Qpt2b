@@ -353,7 +353,6 @@ a:hover {
 #map {
 	position: relative;
 	outline: 1px solid green;
-	height: 398px;
 }
 
 #map_container {
@@ -367,6 +366,7 @@ a:hover {
 	bottom: 20px;
 	left: 20px;
 	outline: 1px solid blue;
+	top: 20px;
 	}
 
 #map_wahl {
