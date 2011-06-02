@@ -188,6 +188,7 @@ nav {
 	position: relative;
 	outline: 1px solid blue;
 	z-index:1;
+	height: 100%;
 	}
 
 .step {
