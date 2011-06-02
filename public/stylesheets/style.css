@@ -509,6 +509,7 @@ a:hover {
 	bottom: 20px;
 	left: 35px;
 	border: none;
+	display:block;
 }
 
 .top_address {
