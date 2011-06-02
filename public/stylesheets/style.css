@@ -163,6 +163,7 @@ nav {
 	background-repeat: no-repeat;
 	background-size: 100%;
 	overflow:visible;
+	display:block;
 }
 	
 /* navigation ende */
