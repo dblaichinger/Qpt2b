@@ -198,12 +198,10 @@ nav {
 #hb01 img{
 	position: absolute;
 	right:0px;
-	outline: 1px solid green;
 	}
 
 .headblase div {
 	position:relative;
-	outline: 1px solid blue;
 	height:64px;
 }
 
@@ -214,11 +212,10 @@ nav {
 	background-repeat:no-repeat;
 	background-size:100%;	
 	z-index:2;
-	outline: 1px solid red;
 	}
 	
 .headblase {
-	width:90%;
+	width:92%;
 	position:relative;
 	}
 	
