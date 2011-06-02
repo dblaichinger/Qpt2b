@@ -242,7 +242,6 @@ h1 {
 	}
 	
 .schatten_l {
-	width:56%;
 	background-image:url('/images/media/infoblase_l_schatten.png');
 	background-position: bottom left;
 	background-repeat:no-repeat;
@@ -250,7 +249,6 @@ h1 {
 	}
 	
 .schatten_m {
-	width:63%;
 	background-image:url('/images/media/infoblase_m_schatten.png');
 	background-position: bottom left;
 	background-repeat:no-repeat;
@@ -308,24 +306,28 @@ a:hover {
 #ib01 {
 	position: absolute;
 	top: 15%;
+	width: 56%;
 }
 
 #ib02 {
 	position: absolute;
-	right:-9%;
+	right:-8%;
 	top:22%;
+	width:52%;
 }
 
 #ib03 {
 	position: absolute;
 	top: 58%;
 	left: -20%;
+	width:60%;
 }
 
 #ib04 {
 	position: absolute;
 	top: 65%;
 	right: -2%;
+	width:64%;
 }
 
 
