@@ -493,11 +493,29 @@ a:hover {
 	height: 180px;
 	padding: 20px;
 	background-image: url('/images/media/praegeflaeche_ranking.png');
-	margin-right: 20px;
+	margin: 0 20px 20px 0;
 	}
+	
+.vote_button {
+	background-image: url('/images/media/vote.png');
+	background-repeat:no-repeat;
+	width: 150px;
+	height: 27px;
+	position: relative;
+	bottom: 20px;
+	right: 15px;
+}
 
-#top_votes li:last-child {
-	margin-right: 0px;
+.top_address {
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+}
+
+.top_counter {
+	font-size: 30px;
+	width: 100%;
+	text-align:center;
 }
 
 	/* ende mitbestimmen */
