@@ -8,14 +8,10 @@ label {
 
 
 table.trashcan {
-	border-width: 1px;
-	border-spacing: 2px;
-	border-style: outset;
-	border-color: gray;
+	border 1px solid #d9dadb;
 	border-collapse: separate;
 	background-color: white;
-	font-size: 60%;
-	font-family: Verdana, sans-serif;
+    font-family: 'TitilliumText22LRegular', Verdana, Arial, sans-serif;
 	width: 900px;
 	margin-bottom: 20px;
 }
