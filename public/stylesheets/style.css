@@ -452,7 +452,7 @@ a:hover {
 #pate_werden {
 	background-image: url('/images/media/pate_werden.png');
 	background-repeat:no-repeat;
-	width: 150px,
+	width: 150px;
 	height: 27px;
 	border: none;
 	cursor: pointer;
