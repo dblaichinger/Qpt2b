@@ -1,6 +1,6 @@
 .ui-dialog {
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 100px;
 	background-color: #d9dadb;
 	padding: 20px;
 }
@@ -23,7 +23,6 @@
 }
 
 #dialog {
-	background-color:#fff;
 	font-family: 'CharisSILItalic', Georgia, serif;
 	color: #000;
 	font-size: 14px;
@@ -34,7 +33,7 @@
 	background-image: url('/images/media/close.png');
 	background-repeat: no-repeat;
 	text-indent: -10000px;
-	position: absolute;
+	position: relative;
 	right: 10px;
 	top: 10px;
 }
