@@ -102,11 +102,10 @@ body {
 
 nav {
 	position: fixed;
-	left: 70px;
+	left: 5%;
 	top: 0px;
-	width: 140px;
-	height: 260px;
-	padding: 20px;
+	width: 10%;
+	padding: 2%;
 	background-color: #003232;
 	background-image: url('/images/media/nav.png');
 	background-repeat: no-repeat;
@@ -115,8 +114,7 @@ nav {
 	}
 
 #logo {
-	width: 140px;
-	height: 140px;
+	width: 100%;
 	margin-bottom: 20px;
 	}
 
