@@ -198,10 +198,8 @@ nav {
 #hb01 img{
 	position: absolute;
 	right:0;
-	bottom:-64px;
 	display:block;
 	width:55%,
-	
 	}
 
 .headblase_schatten {
@@ -212,6 +210,7 @@ nav {
 	background-size:100%;	
 	z-index:2;
 	outline: 1px solid red;
+	overflow:hidden;
 	}
 	
 .headblase {
