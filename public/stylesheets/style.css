@@ -522,11 +522,11 @@ a:hover {
 .vote_button {
 	background-image: url('/images/media/vote.png');
 	background-repeat:no-repeat;
-	width: 150px;
-	height: 27px;
+	width: 152px;
+	height: 29px;
 	position: absolute;
 	bottom: 20px;
-	left: 35px;
+	left: 34px;
 	display:block;
 	border: 1px solid #d9dadb;
 	cursor: pointer;
