@@ -45,7 +45,7 @@
         </div>
 
        <div id="step2" class="step">
-        	<div id="video"><iframe src="http://player.vimeo.com/video/20701329?portrait=0&color=ffffff" width="660" height="358"></iframe></div>
+        	<div id="video" class="praegeflaeche"><iframe src="http://player.vimeo.com/video/20701329?portrait=0&color=ffffff" width="660" height="358"></iframe></div>
          	<div class="schatten_l" id="ib_02_01">
             	<div class="infoblase_l">
          			<p>Du bist Dir noch nicht ganz sicher, was das Ganze soll? In diesem Video erhälst du nochmal eine kurze Zusammenfassung aller wichtigen Informationen.</p>
@@ -62,12 +62,15 @@
             		<div><img src="/images/media/headblase_spitz.png" /></div>
             	</div>
         	</div>         	
-        	<p>In dieser Karte sind alle öffentlichen M&uuml;lleimer eingezeichnet. Wenn du Pate werden willst, wähle einen noch freien M&uuml;lleimer aus. Jene M&uuml;lleimer, die bereits einen Paten haben, sind mit einem Herz in der Mitte gekennzeichnet.</p>
-        	<div id="map">
+         	<div class="schatten_l" id="ib_03_01">
+            	<div class="infoblase_l">
+                     <p>In dieser Karte sind alle öffentlichen M&uuml;lleimer eingezeichnet. Wenn du Pate werden willst, wähle einen noch freien M&uuml;lleimer aus. Jene M&uuml;lleimer, die bereits einen Paten haben, sind mit einem Herz in der Mitte gekennzeichnet.</p>
+            	</div>   
+            	<img src="/images/media/infoblase_spitz.png" />
+			</div>
+			<div id="map" class="praegeflaeche">
             	<div id="map_wahl">
                 	<input type="text" name="suche" size="50" />
-                    <div id="alle"><input type="submit" name="abschicken" value="alle Mülleimer anzeigen" class="button"/></div>
-                    <div id="frei"><input type="submit" name="abschicken" value="freie Mülleimer anzeigen" class="button"/></div>
 				</div>
             	
 					<%= gmaps( "markers" => {"data" => @markers}, "map_options" => {"map_container_id" => "map_box"}

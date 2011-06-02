@@ -318,16 +318,19 @@ a:hover {
 	right: -2%;
 	width:64%;
 	}
-
-			/* step 2 */
-
-#video {
+	
+.praegeflaeche {
 	background-image: url('/images/media/praegeflaeche.png');
 	background-repeat: no-repeat;
 	width: 660px;
 	height: 358px;
 	padding: 20px;
 	position: absolute;
+}
+
+			/* step 2 */
+
+#video {
 	top: 25%;
 	}
 
@@ -360,24 +363,15 @@ a:hover {
 	padding: 10px;
 	border: 1px solid #FFF;
 	}
-	
-#alle {
-	background-image: url('/images/media/btn_150px.png');
-	background-repeat:no-repeat;
-	background-position:center;
-	width: 150px;
-	height: 20px;
-	display: inline;
-	}
 
-#frei {
-	background-image: url('/images/media/btn_150px.png');
-	background-repeat:no-repeat;
-	background-position:center;
-	width: 150px;
-	height: 20px;
-	display: inline;
-	}
+
+#ib_03_01 {
+	position: absolute;
+	top: 7%;	
+	right: -5%;
+	width:30%;
+}
+
 
 .button {
 	width: 150px;
