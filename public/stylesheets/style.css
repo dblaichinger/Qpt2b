@@ -483,6 +483,14 @@ a:hover {
 	z-index:2000;
 }
 
+			/* step 2 */
+			
+#ib_22_01 {
+	position: absolute;
+	top: 465px;	
+	left: -15%;
+	width: 30%;
+}
 
 #top_votes {
 	overflow: hidden;
@@ -518,7 +526,6 @@ a:hover {
 	text-align: center;
 	font-size: 14px;
 	display: block;
-	outline: 1px solid red;
 	height: 40px;
 }
 
@@ -527,7 +534,6 @@ a:hover {
 	width: 100%;
 	text-align:center;
 	display: block;
-	outline: 1px solid green;
 	margin-top: 50px;
 }
 
