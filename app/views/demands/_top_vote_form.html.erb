@@ -2,7 +2,7 @@
   <%= hidden_field_tag :id,  demand.id %>
   <span class="top_address"><%= demand.address %></span>
   <span class="top_counter", id="counter_<%= demand.id %>"><%= demand.counter %></span>
-  <% if !cookies[:demand] %>
+  <p>Stimmen</p><% if !cookies[:demand] %>
     <%= submit_tag "Vote", :disabled => false, :class => "vote_button", :id => "#{demand.id}" %>
 
   <% else %>
