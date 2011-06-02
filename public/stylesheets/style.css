@@ -198,11 +198,6 @@ nav {
 	position:relative;
 	}
 
-#hb01 {
-	position: absolute;
-	right:70px;
-	top: 30px;
-	}
 
 .headblase_schatten {
 	width:55%;
@@ -239,7 +234,17 @@ h1 {
 	padding:25px;
 	}
 	
+#hb01 {
+	position: absolute;
+	right:70px;
+	top: 30px;
+	}
 	
+#hb02 {
+	position: absolute;
+	right:70px;
+	top: 30px;
+	}
 	
 .schatten_l {
 	width:56%;
@@ -291,10 +296,9 @@ a:hover {
 	}
 
 .toScroll {
-	margin-left: 35%;
+	margin-left: 45%;
 	position:absolute;
-	bottom:30px;
-	z-index:
+	bottom:15px;
 }
 
 
