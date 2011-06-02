@@ -376,7 +376,7 @@ a:hover {
 
 #ib_03_01 {
 	position: absolute;
-	bottom: 30px;	
+	top: 500px;	
 	left: -15%;
 	width:40%;
 	z-index:2000;
