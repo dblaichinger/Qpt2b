@@ -580,6 +580,32 @@ a:hover {
 }
 
 	/* ende mitbestimmen */
+	
+	/* kontakt */
+
+#hb41 {
+	position: absolute;
+	top: 8%;
+	right: -5%;
+}
+
+#hb41 a {
+    font-family: 'TitilliumText22LRegular', Verdana, sans-serif;
+	font-size: 20px;
+	line-height:1.2em;
+	color: #fff;
+	text-transform:uppercase;
+	text-shadow: -1px -1px #666, 1px 1px #fff;
+	text-align:center;
+	background-color:#ff6600;
+	padding:25px;
+	text-decoration: none;
+}
+
+#hb41 a:hover {
+	color: #003232;
+	text-decoration: none;
+}
 
 /* ende content */
 	
