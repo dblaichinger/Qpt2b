@@ -305,8 +305,31 @@ a:hover {
 	bottom:10px;
 	clear: both,
 	float: none;
+	display:block;
+	background-image: url('/images/media/pfeil.png');
+	background-repeat: no-repeat;
 }
 
+.toScroll:hover {
+	background-image: url('/images/media/pfeil_hover.png');
+	background-repeat: no-repeat;
+}
+
+#zusammenarbeit .toScroll {
+	margin-left: 40%;
+	position:absolute;
+	bottom:10px;
+	clear: both,
+	float: none;
+	display:block;
+	background-image: url('/images/media/pfeil_o.png');
+	background-repeat: no-repeat;
+}
+
+#zusammenarbeit .toScroll:hover {
+	background-image: url('/images/media/pfeil_o_hover.png');
+	background-repeat: no-repeat;
+}
 
 	/* pate werden */
 	
