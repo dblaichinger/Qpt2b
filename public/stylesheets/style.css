@@ -696,13 +696,3 @@ h3 {
 	text-transform:uppercase;
 	text-shadow: -1px -1px #999, 1px 1px #fff;	
 }
-	
-#sponsoren {
-	width:100%;
-	height:500px;
-	background-image:url('/images/media/sponsoren_flaeche.png');
-	background-repeat:no-repeat;
-	background-size:100%;
-	margin-top:30px;
-}
-
