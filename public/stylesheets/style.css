@@ -200,6 +200,7 @@ nav {
 	width: 100%;
 	min-width: 1000px;
 	max-width: 1420px;
+	outline: 1px solid red;
 }
 
 #content {
@@ -692,6 +693,8 @@ footer {
 	min-height:660px;
 	position:relative;
 	width:100%;
+	overflow:visible;
+	outline: 1px solid green;
 }
 	
 #zusammenarbeit {
