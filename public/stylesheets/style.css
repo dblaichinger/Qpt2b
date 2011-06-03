@@ -246,10 +246,11 @@ h1 {
 	line-height:1.2em;
 	color: #fff;
 	text-transform:uppercase;
-	text-shadow: -1px -1px #666, 1px 1px #fff;
+	text-shadow: -1px -1px #999, 1px 1px #fff;
 	text-align:center;
 	background-color:#ff6600;
 	padding:25px;
+	font-weight: normal;
 }
 	
 .schatten_l {
@@ -286,6 +287,7 @@ h2 {
 	margin: 0 0 10px 0;
 	text-transform:uppercase;
 	text-shadow: -1px -1px #999, 1px 1px #fff;	
+	font-weight: normal;
 }
 
 a {
