@@ -15,7 +15,6 @@ Meps::Application.routes.draw do
   resources :users
   resources :admins
   resources :trashcans
-
   resources :demands
 
   root :to => "pages#home"
