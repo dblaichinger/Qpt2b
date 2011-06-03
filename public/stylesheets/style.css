@@ -684,7 +684,9 @@ a:hover {
 
 /* ende content */
 	
-/* footer */
+#content:last-child {
+	border-bottom: 5px solid #003232;
+}
 
 
 h3 {
