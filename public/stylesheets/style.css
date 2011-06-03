@@ -177,6 +177,7 @@ nav {
 	height: 35px;
 	display:block;
 	background-image: url('/images/media/kontakt.png');
+	z-index: 5;
 }
 
 #kontakt a {
