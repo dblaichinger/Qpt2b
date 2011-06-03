@@ -585,7 +585,7 @@ a:hover {
 
 #hb41 {
 	position: absolute;
-	top: 8%;
+	top: 5%;
 	right: -5%;
 	width: 50%;
 }
@@ -641,7 +641,7 @@ a:hover {
 #ib_41_03 {
 	position: absolute;
 	width: 40%;
-	bottom: 20%; 
+	bottom: 30%; 
 	left: -15%;
 }
 
@@ -655,7 +655,7 @@ a:hover {
 #ib_41_05 {
 	position: absolute;
 	width: 40%;
-	bottom: 20%;
+	bottom: 15%;
 	right: 0%;
 }
 
@@ -663,7 +663,7 @@ a:hover {
 	position: absolute;
 	width: 30%;
 	top: 75%;
-	right: 30%;
+	right: 50%;
 }
 /* ende content */
 	
