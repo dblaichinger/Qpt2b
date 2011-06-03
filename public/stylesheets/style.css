@@ -95,7 +95,7 @@ body {
 	background-image: url('/images/media/hg.png');
 	background-repeat: repeat;
 	height: 100%;
-	}
+}
 
 
 /* navigation */
@@ -112,7 +112,7 @@ nav {
 	background-size: 100%;
 	overflow: visible;
 	z-index:2;
-	}
+}
 
 #logo {
 	margin: 10px 7%;
@@ -121,15 +121,14 @@ nav {
 
 #logo img {
 	width: 100%;
-	}
-
+}
 
 #nav_haupt {
 	overflow: visible;
 	width: 112%;
 	margin-left:-6%;
 	margin-bottom: 10px;
-	}
+}
 
 #nav_haupt li{
 	color: #FFF;
@@ -140,20 +139,20 @@ nav {
 	text-align: center;
 	overflow:visible;
 	padding-bottom: 1px;
-	}
+}
 
 #nav_haupt a {
 	color: #FFF;
 	text-decoration:none;
 	overflow: visible;
 	display: block;
-	}
+}
 
 #nav_haupt a:hover, a:visited, a:active {
 	color: #fff;
 	text-decoration:none;
     font-family: 'TitilliumText22LBold', Verdana, Arial, sans-serif;
-	}
+}
 	
 #nav_haupt li.active {
     font-family: 'TitilliumText22LBold', Verdana, Arial, sans-serif;
@@ -201,23 +200,22 @@ nav {
 	width: 100%;
 	min-width: 1000px;
 	max-width: 1420px;
-	}
+}
 
 #content {
 	width: 72%;
 	margin-left: 22%;
 	position: relative;
-	outline: 1px solid blue;
 	z-index:1;
 	height: 100%;
 	display:block;
-	}
+}
 
 .step {
 	height:100%;
 	min-height:660px;
 	position:relative;
-	}
+}
 
 .headblase_schatten {
 	width:55%;
@@ -226,12 +224,12 @@ nav {
 	background-repeat:no-repeat;
 	background-size:100%;	
 	z-index:2;
-	}
+}
 
 .headblase_schatten img{
 	position: absolute;
 	right:0px;
-	}
+}
 
 .headblase div {
 	position:relative;
@@ -240,7 +238,7 @@ nav {
 
 .headblase {
 	width:92%;
-	}
+}
 	
 h1 {
     font-family: 'TitilliumText22LRegular', Verdana, sans-serif;
@@ -252,28 +250,28 @@ h1 {
 	text-align:center;
 	background-color:#ff6600;
 	padding:25px;
-	}
+}
 	
 .schatten_l {
 	background-image:url('/images/media/infoblase_l_schatten.png');
 	background-position: bottom left;
 	background-repeat:no-repeat;
 	background-size:100%;
-	}
+}
 	
 .schatten_m {
 	background-image:url('/images/media/infoblase_m_schatten.png');
 	background-position: bottom left;
 	background-repeat:no-repeat;
 	background-size:100%;
-	}
+}
 	
 .infoblase_l {
 	width: 75%; 
 	background-color: #fff;
 	padding:25px;
-	}
-
+}
+	
 .infoblase_m {
 	width: 80%;
 	background-color: #fff;
@@ -293,11 +291,13 @@ h2 {
 a {
 	color: #003232;
 	text-decoration: none;
-	}
+}
 
 a:hover {
 	color: #ff6600;
-	}
+}
+
+/* pfeil */
 
 .toScroll {
 	margin-left: 40%;
@@ -339,8 +339,7 @@ a:hover {
 	position: absolute;
 	right:10%;
 	top: 3%;
-	}
-
+}
 
 #ib_01_01 {
 	position: absolute;
@@ -367,7 +366,7 @@ a:hover {
 	top: 65%;
 	right: -2%;
 	width:64%;
-	}
+}
 	
 .praegeflaeche {
 	background-image: url('/images/media/praegeflaeche.png');
@@ -382,13 +381,13 @@ a:hover {
 
 #video {
 	top: 25%;
-	}
+}
 
 #hb02 {
 	position: absolute;
 	left:-5%;
 	top: 75%;
-	}
+}
 	
 
 #ib_02_01 {
@@ -462,7 +461,7 @@ a:hover {
 	text-transform: uppercase;
 	padding-top: 4px;
 	font-size: 10px;
-	}
+}
 
 			/* step5 */	
 
@@ -480,7 +479,6 @@ a:hover {
 	width:55%;
 }
 
-
 #formular {
 	width: 310px;
 	height: 360px;
@@ -490,14 +488,7 @@ a:hover {
 	top: 15%;
 	background-image:url('/images/media/praegeflaeche_formular.png');
 	background-repeat: no-repeat;
-	}
-		
-
-/*#form_info {
-	padding: 10px;
-	margin:10px 0 10px 0;
-	font-size:16px;
-	}*/
+}
 
 #pate_werden {
 	background-image: url('/images/media/pate_werden.png');
@@ -509,8 +500,8 @@ a:hover {
 	right: 20px;
 	bottom: 20px;
 	position: absolute;
-	}
-
+}
+	
 	/* ende pate werden */	
 
 	/* mitbestimmen */
@@ -520,8 +511,7 @@ a:hover {
 	top:60px;
 	right:-5%;
 	z-index:2000;
-	}
-
+}
 
 #ib_21_01 {
 	position: absolute;
@@ -539,7 +529,7 @@ a:hover {
 	right:-5%;
 	z-index:2000;
 	width: 30%;
-	}
+}
 
 #ib_22_01 {
 	position: absolute;
@@ -553,7 +543,7 @@ a:hover {
 	overflow: hidden;
 	position: relative;
 	top:120px;
-	}
+}
 
 #top_votes li {
 	list-style-type:none;
@@ -564,8 +554,7 @@ a:hover {
 	background-image: url('/images/media/praegeflaeche_ranking.png');
 	margin: 0 20px 20px 0;
 	position: relative;
-	}
-	
+}
 	
 .vote_button {
 	background-image: url('/images/media/vote.png');
@@ -691,26 +680,25 @@ a:hover {
 	top: 75%;
 	right: 50%;
 }
+
 /* ende content */
-	
 	
 /* footer */
 	
 footer {
 	background-color:#d9dadb;
-	outline: 1px solid red;
 	bottom:-400%;
 	height:100%;
 	min-height:660px;
 	position:relative;
-	}
+}
 	
 #zusammenarbeit {
 	top:50px;
 	margin-left: 22%;
 	width:72%;
 	position: absolute;
-	}
+}
 
 h3 {
     font-family: 'TitilliumText22LRegular', Verdana, sans-serif;
@@ -729,5 +717,5 @@ h3 {
 	background-repeat:no-repeat;
 	background-size:100%;
 	margin-top:30px;
-	}
+}
 
