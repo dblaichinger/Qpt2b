@@ -198,7 +198,8 @@ nav {
 	position:relative;
 	height: 100%;
 	width: 100%;
-
+	min-width: 1000px;
+	max-width: 1420px;
 	outline: 1px solid red;
 }
 
@@ -209,9 +210,7 @@ nav {
 	z-index:1;
 	height: 100%;
 	display:block;
-	min-width: 700px;
-	max-width: 1120px;
-	}
+}
 
 .step {
 	height:100%;
