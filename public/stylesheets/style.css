@@ -601,6 +601,7 @@ a:hover {
 	background-color:#ff6600;
 	padding:25px;
 	text-decoration: none;
+	display: block;
 }
 
 #hb41 a:hover {
@@ -608,7 +609,7 @@ a:hover {
 	text-decoration: none;
 }
 
-.name a {
+.name {
     font-family: 'TitilliumText22LRegular', Verdana, sans-serif;
 	font-size: 20px;
 	line-height:1.2em;
@@ -619,11 +620,51 @@ a:hover {
 	text-decoration: none;
 }
 
-.name a:hover {
+.name:hover {
 	text-decoration: none;
 	color: #ff6600;
 }
 
+#ib_41_01 {
+	position: absolute;
+	width: 20%;
+	top: 20%;
+}
+
+#ib_41_02 {
+	position: absolute;
+	width: 20%;
+	top: 25%;
+	right: 10%;
+}
+
+#ib_41_03 {
+	position: absolute;
+	width: 20%;
+	bottom: 20%; 
+	left: -5%;
+}
+
+#ib_41_04 {
+	position: absolute;
+	width: 20%;
+	top: 40%;
+	left: 40%;
+}
+
+#ib_41_05 {
+	position: absolute;
+	width: 20%;
+	bottom: 30%;
+	right: -8%;
+}
+
+#ib_41_06 {
+	position: absolute;
+	width: 20%;
+	top: 70%;
+	right: 25%;
+}
 /* ende content */
 	
 	
