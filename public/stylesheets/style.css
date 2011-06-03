@@ -259,6 +259,7 @@ h1 {
 	background-position: bottom left;
 	background-repeat:no-repeat;
 	background-size:100%;
+	overflow: visible;
 	}
 	
 .schatten_m {
@@ -266,6 +267,7 @@ h1 {
 	background-position: bottom left;
 	background-repeat:no-repeat;
 	background-size:100%;
+	overflow: visible;
 	}
 	
 .infoblase_l {
@@ -317,7 +319,7 @@ a:hover {
 }
 
 #pfeil_footer {
-	margin-left: 50%;
+	margin-left: 52%;
 	position:absolute;
 	bottom:10px;
 	clear: both,
@@ -700,6 +702,9 @@ footer {
 	background-color:#d9dadb;
 	outline: 1px solid red;
 	bottom:-400%;
+	height:100%;
+	min-height:660px;
+	position:relative;
 	}
 	
 #zusammenarbeit {
