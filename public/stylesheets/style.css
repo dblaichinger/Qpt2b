@@ -722,8 +722,7 @@ a:hover {
 }
 
 .admin {
-	position: absolute;
-	top: 40px;
+	padding-top: 40px;
 }
 
 h3 {
