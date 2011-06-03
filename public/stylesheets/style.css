@@ -681,6 +681,11 @@ a:hover {
 	right: 50%;
 }
 
+#sponsoren {
+	position: absolute;
+	top:120px;
+}
+
 #hb42 {
 	position: absolute;
 	top:8%;
@@ -693,13 +698,14 @@ a:hover {
 	left:-10%;
 	top:40%;
 	width: 25%;
+	z-index:2000;
 }
 
 #ib_42_02 {
 	position: absolute;
 	bottom: 5%;
 	right: -3%;
-	width:15%;
+	width:20%;
 }
 
 /* ende content */
