@@ -111,7 +111,7 @@ nav {
 	background-repeat: no-repeat;
 	background-size: 100%;
 	overflow: visible;
-	z-index:2;
+	z-index:5001;
 }
 
 #logo {
@@ -688,6 +688,7 @@ a:hover {
 	width:100%;
 	height:5px;
 	background-color: #003232;
+	z-index:5000;
 }
 
 h3 {
