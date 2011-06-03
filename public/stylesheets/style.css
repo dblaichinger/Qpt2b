@@ -587,7 +587,7 @@ a:hover {
 	position: absolute;
 	top: 8%;
 	right: -5%;
-	width: 30%;
+	width: 50%;
 }
 
 #hb41 a {
@@ -609,7 +609,7 @@ a:hover {
 	text-decoration: none;
 }
 
-.name {
+.name:link, .name:visited {
     font-family: 'TitilliumText22LRegular', Verdana, sans-serif;
 	font-size: 20px;
 	line-height:1.2em;
@@ -620,7 +620,7 @@ a:hover {
 	text-decoration: none;
 }
 
-.name:hover {
+.name:hover, .name:active {
 	text-decoration: none;
 	color: #ff6600;
 }
@@ -648,21 +648,21 @@ a:hover {
 #ib_41_04 {
 	position: absolute;
 	width: 40%;
-	top: 40%;
+	top: 45%;
 	left: 30%;
 }
 
 #ib_41_05 {
 	position: absolute;
 	width: 40%;
-	bottom: 30%;
+	bottom: 20%;
 	right: 5%;
 }
 
 #ib_41_06 {
 	position: absolute;
 	width: 30%;
-	top: 70%;
+	top: 75%;
 	right: 30%;
 }
 /* ende content */
