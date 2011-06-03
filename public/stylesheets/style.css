@@ -210,6 +210,7 @@ nav {
 	z-index:1;
 	height: 100%;
 	display:block;
+	border-bottom: 5px solid #003232;
 }
 
 .step {
@@ -684,8 +685,8 @@ a:hover {
 
 /* ende content */
 	
-#content:last-child {
-	border-bottom: 5px solid #003232;
+.border {
+	border-bottom: 20px solid #003232;
 }
 
 
