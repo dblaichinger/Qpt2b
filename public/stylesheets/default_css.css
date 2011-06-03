@@ -8,33 +8,33 @@ label {
 
 
 table.trashcan {
-	border-width: 1px;
-	border-spacing: 2px;
-	border-style: outset;
-	border-color: gray;
-	border-collapse: separate;
+	border: 1px solid #d9dadb;
 	background-color: white;
-	font-size: 60%;
-	font-family: Verdana, sans-serif;
+    font-family: 'TitilliumText22LRegular', Verdana, Arial, sans-serif;
 	width: 900px;
 	margin-bottom: 20px;
+	font-size: 11px;
 }
 
 table.trashcan th {
-	border-width: 1px;
-	padding: 3px;
-	border-style: inset;
-	border-color: gray;
-	background-color: white;
-}
-table.trashcan td {
-	border-width: 1px;
-	padding: 3px;
-	border-style: inset;
-	border-color: gray;
-	background-color: white;
+	border: 1px solid #d9dadb;
+	padding:5px;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-weight: normal;
+    font-family: 'TitilliumText22LBold', Verdana, Arial, sans-serif;
 }
 
+table.trashcan td {
+	border: 1px solid #d9dadb;
+	padding: 0 5px;
+	vertical-align: middle;
+}
+
+.gleichbreit {
+	width: 30px;
+	text-align: center;
+}
 
 #error_explanation {
   width: 400px;
@@ -69,24 +69,24 @@ table.trashcan td {
 /* -------------------------------------------- */
 /* EDITOR */
 #editorWrapper {
-	background:#cccccc;
 	overflow:hidden;
-	padding:1em;
-	width:620px;
+	width:660px;
 	font-size:0.8em;
 }
 
 #canvas {
-	background:#ffffff url("images/grid.png");
-	width:580px;
-	height:300px;
-	margin-bottom:1em;
+	background-color:#fff;
+	width:600px;
+	height:200px;
+	margin-bottom:10px;
 }
 
-.innerPadding { padding:0.5em; }
+.innerPadding { padding:5px; }
 
 #editorText, #editorInfo, #imageList {
-	width:180px; border:1px solid #FFFFFF; margin-right:1em;
+	width:210px; 
+	border:1px solid #FFFFFF; 
+	height:148px;
 }
 
 #editorText {
@@ -95,12 +95,14 @@ table.trashcan td {
 
 #editorInfo {
 	float:left;
+	margin-right: 10px;
 }
 
 
 #imageList {
 	overflow:hidden;
 	float:left;
+	margin-right: 10px;
 }
 
 .motiveIn { border:1px dotted #000000; }
@@ -127,12 +129,6 @@ table.trashcan td {
 
 /* -------------------------------------------- */
 
-#gmaps4rails_map {
-  	height: 445px;
-    left: -20px;
-    top: -114px;
-    width: 700px;
-}
 
 .flash {
     text-align: center;
@@ -161,11 +157,6 @@ table.trashcan td {
 .flash.warning {
     border: thin solid #b8860b;
     background: #ff0;
-}
-
-
-.admin {
-	margin-top: 30px;
 }
 
 .editform {

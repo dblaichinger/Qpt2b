@@ -1,32 +1,29 @@
   <section id="content">
     
-    	<div id="step1" class="step">
-        
-        	<h1> Voting </h1>
-         	<p> Lorem dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit 
-            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
-            <a href="#" class="toScroll" rel="step2">Schritt 2 >></a>
-           	<!--<div class="icons"> <img src="media/icons.png" alt="" title="" /> </div>-->
-            
-        </div>
-        
-        
-        <div id="step2" class="step">
-        	<h1> Mülleimer hinzufügen </h1>
-         	<p> Hier kannst Du sehen, welche öffentliche Mülleimer bereits einen Paten haben. Wähle einen noch freien Mülleimer aus </p>
-        	<div id="map">
+	<div id="step1" class="step">
+	
+         	<div class="headblase_schatten" id="hb21">
+        		<div class="headblase">
+        			<h1>Fehlende Mülleimer</h1>
+            		<div><img src="/images/media/headblase_spitz.png" /></div>
+            	</div>
+        	</div>
+         	<div class="schatten_l" id="ib_21_01">
+            	<div class="infoblase_l">
+					<p>Wenn du einen Mülleimer ausgewählt hast, kannst du ihn mit Hilfe des Editors individuell gestalten. Sobald du mit deinem Design zufrieden bist, klicke auf "Design übernehmen" und dein Entwurf wird automatisch im nachfolgenden Formular gespeichert.</p>
+            	</div>   
+            	<img src="/images/media/infoblase_spitz.png" />
+			</div>        	
+			<div id="map" class="praegeflaeche">
             	<div id="map_wahl">
-                	<input type="text" name="suche" size="50" />
-                    <input type="submit" name="abschicken" value="alle Mülleimer anzeigen"/>
-                    <input type="submit" name="abschicken" value=" Wunsch-Mülleimer anzeigen"/>
+                	<input type="text" name="suche" size="65" />
 				</div>
 
 				<%= gmaps("markers" => {"data" => @markers},"circles" => {"data" => @circles}, "map_options" => {"map_container_id" => "map_box", "auto_adjust" => "true"}) %>
 
 			
-				<div id="dialog" style="display:none" title="Neuer Mistkübel">
-				 <p>Willst du hier einen neuen Mistkübel fordern?</p>
+				<div id="dialog" style="display:none" title="Neuer M&uuml;lleimer">
+				 <p>Möchtest Du, dass hier ein neuer M&uuml;lleimer aufgestellt wird?</p>
 				 <form action="/demand/new" method="post">
 				   <input name="benutzerID" type="hidden" value="1" />
 				   <input name="weiterer_parameter" type="hidden" value="2" />
@@ -34,40 +31,36 @@
 				</div>
 
          </div>
-        	<a href="#" class="toScroll" rel="step3">Ranking >></a>
-           	<!--<div class="icons"> <img src="media/icons.png" alt="" title="" /> </div>-->
+            <a class="toScroll" rel="step2"></a>
             
         </div>
        
         
-    	<div id="step3" class="step">
+    	<div id="step2" class="step">
         
-        	<h1> Ranking </h1>
-         	<p> Hier findest du die am dringendsten benötigten Mistkübel. </p>
+         	<div class="headblase_schatten" id="hb22">
+        		<div class="headblase">
+        			<h1>Ranking</h1>
+            		<div><img src="/images/media/headblase_spitz.png" /></div>
+            	</div>
+        	</div>
+         	<div class="schatten_l" id="ib_22_01">
+            	<div class="infoblase_l">
+					<p>Hier siehst du, f&uuml;r welche Bereiche die meisten Stimmen abgegeben wurden. Außerdem hast du die Möglichkeit, diese Bereiche mit deiner Stimme zusätzlich zu unterst&uuml;tzen.</p>
+            	</div>   
+            	<img src="/images/media/infoblase_spitz.png" />
+			</div>        	
+          
           <ul id="top_votes">
           <% @top_demands.each do |demand| %>
             <li>
               <%= render :partial => 'top_vote_form', :locals => { :demand => demand } %>
             </li>
           <% end %>
-			<a href="#" class="toScroll" rel="step4">Info >></a>
-
-
-           	<!--<div class="icons"> <img src="media/icons.png" alt="" title="" /> </div>-->
-            
+          </ul>
+            <a class="toScroll" rel="step1" id="pfeil_oben"></a>
         </div>    
-        
-        
-   		<div id="step4" class="step">
-        
-        	<h1> Infografiken </h1>
-         	<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit 
-            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
-            <a class="toScroll" rel="step1">Seitenanfang>></a>
-           	<!--<div class="icons"> <img src="media/icons.png" alt="" title="" /> </div>-->
-            
-        </div>     
+    
         
     </section>
 

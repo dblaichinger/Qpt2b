@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= title %></title>
+  <title>TRASHCANNY | Mülleimer-Patenschaft</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   
-  <link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag :defaults %>
   <%= javascript_include_tag  'jquery.scrollTo-min', 'jquery.cookie', 'jquery-ui', 'jquery.reversegeocode.min', 'gears_init', 'jquery.class.min', 'editor' %>
   <%= csrf_meta_tag %>
@@ -30,18 +29,19 @@
 	        <% if controller?("pages") && action?("home")  %>
 	        <li class="active">
 	        <%else%><li><% end %>
-	        <%=link_to 'Patenschaft', pages_home_path %></li>
-	        
-	       	<% if controller?("pages") && action?("info")  %>
-	        <li class="active">
-	        <%else%><li><% end %>
-	        <%=link_to 'Information', pages_info_path %></li>
-	        
+	        <%=link_to 'Pate werden', pages_home_path %></li>
+	    
 	        <% if controller?("demands") && action?("index")  %>
 	        <li class="active">
 	        <%else%><li><% end %>
-	        <%= link_to 'Voting', demands_path %></li>
+	        <%= link_to 'Mitbestimmen', demands_path %></li>
+
+	       	<% if controller?("pages") && action?("info")  %>
+	        <li class="active">
+	        <%else%><li><% end %>
+	        <%=link_to 'Bildergalerie', pages_info_path %></li>
 	        
+	        <!--
 	        <% if controller?("admins") && action?("index") %>
 	        <li class="active">
 	        <% elsif controller?("trashcans") && action?("edit") %>
@@ -50,20 +50,22 @@
 	        <li class="active">
 	        <%else%><li><% end %>
 	        <%=link_to '(Admin)', admins_path  %> </li>
-	    </ul>
-	        
-	    <ul id="nav_klein">
-	        <li><%=link_to 'Kontakt', pages_home_path %></li>
-	        <li>|</li>
-	        <li> <%=link_to 'FAQs', pages_home_path %> </li>
-	   </ul>
-	</nav>
+	        -->
 
+	    </ul>
+
+	</nav>
+	
+	<div id="kontakt">
+		<%=link_to '', {:controller => "pages", :action => "contact"} %>
+	</div>
+
+	<div id="border_top"></div>
 
 <%= yield %>
 <%= yield :scripts %>
 
-</div>
+<!-- brauchen wir nicht mehr, da footer nicht mehr wirklich vorhanden
 
 	<% 	if(( !controller?("admins") && !action?("edit") ) and ( !controller?("trashcans") && !action?("index") )) %>
 		<%= render 'layouts/footer' %> 
@@ -71,7 +73,9 @@
 	<% 	if controller?("demands") && !action?("edit") %>
 		<%= render 'layouts/footer' %> 
 	 <% end %>
+-->
 
+</div>
 
 </body>
 </html>

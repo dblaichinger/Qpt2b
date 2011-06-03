@@ -2,7 +2,7 @@
     
 
         
-        	<h1 class="admin"> Vorhandene Mülleimer </h1>
+        	<h3 class="admin"> Vorhandene Mülleimer </h3>
 
         	<%if @trashcans != [] %>
 				<table class="trashcan">
@@ -22,12 +22,12 @@
 				
 					<% @trashcans.each do |trashcan| %>
 					<tr>
-						<td><%= link_to image_tag("/images/delete.png"), trashcan, :method => :delete, 
+						<td class="gleichbreit"><%= link_to image_tag("/images/delete.png"), trashcan, :method => :delete, 
 						 	:confirm => "Attention:\nAre you sure to delete trashcan?", :title => "Delete #{trashcan.address}"
 							%>
 						</td>
-						<td><%= link_to image_tag("/images/edit.png"), edit_trashcan_path(trashcan) %></td>
-						<td><%= trashcan.id %></td>
+						<td class="gleichbreit"><%= link_to image_tag("/images/edit.png"), edit_trashcan_path(trashcan) %></td>
+						<td class="gleichbreit"><%= trashcan.id %></td>
 						<td><%= trashcan.address %></td>
 						<td><%= trashcan.latitude %></td>
 						<td><%= trashcan.longitude %></td>
@@ -44,7 +44,7 @@
 			
 
 
-	<h1 class="admin">Voting</h1>
+	<h3 class="admin">Neue Mülleimer</h3>
 <%if @demands != [] %>
 	<table class="trashcan">
 		<tr>
@@ -60,12 +60,12 @@
 
 		<% @demands.each do |demand| %>
 		<tr>
-			<td><%= link_to image_tag("../images/delete.png"), demand, :method => :delete, 
+			<td class="gleichbreit"><%= link_to image_tag("../images/delete.png"), demand, :method => :delete, 
 			 	:confirm => "Attention:\nAre you sure to delete this demand?", :title => "Delete #{demand.address}"
 				%>
 			</td>
-			<td><%= link_to image_tag("../images/edit.png"), edit_demand_path(demand) %></td>
-			<td><%= demand.id %></td>
+			<td class="gleichbreit"><%= link_to image_tag("../images/edit.png"), edit_demand_path(demand) %></td>
+			<td class="gleichbreit"><%= demand.id %></td>
 			<td><%= demand.address %></td>
 			<td><%= demand.latitude %></td>
 			<td><%= demand.longitude %></td>
