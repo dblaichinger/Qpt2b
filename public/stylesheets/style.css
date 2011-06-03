@@ -689,7 +689,7 @@ a:hover {
 #hb42 {
 	position: absolute;
 	top:8%;
-	width:40%;
+	width:50%;
 	right:-5%;
 }
 
@@ -706,6 +706,7 @@ a:hover {
 	bottom: 5%;
 	right: -3%;
 	width:20%;
+	z-index:2000;
 }
 
 /* ende content */
