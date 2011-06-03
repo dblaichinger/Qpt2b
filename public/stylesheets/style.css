@@ -702,7 +702,6 @@ footer {
 	display:block;
 	outline: 1px solid red;
 	position: relative;
-	bottom: -400%;
 	min-height:660px;
 	}
 	
