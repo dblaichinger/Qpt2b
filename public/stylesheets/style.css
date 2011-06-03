@@ -304,8 +304,9 @@ a:hover {
 	position:absolute;
 	bottom:10px;
 	clear: both,
-	float: none;
 	display:block;
+	width: 37px;
+	height:32px;
 	background-image: url('/images/media/pfeil.png');
 	background-repeat: no-repeat;
 }
@@ -320,8 +321,9 @@ a:hover {
 	position:absolute;
 	bottom:10px;
 	clear: both,
-	float: none;
 	display:block;
+	width: 37px;
+	height:32px;
 	background-image: url('/images/media/pfeil_o.png');
 	background-repeat: no-repeat;
 }
