@@ -316,7 +316,7 @@ a:hover {
 	background-repeat: no-repeat;
 }
 
-#zusammenarbeit .toScroll {
+#pfeil_footer {
 	margin-left: 40%;
 	position:absolute;
 	bottom:10px;
@@ -328,7 +328,7 @@ a:hover {
 	background-repeat: no-repeat;
 }
 
-#zusammenarbeit .toScroll:hover {
+#pfeil_footer:hover {
 	background-image: url('/images/media/pfeil_o_hover.png');
 	background-repeat: no-repeat;
 }
@@ -697,12 +697,8 @@ a:hover {
 /* footer */
 	
 footer {
-	height: 100%;
 	background-color:#d9dadb;
-	display:block;
 	outline: 1px solid red;
-	position: relative;
-	min-height:660px;
 	}
 	
 #zusammenarbeit {
