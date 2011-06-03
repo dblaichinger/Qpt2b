@@ -587,6 +587,7 @@ a:hover {
 	position: absolute;
 	top: 8%;
 	right: -5%;
+	width: 30%;
 }
 
 #hb41 a {
@@ -603,8 +604,24 @@ a:hover {
 }
 
 #hb41 a:hover {
-	color: #003232;
+	color: #d9dadb;
 	text-decoration: none;
+}
+
+.name a {
+    font-family: 'TitilliumText22LRegular', Verdana, sans-serif;
+	font-size: 20px;
+	line-height:1.2em;
+	color: #ddd;
+	margin: 0 0 10px 0;
+	text-transform:uppercase;
+	text-shadow: -1px -1px #999, 1px 1px #fff;	
+	text-decoration: none;
+}
+
+.name a:hover {
+	text-decoration: none;
+	color: #ff6600;
 }
 
 /* ende content */
