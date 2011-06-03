@@ -689,8 +689,11 @@ a:hover {
 	height:5px;
 	background-color: #003232;
 }
-.border {
-	border-bottom: 20px solid #003232;
+
+#border_bottom {
+	height:20px;
+	width:100%;
+	background-color: #003232;
 }
 
 
