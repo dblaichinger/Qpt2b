@@ -317,8 +317,8 @@ a:hover {
 	background-repeat: no-repeat;
 }
 
-#pfeil_footer {
-	margin-left: 52%;
+#pfeil_oben {
+	margin-left: 40%;
 	position:absolute;
 	bottom:10px;
 	clear: both,
@@ -329,7 +329,7 @@ a:hover {
 	background-repeat: no-repeat;
 }
 
-#pfeil_footer:hover {
+#pfeil_oben:hover {
 	background-image: url('/images/media/pfeil_o_hover.png');
 	background-repeat: no-repeat;
 }
@@ -685,21 +685,7 @@ a:hover {
 /* ende content */
 	
 /* footer */
-/*	
-footer {
-	height:100%;
-	min-height:660px;
-	position:relative;
-	width:100%;
-	overflow:visible;
-	outline: 1px solid green;
-}*/
-	
-#zusammenarbeit {
-	top:50px;
-	width:72%;
-	position: absolute;
-}
+
 
 h3 {
     font-family: 'TitilliumText22LRegular', Verdana, sans-serif;
