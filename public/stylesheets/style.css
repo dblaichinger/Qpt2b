@@ -681,6 +681,27 @@ a:hover {
 	right: 50%;
 }
 
+#hb42 {
+	position: absolute;
+	top:8%;
+	width:40%;
+	right:-5%;
+}
+
+#ib_42_01 {
+	position: absolute;
+	left:-10%;
+	top:40%;
+	width: 25%;
+}
+
+#ib_42_02 {
+	position: absolute;
+	bottom: 5%;
+	right: -3%;
+	width:15%;
+}
+
 /* ende content */
 	
 #border_top {
