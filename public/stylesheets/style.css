@@ -305,8 +305,8 @@ a:hover {
 	bottom:10px;
 	clear: both,
 	display:block;
-	width: 37px;
-	height:32px;
+	width: 23px;
+	height:20px;
 	background-image: url('/images/media/pfeil.png');
 	background-repeat: no-repeat;
 }
@@ -322,8 +322,8 @@ a:hover {
 	bottom:10px;
 	clear: both,
 	display:block;
-	width: 37px;
-	height:32px;
+	width: 23px;
+	height:20px;
 	background-image: url('/images/media/pfeil_o.png');
 	background-repeat: no-repeat;
 }
