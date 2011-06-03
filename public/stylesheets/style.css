@@ -317,7 +317,7 @@ a:hover {
 }
 
 #pfeil_footer {
-	margin-left: 40%;
+	margin-left: 50%;
 	position:absolute;
 	bottom:10px;
 	clear: both,
@@ -699,6 +699,7 @@ a:hover {
 footer {
 	background-color:#d9dadb;
 	outline: 1px solid red;
+	bottom:-400%;
 	}
 	
 #zusammenarbeit {
