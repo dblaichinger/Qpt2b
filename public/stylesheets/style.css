@@ -721,6 +721,11 @@ a:hover {
 	z-index:5000;
 }
 
+.admin {
+	position: absolute;
+	top: 40px;
+}
+
 h3 {
     font-family: 'TitilliumText22LRegular', Verdana, sans-serif;
 	font-size: 20px;
