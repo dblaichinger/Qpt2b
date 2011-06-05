@@ -524,8 +524,13 @@ a:hover {
 }
 
 #ib_21_01 img {
-	width: 10px;
-	height: 10px;
+	width: 12px;
+	height: 12px;
+}
+
+#ib_21_01 img+img {
+	width: 16px;
+	height: 16px;
 }
 
 			/* step 2 */
