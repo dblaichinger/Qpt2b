@@ -528,9 +528,10 @@ a:hover {
 	height: 12px;
 	vertical-align: -2px;
 
-.l_gr {
+.legende_gr {
 	width: 17px;
 	height: 17px;
+	vertical-align: -2px;
 }
 
 			/* step 2 */
