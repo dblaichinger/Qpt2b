@@ -523,12 +523,12 @@ a:hover {
 	z-index:2000;
 }
 
-#ib_21_01 img {
+legende {
 	width: 12px;
 	height: 12px;
 	vertical-align: -2px;
 
-#ib_21_01 img+img {
+.legende+.legende {
 	width: 16px;
 	height: 16px;
 }
