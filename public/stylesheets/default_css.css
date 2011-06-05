@@ -34,7 +34,10 @@ table.trashcan td {
 .gleichbreit {
 	width: 30px;
 	text-align: center;
-	padding-top: 2px;
+}
+
+.gleichbreit img {
+	margin-top: 2px;
 }
 
 #error_explanation {
