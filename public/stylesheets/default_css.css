@@ -135,10 +135,11 @@ table.trashcan td {
     padding:    .3em .4em;
     margin:      0 auto .5em;
     clear:       both;
+    width:25%;
     max-width:  46.923em;
     position: absolute;
     top: 5px;
-    left: 25%;
+    left: 22%;
 
 }
 
