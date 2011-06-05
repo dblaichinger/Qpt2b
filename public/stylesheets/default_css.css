@@ -41,8 +41,8 @@ table.trashcan td {
   border: 2px solid red;
   padding: 7px;
   padding-bottom: 12px;
+  margin-bottom: 20px;
   background-color: #f0f0f0;
-  position: relative;
 }
 
 #error_explanation h2 {
@@ -136,6 +136,8 @@ table.trashcan td {
     margin:      0 auto .5em;
     clear:       both;
     max-width:  46.923em;
+    position: absolute;
+    top: 0px;
 
 }
 
