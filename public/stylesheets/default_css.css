@@ -137,7 +137,8 @@ table.trashcan td {
     clear:       both;
     max-width:  46.923em;
     position: absolute;
-    top: 0px;
+    top: 5px;
+    left: 25%;
 
 }
 
