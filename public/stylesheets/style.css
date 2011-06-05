@@ -523,14 +523,14 @@ a:hover {
 	z-index:2000;
 }
 
-legende {
+.legende {
 	width: 12px;
 	height: 12px;
 	vertical-align: -2px;
 
 .legende+.legende {
-	width: 16px;
-	height: 16px;
+	width: 15px;
+	height: 15px;
 }
 
 			/* step 2 */
