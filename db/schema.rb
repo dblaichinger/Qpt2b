@@ -10,13 +10,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110511195109) do
+ActiveRecord::Schema.define(:version => 20110606100239) do
 
   create_table "demands", :force => true do |t|
     t.integer  "counter"
     t.float    "longitude"
     t.float    "latitude"
     t.string   "address"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "radius"
+  end
+
+  create_table "designs", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "image_path"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -39,7 +47,7 @@ ActiveRecord::Schema.define(:version => 20110511195109) do
     t.float    "latitude"
     t.float    "longitude"
     t.boolean  "is_free"
-    t.datetime "adopted_until"
+    t.date     "adopted_until"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

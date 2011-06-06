@@ -8,14 +8,12 @@ Meps::Application.routes.draw do
   get "pages/info"
   get "pages/vote"
 
-
-
   devise_for :users
   resources :orders
   resources :users
   resources :admins
   resources :trashcans
-
+  resources :designs
   resources :demands
 
   root :to => "pages#home"
