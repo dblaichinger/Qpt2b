@@ -21,8 +21,16 @@ class Trashcan < ActiveRecord::Base
   include MarkerModule
 
   def gmaps4rails_marker_picture
+    pic_path = ""
+
+    if self.is_free
+      pic_path = "/images/icon_frei.png"
+    else
+      pic_path = "/images/icon_pate.png"
+    end
+
    {
-    "picture" => "/images/trash.png",
+    "picture" => pic_path,
     "width" => "128",
     "height" => "128"
    }
