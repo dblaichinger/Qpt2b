@@ -36,6 +36,10 @@ table.trashcan td {
 	text-align: center;
 }
 
+.gleichbreit img {
+	margin-top: 3px;
+}
+
 #error_explanation {
   width: 400px;
   border: 2px solid red;
@@ -135,7 +139,11 @@ table.trashcan td {
     padding:    .3em .4em;
     margin:      0 auto .5em;
     clear:       both;
+    width:25%;
     max-width:  46.923em;
+    position: absolute;
+    top: 5px;
+    left: 22%;
 
 }
 
