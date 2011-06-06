@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110511195109) do
+ActiveRecord::Schema.define(:version => 20110606120557) do
 
   create_table "demands", :force => true do |t|
     t.integer  "counter"
@@ -19,11 +19,19 @@ ActiveRecord::Schema.define(:version => 20110511195109) do
     t.string   "address"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "radius"
+  end
+
+  create_table "designs", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "image_path"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "orders", :force => true do |t|
     t.integer  "trashcan_id"
-    t.integer  "owner_id"
+    t.integer  "user_id"
     t.string   "code"
     t.integer  "design_id"
     t.datetime "created_at"
@@ -31,15 +39,15 @@ ActiveRecord::Schema.define(:version => 20110511195109) do
   end
 
   add_index "orders", ["design_id"], :name => "index_orders_on_design_id"
-  add_index "orders", ["owner_id"], :name => "index_orders_on_owner_id"
   add_index "orders", ["trashcan_id"], :name => "index_orders_on_trashcan_id"
+  add_index "orders", ["user_id"], :name => "index_orders_on_owner_id"
 
   create_table "trashcans", :force => true do |t|
     t.string   "address"
     t.float    "latitude"
     t.float    "longitude"
     t.boolean  "is_free"
-    t.datetime "adopted_until"
+    t.date     "adopted_until"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

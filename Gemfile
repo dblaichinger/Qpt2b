@@ -8,6 +8,7 @@ gem 'gmaps4rails'
 gem 'jquery-rails'
 gem 'annotate-models'
 gem 'json_pure'
+gem "mini_magick", "~> 3.3"
 
 group :test do
   gem 'machinist'

@@ -23,7 +23,7 @@
                 	<input type="text" name="suche" size="65" />
 				</div>
 
-				<%= gmaps("markers" => {"data" => @markers},"circles" => {"data" => @circles}, "map_options" => {"map_container_id" => "map_box", "auto_adjust" => "true"}) %>
+				<%= gmaps("markers" => {"data" => @markers},"circles" => {"data" => @circles}, "map_options" => {"map_container_id" => "map_box", "auto_adjust" => "true", "detect_location" => true, "center_on_user" => true, "custom_infowindow_class" => "yellow" }) %>
 
 			
 				<div id="dialog" style="display:none" title="Neuer M&uuml;lleimer">

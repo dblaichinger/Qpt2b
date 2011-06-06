@@ -4,7 +4,8 @@ class DemandsController < ApplicationController
   
 def index
     @title = "Vote"
-    @markers = Demand.all.to_gmaps4rails
+    markers = Demand.all | Trashcan.all
+    @markers =  markers.to_gmaps4rails
     @top_demands = Demand.find(:all, :order => 'counter DESC', :limit => 6)
     @circles = Demand.all.map{|d| {:longitude => d.longitude, :latitude => d.latitude, :radius => d.radius}}.to_json
   end

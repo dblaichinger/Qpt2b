@@ -15,8 +15,9 @@ end
 
 def update
 	 @trashcan = Trashcan.find(params[:id])
-    if params[:is_free] 
-      params[:adopted_until] = nil
+    if params[:trashcan][:is_free] == "1"
+      puts "in"
+      params[:trashcan][:adopted_until] = nil
     end
 
     if @trashcan.update_attributes(params[:trashcan])
