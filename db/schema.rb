@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110606100239) do
+ActiveRecord::Schema.define(:version => 20110606120557) do
 
   create_table "demands", :force => true do |t|
     t.integer  "counter"
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(:version => 20110606100239) do
 
   create_table "orders", :force => true do |t|
     t.integer  "trashcan_id"
-    t.integer  "owner_id"
+    t.integer  "user_id"
     t.string   "code"
     t.integer  "design_id"
     t.datetime "created_at"
@@ -39,8 +39,8 @@ ActiveRecord::Schema.define(:version => 20110606100239) do
   end
 
   add_index "orders", ["design_id"], :name => "index_orders_on_design_id"
-  add_index "orders", ["owner_id"], :name => "index_orders_on_owner_id"
   add_index "orders", ["trashcan_id"], :name => "index_orders_on_trashcan_id"
+  add_index "orders", ["user_id"], :name => "index_orders_on_owner_id"
 
   create_table "trashcans", :force => true do |t|
     t.string   "address"
