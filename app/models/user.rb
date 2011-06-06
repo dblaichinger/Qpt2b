@@ -42,7 +42,7 @@ class User < ActiveRecord::Base
     :uniqueness => { :case_sensitive => false }
 
   validates :name, :presence => true, :length => {:within => 3..100}
-  validates :street, :presence => true
-  validates :city, :presence => true
+  #validates :street, :presence => true
+  #validates :city, :presence => true
 
 end
