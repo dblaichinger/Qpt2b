@@ -226,11 +226,10 @@ nav {
 }
 
 .pfeiltext {
-    font-family: 'TitilliumText22LRegular', Verdana, Arial, sans-serif;
 	color: #003232;
 	position: absolute;
-	margin-left: 43%;
-	bottom: 15px;
+	margin-left: 45%;
+	bottom: 12px;
 }
 
 /* navigation ende */
