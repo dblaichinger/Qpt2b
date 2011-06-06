@@ -189,6 +189,50 @@ nav {
 	background-image: url('/images/media/kontakt_hover.png');
 }
 
+/* pfeil */
+
+.toScroll {
+	margin-left: 40%;
+	position:absolute;
+	bottom:10px;
+	clear: both,
+	display:block;
+	width: 23px;
+	height:20px;
+	background-image: url('/images/media/pfeil.png');
+	background-repeat: no-repeat;
+}
+
+.toScroll:hover {
+	background-image: url('/images/media/pfeil_hover.png');
+	background-repeat: no-repeat;
+}
+
+#pfeil_oben {
+	margin-left: 40%;
+	position:absolute;
+	bottom:10px;
+	clear: both,
+	display:block;
+	width: 23px;
+	height:20px;
+	background-image: url('/images/media/pfeil_o.png');
+	background-repeat: no-repeat;
+}
+
+#pfeil_oben:hover {
+	background-image: url('/images/media/pfeil_o_hover.png');
+	background-repeat: no-repeat;
+}
+
+.pfeiltext {
+    font-family: 'TitilliumText22LRegular', Verdana, Arial, sans-serif;
+	color: #003232;
+	position: absolute;
+	margin-left: 43%;
+	bottom: 15px;
+}
+
 /* navigation ende */
 
 
@@ -299,41 +343,6 @@ a:hover {
 	color: #ff6600;
 }
 
-/* pfeil */
-
-.toScroll {
-	margin-left: 40%;
-	position:absolute;
-	bottom:10px;
-	clear: both,
-	display:block;
-	width: 23px;
-	height:20px;
-	background-image: url('/images/media/pfeil.png');
-	background-repeat: no-repeat;
-}
-
-.toScroll:hover {
-	background-image: url('/images/media/pfeil_hover.png');
-	background-repeat: no-repeat;
-}
-
-#pfeil_oben {
-	margin-left: 40%;
-	position:absolute;
-	bottom:10px;
-	clear: both,
-	display:block;
-	width: 23px;
-	height:20px;
-	background-image: url('/images/media/pfeil_o.png');
-	background-repeat: no-repeat;
-}
-
-#pfeil_oben:hover {
-	background-image: url('/images/media/pfeil_o_hover.png');
-	background-repeat: no-repeat;
-}
 
 	/* pate werden */
 	
