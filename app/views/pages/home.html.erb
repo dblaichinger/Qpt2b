@@ -40,7 +40,7 @@
             	</div>   
             	<img src="/images/media/infoblase_spitz.png" />
             </div> 
-            
+            <p class="pfeiltext">Klicke auf den Pfeil und Du gelangst zum nächsten Schritt.</p>
             <a class="toScroll" rel="step2"></a>
         </div>
 
@@ -48,7 +48,7 @@
         	<div id="video" class="praegeflaeche"><iframe src="http://player.vimeo.com/video/20701329?portrait=0&color=ffffff" width="660" height="358"></iframe></div>
          	<div class="schatten_l" id="ib_02_01">
             	<div class="infoblase_l">
-         			<p>Du bist Dir noch nicht ganz sicher, was das Ganze soll? In diesem Video erhälst du nochmal eine kurze Zusammenfassung aller wichtigen Informationen.</p>
+         			<p>Du bist Dir noch nicht ganz sicher, was das Ganze soll? In diesem Video erhälst Du nochmal eine kurze Zusammenfassung aller wichtigen Informationen.</p>
             	</div>   
             	<img src="/images/media/infoblase_spitz.png" />
             </div> 
@@ -64,7 +64,7 @@
         	</div>         	
          	<div class="schatten_l" id="ib_03_01">
             	<div class="infoblase_l">
-                     <p>In dieser Karte sind alle öffentlichen M&uuml;lleimer eingezeichnet. Wenn du Pate werden willst, wähle einen noch freien M&uuml;lleimer <img src="/images/icons_buttons/icon_frei_legende.png" class="legende" /> aus. Jene M&uuml;lleimer, die bereits einen Paten haben, sind mit einem Herz in der Mitte gekennzeichnet. <img src="/images/icons_buttons/icon_pate_legende.png" class="legende" /></p>
+                     <p>In dieser Karte sind alle öffentlichen M&uuml;lleimer eingezeichnet. Wenn Du Pate werden willst, wähle einen noch freien M&uuml;lleimer <img src="/images/media/icon_frei_legende.png" class="legende" /> aus. Jene M&uuml;lleimer, die bereits einen Paten haben, sind mit einem Herz in der Mitte gekennzeichnet. <img src="/images/media/icon_pate_legende.png" class="legende" /></p>
             	</div>   
             	<img src="/images/media/infoblase_spitz.png" />
 			</div>
@@ -93,7 +93,7 @@
         	</div>         	
          	<div class="schatten_l" id="ib_04_01">
             	<div class="infoblase_l">
-					<p>Wenn du einen Mülleimer ausgewählt hast, kannst du ihn mit Hilfe des Editors individuell gestalten. Sobald du mit deinem Design zufrieden bist, klicke auf "Design übernehmen" und dein Entwurf wird automatisch im nachfolgenden Formular gespeichert.</p>
+					<p>Wenn Du einen Mülleimer ausgewählt hast, kannst Du ihn mit Hilfe des Editors individuell gestalten. Sobald Du mit Deinem Design zufrieden bist, klicke auf "Design übernehmen" und Dein Entwurf wird automatisch im nachfolgenden Formular gespeichert.</p>
             	</div>   
             	<img src="/images/media/infoblase_spitz.png" />
 			</div>
@@ -114,35 +114,31 @@
         	</div>         	
          	<div class="schatten_l" id="ib_05_01">
             	<div class="infoblase_l">
-				<p>Wenn du nun alle Schritte erledigt hast und eine Patenschaft übernehmen willst, musst du nur noch das Formular ausf&uuml;llen und "Pate werden". Schon bald wird dein Wunschdesign auf dem von dir ausgewählten M&uuml;lleimer zu bewundern sein. Yeah!</p>
+				<p>Wenn Du nun alle Schritte erledigt hast und eine Patenschaft übernehmen willst, musst Du nur noch das Formular ausf&uuml;llen und "Pate werden". Schon bald wird Dein Wunschdesign auf dem von Dir ausgewählten M&uuml;lleimer zu bewundern sein. Yeah!</p>
             	</div>   
             	<img src="/images/media/infoblase_spitz.png" />
 			</div>
             <div id="formular">
-				 <%= form_for @user, :url => orders_path do |f| %>
+				 <%= form_for @order do |f| %>
 					  <%= render 'shared/error_messages', :object => f.object %>
 
-					<%= f.fields_for :orders do |t| %>
-						<%= t.label :design_id %>
-						<%= t.text_field :design_id  %>
-						<%= t.label "TrashcanID" %>
-						<%= t.text_field :trashcan_id %>
-					<% end %>
-
-					<%= f.label :name %>
-					<%= f.text_field :name %>
 					
-					<%= f.label :email %>
-					<%= f.text_field :email %>
+					<%= f.label :design_id %>
+					<%= f.text_field :design_id  %>
+					<%= f.label "TrashcanID" %>
+					<%= f.text_field :trashcan_id %>
+					
+                    <%= f.fields_for :user do |t| %>
+					   <%= t.label :name %>
+					   <%= t.text_field :name %>
+					
+					   <%= t.label :email %>
+					   <%= t.text_field :email %>
+                    <% end %>
 
-<!-- unnötig, weg damit
+                    <span id="isDesignSet"><img src="/images/icons_buttons/icon_frei_legende.png" /> Design ausgewaehlt</span>
+                    <span id="isTrashcanSet"><img src="/images/icons_buttons/icon_pate_legende.png" /> Muelleimer uebernommen</span>
 
-					<%= f.label "Strasse:" %>
-					<%= f.text_field :street %>
-
-					<%= f.label "Stadt:" %>
-					<%= f.text_field :city %>
--->
 					<%= f.submit "", :id => "pate_werden" %>
 				<% end %>
             </div>
