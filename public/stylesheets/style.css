@@ -382,7 +382,8 @@ a:hover {
 	background-image: url('/images/media/praegeflaeche.png');
 	background-repeat: no-repeat;
 	width: 660px;
-	height: 358px;
+	min-height: 358px;
+	overflow:hidden;
 	padding: 20px;
 	position: absolute;
 }
