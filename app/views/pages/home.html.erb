@@ -119,30 +119,26 @@
             	<img src="/images/media/infoblase_spitz.png" />
 			</div>
             <div id="formular">
-				 <%= form_for @user, :url => orders_path do |f| %>
+				 <%= form_for @order do |f| %>
 					  <%= render 'shared/error_messages', :object => f.object %>
 
-					<%= f.fields_for :orders do |t| %>
-						<%= t.label :design_id %>
-						<%= t.text_field :design_id  %>
-						<%= t.label "TrashcanID" %>
-						<%= t.text_field :trashcan_id %>
-					<% end %>
-
-					<%= f.label :name %>
-					<%= f.text_field :name %>
 					
-					<%= f.label :email %>
-					<%= f.text_field :email %>
+					<%= f.label :design_id %>
+					<%= f.text_field :design_id  %>
+					<%= f.label "TrashcanID" %>
+					<%= f.text_field :trashcan_id %>
+					
+                    <%= f.fields_for :user do |t| %>
+					   <%= t.label :name %>
+					   <%= t.text_field :name %>
+					
+					   <%= t.label :email %>
+					   <%= t.text_field :email %>
+                    <% end %>
 
-<!-- unnötig, weg damit
+                    <span id="isDesignSet"><img src="/images/icons_buttons/icon_frei_legende.png" /> Design ausgewaehlt</span>
+                    <span id="isTrashcanSet"><img src="/images/icons_buttons/icon_pate_legende.png" /> Muelleimer uebernommen</span>
 
-					<%= f.label "Strasse:" %>
-					<%= f.text_field :street %>
-
-					<%= f.label "Stadt:" %>
-					<%= f.text_field :city %>
--->
 					<%= f.submit "", :id => "pate_werden" %>
 				<% end %>
             </div>

@@ -8,6 +8,9 @@
 
 $(document).ready(function() { 
 
+  $("#isDesignSet").hide();
+  $("#isTrashcanSet").hide();
+
 	// Scrolling
 	// Example: <span class="toScroll" rel="target.id">Some text</span>
 	$(".toScroll").click(function() {
@@ -92,6 +95,7 @@ var GeoTool = function() {
 function setTrashcanId(val) {
 	$("#user_orders_attributes_0_trashcan_id").val( val );
 	$.scrollTo("#step4", 2000);
+  $("#isTrashcanSet").show();
 }
 
 // --------------------------------------------------
