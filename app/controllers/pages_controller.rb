@@ -3,9 +3,10 @@ class PagesController < ApplicationController
   	@title = "Home"
   	#@user = User.new
   	#<%= form_for @order, :url => orders_path do |f| %>
-  	@order = Order.new
-  	@order.build_user
-  	#order = @user.orders.build
+  	@user = User.new
+  	#@order.build_user
+  	@order = @user.orders.build
+  
     @markers = Trashcan.all.to_gmaps4rails
   end
 

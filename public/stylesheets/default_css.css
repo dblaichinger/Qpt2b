@@ -72,25 +72,26 @@ table.trashcan td {
 
 /* -------------------------------------------- */
 /* EDITOR */
+/* --- EDITOR --- */
+
 #editorWrapper {
+	background:#cccccc;
 	overflow:hidden;
-	width:660px;
-	font-size:0.8em;
+	padding:1em;
+	width:620px;
 }
 
 #canvas {
-	background-color:#fff;
-	width:600px;
-	height:200px;
-	margin-bottom:10px;
+	background:#FFFFFF;
+	width:580px;
+	height:300px;
+	margin-bottom:1em;
 }
 
-.innerPadding { padding:5px; }
+.innerPadding { padding:0.5em; }
 
 #editorText, #editorInfo, #imageList {
-	width:210px; 
-	border:1px solid #FFFFFF; 
-	height:148px;
+	width:180px; border:1px solid #FFFFFF; margin-right:1em;
 }
 
 #editorText {
@@ -99,20 +100,19 @@ table.trashcan td {
 
 #editorInfo {
 	float:left;
-	margin-right: 10px;
 }
 
 
 #imageList {
 	overflow:hidden;
 	float:left;
-	margin-right: 10px;
 }
 
-.motiveIn { border:1px dotted #000000; }
-.motiv { cursor:pointer; margin-left:4px; width:30px; height:30px;}
+.motivIn { border:1px dotted #000000; }
+.motiv { cursor:pointer; margin-left:4px; height:30px; width:30px; }
 
-.textField, .motiveIn {
+.motivIn :hover { background:#CCCCCC; }
+.textField, .motivIn {
 	cursor:move;	
 }
 
@@ -128,6 +128,12 @@ table.trashcan td {
 
 #editorWrapper input {
 	background:#003232; color:#FFFFFF;
+}
+
+.textIn {
+	background:none;
+	color: #333333;
+	border:1px dotted #000000; 
 }
 
 

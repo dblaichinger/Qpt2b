@@ -34,7 +34,8 @@ class User < ActiveRecord::Base
 
   ##has_many :orders, :dependent => :destroy
   
-  belongs_to :order
+  has_many :orders
+  accepts_nested_attributes_for :orders
 
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
