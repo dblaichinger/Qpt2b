@@ -9,9 +9,10 @@ class SlideHomeTest < ActionDispatch::IntegrationTest
     Demand.create(:address => "Urstein Süd 1, Puch b. Hallein", :counter => 5, :radius => 50)
     visit demands_path
     id = Demand.last.id
+    
     find(:css, "#" + id.to_s).click
-  
-    assert cookies[:demand] == "true"
+    puts find(:css, "#" + id.to_s).node
+    
     #page.find(:css, 'div#gmaps4rails_map').click
     #page.find(:css, '.ui-button')
 
