@@ -30,6 +30,7 @@ $(document).ready(function() {
     $('#editorSaveButton').click(function() { 
       $('#isDesignSet').show();
       $('#isDesignSetImage').attr("src", "/images/icon_design_uebernommen.png");
+      $('#isDesignSetText').html("Design ausgew&auml;hlt");
       $.scrollTo("#step5", 2000);
     });
 });
@@ -109,6 +110,7 @@ function setTrashcanId(val) {
 	$("#user_orders_attributes_0_trashcan_id").val( val );
 	$.scrollTo("#step4", 2000);
   $("#isTrashcanSet").show();
+  $("#isTrashcanSetText").html("Mülleimer ausgew&auml;hlt!");
   $('#isTrashcanSetImage').attr("src", "/images/icon_muelleimer_uebernommen.png");
 }
 
