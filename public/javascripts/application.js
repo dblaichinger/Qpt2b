@@ -26,7 +26,8 @@ $(document).ready(function() {
 
     $('#editorSaveButton').click(function() { 
       $('#isDesignSet').show();
-       $('#isDesignSetImage').attr("src", "/images/icon_design_uebernommen.png");
+      $('#isDesignSetImage').attr("src", "/images/icon_design_uebernommen.png");
+      $.scrollTo("#step5", 2000);
     });
 });
 
