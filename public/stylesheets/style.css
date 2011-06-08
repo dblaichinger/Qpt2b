@@ -261,7 +261,7 @@ nav {
 	position:relative;
 }
 
-.headblase_schatten {
+.schatten_h {
 	width:55%;
 	background-image:url('/images/media/schatten.png');
 	background-position: bottom right;
@@ -270,7 +270,7 @@ nav {
 	z-index:2;
 }
 
-.headblase_schatten img{
+.schatten_h img{
 	position: absolute;
 	right:0px;
 }
@@ -297,15 +297,15 @@ h1 {
 	font-weight: normal;
 }
 	
-.schatten_l {
+.schatten {
 	background-image:url('/images/media/schatten.png');
 	background-position: bottom left;
 	background-repeat:no-repeat;
 	background-size:100%;
 }
 	
-.schatten_m {
-	background-image:url('/images/media/schatten.png');
+.schatten_l {
+	background-image:url('/images/media/schatten_l.png');
 	background-position: bottom left;
 	background-repeat:no-repeat;
 	background-size:100%;
