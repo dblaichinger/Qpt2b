@@ -6,7 +6,8 @@ class AdminsController < ApplicationController
   	@title = "Admin"
     @trashcans = Trashcan.all
     @demands = Demand.find(:all, :order => "counter DESC")
-    @orders = Order.all # TODO: add oder status -> only query unprocessed orders
+    @pending_orders = Order.where(:status => "pending") 
+    @processed_orders = Order.where("status != 'pending'")
   end
 
   def is_admin

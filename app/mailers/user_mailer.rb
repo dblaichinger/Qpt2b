@@ -8,7 +8,7 @@ class UserMailer < ActionMailer::Base
 
   def order_declined(user_id)
     @user = User.find(user_id)
-
+    puts "*********** " + user_id
     mail(:to => @user.email, :subject => "Bestellung abgelehnt")
   end
 
