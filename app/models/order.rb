@@ -25,7 +25,7 @@ class Order < ActiveRecord::Base
 	#validates :code, :presence => true
 	#validates :owner_id, :presence => true
 
-	self.random_code
+	def self.random_code
 		 return rand(100) + Time.new.to_i
 	end
 
