@@ -598,7 +598,6 @@ a:hover {
 	font-size: 14px;
 	display: block;
 	height: 40px;
-	margin-top: 10px;
 	line-height: 1.3em;
 }
 
@@ -607,7 +606,7 @@ a:hover {
 	width: 100%;
 	text-align:center;
 	display: block;
-	margin-top: 40px;
+	margin-top: 30px;
 	color: #003232;
 	text-shadow: -1px -1px #999, 1px 1px #fff;	
 	height: 30px;
