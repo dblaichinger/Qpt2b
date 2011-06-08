@@ -339,7 +339,7 @@ $(document).ready(function() {
             
         });
 
-        $("#saveButton").click(function() {
+        $("#editorSaveButton").click(function() {
             if($('.motivIn').length > 0 || $('.textIn').length > 0 )
                 motivManager.doXml();         
             else

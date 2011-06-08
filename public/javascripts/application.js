@@ -20,6 +20,10 @@ $(document).ready(function() {
 	// Get current geo position
   	getPosition();
     $('.vote_button').click(function() {voteClicked($(this).attr('id'), false)});
+
+    $('#editorSaveButton').click(function() { 
+      $('#isDesignSet').show();
+    });
 });
 
 // Vote-Button was clicked (within maps or top demands)

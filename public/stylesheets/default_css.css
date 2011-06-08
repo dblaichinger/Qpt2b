@@ -70,8 +70,12 @@ table.trashcan td {
   list-style: square;
 }
 
+ul.form_checked {
+	padding:1em;
+	list-style-type:none;	
+}
+
 /* -------------------------------------------- */
-/* EDITOR */
 /* --- EDITOR --- */
 
 #editorWrapper {
