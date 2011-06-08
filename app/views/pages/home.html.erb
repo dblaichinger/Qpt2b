@@ -121,24 +121,30 @@
             <div id="formular">
 				 <%= form_for @user , :url => orders_path do |t| %>
 					  <%= render 'shared/error_messages', :object => t.object %>
+                       
+                       <div>
                        <%= t.label :name %>
                        <%= t.text_field :name %>
                     
                        <%= t.label "E-Mail" %>
                        <%= t.text_field :email %>
+					   </div>
 					   
+					   <div>
                        <%= t.fields_for :orders do |f| %>
-					       <%= f.hidden_field :design_id, :value => "45"  %>
 					       <%= f.hidden_field :trashcan_id, :value => "89" %>                          
+					       <%= f.hidden_field :design_id, :value => "45"  %>
                           
                     <% end %>
 
                     <ul class="form_checked">
-                        <li id="isDesignSet"><img id="isDesignSetImage" src="/images/icon_design_uebernommen_inaktiv.png" /> Design ausgewaehlt</li>
-                        <li id="isTrashcanSet"><img id="isTrashcanSetImage" src="/images/icon_muelleimer_uebernommen_inaktiv.png" /> Muelleimer uebernommen</li>
+                        <li id="isTrashcanSet"><img id="isTrashcanSetImage" src="/images/icon_muelleimer_uebernommen_inaktiv.png" /> kein M&uuml;lleimer &uuml;bernommen</li>
+                        <li id="isDesignSet"><img id="isDesignSetImage" src="/images/icon_design_uebernommen_inaktiv.png" /> kein Design ausgew&auml;hlt</li>
                     </ul>
 
 					<%= t.submit "", :id => "pate_werden" %>
+					
+					</div>
 				<% end %>
             </div>
             <a class="toScroll" rel="step1" id="pfeil_oben"></a>

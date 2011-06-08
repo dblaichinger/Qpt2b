@@ -515,6 +515,13 @@ a:hover {
 	background-repeat: no-repeat;
 }
 
+#formular div {
+	border: 1px solid #fff;
+	width: 290px;
+	height: 120px;
+	padding: 10px;
+}
+
 #pate_werden {
 	background-image: url('/images/media/btn_patewerden.png');
 	background-repeat:no-repeat;
