@@ -501,7 +501,7 @@ a:hover {
 	position: absolute;
 	top: 40%;	
 	left: -15%;
-	width:55%;
+	width:45%;
 }
 
 #formular {
@@ -510,7 +510,7 @@ a:hover {
 	padding: 20px;
 	position: absolute;
 	left: 30%;
-	top: 15%;
+	top: 25%;
 	background-image:url('/images/media/praegeflaeche_formular.png');
 	background-repeat: no-repeat;
 }
