@@ -18,6 +18,7 @@ class OrdersController < ApplicationController
       @make_order = @is_already_user.orders.build(params[:user][:orders_attributes]["0"])
       if @make_order.save
         flash[:notice] = "Eine weitere Patenschaft wurde beantragt!"
+        UserMailer.order_recieved(@is_already_user).deliver
       else
         flash[:error] = "Tut uns Leid, aber die Bestellung ist fehlgeschlagen!"
       end
