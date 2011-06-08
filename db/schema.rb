@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110608185916) do
+ActiveRecord::Schema.define(:version => 20110608203754) do
 
   create_table "demands", :force => true do |t|
     t.integer  "counter"
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(:version => 20110608185916) do
     t.string   "code"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "status"
+    t.string   "status",      :default => "pending"
   end
 
   add_index "orders", ["trashcan_id"], :name => "index_orders_on_trashcan_id"
