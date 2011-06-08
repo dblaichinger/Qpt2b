@@ -124,14 +124,12 @@
                        <%= t.label :name %>
                        <%= t.text_field :name %>
                     
-                       <%= t.label :email %>
+                       <%= t.label "E-Mail" %>
                        <%= t.text_field :email %>
 					   
-                       <%= t.fields_for @order do |f| %>
-					      <%= f.label :design_id %>
-					       <%= f.text_field :design_id  %>
-					       <%= f.label "TrashcanID" %>
-					       <%= f.text_field :trashcan_id %>                          
+                       <%= t.fields_for :orders do |f| %>
+					       <%= f.hidden_field :design_id, :value => "45"  %>
+					       <%= f.hidden_field :trashcan_id, :value => "89" %>                          
                           
                     <% end %>
 

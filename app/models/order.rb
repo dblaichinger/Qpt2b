@@ -20,7 +20,7 @@ class Order < ActiveRecord::Base
 	has_one :trashcan, :foreign_key => "trashcan_id"
 	has_one :design, :dependent => :destroy
 
-	accepts_nested_attributes_for :designs
+	accepts_nested_attributes_for :design
 
 	#validates :code, :presence => true
 	#validates :owner_id, :presence => true

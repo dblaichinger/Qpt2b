@@ -1,5 +1,8 @@
 <%= form_tag demand_vote_path, :remote => true, :class => 'top_vote_form' do %>
   <%= hidden_field_tag :id,  demand.id %>
+  
+
+  
   <span class="top_address"><%= demand.address %></span>
   <span class="top_counter", id="counter_<%= demand.id %>"><%= demand.counter %></span>
   <p>Stimmen</p><% if !cookies[:demand] %>
