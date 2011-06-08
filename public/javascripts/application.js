@@ -1,6 +1,6 @@
 /*
   application.JS
-  QPT2b MMT09 - made by Andre Schweighoder, Daniel Blaichinger, Francois Weber
+  QPT2b MMT09 - made by Andre Schweighoder, Daniel Blaifinger, Francmois Weber
 
   _DESCRIPTION:
     - This file includes most of the own javascript code of the site
@@ -110,7 +110,7 @@ function setTrashcanId(val) {
 	$("#user_orders_attributes_0_trashcan_id").val( val );
 	$.scrollTo("#step4", 2000);
   $("#isTrashcanSet").show();
-  $("#isTrashcanSetText").html("Mülleimer ausgew&auml;hlt!");
+  $("#isTrashcanSetText").html("Mülleimer ausgew&auml;hlt");
   $('#isTrashcanSetImage').attr("src", "/images/icon_muelleimer_uebernommen.png");
 }
 
@@ -219,7 +219,7 @@ function getPosition(){
           Gmaps4Rails.map.setCenter(initialLocation);
           Gmaps4Rails.map.setZoom(15);
 
-          var contentString = "Location found - you are here !";
+          var contentString = "Du befindest dich gerade hier!";
           
           infowindow.setContent(contentString);
           infowindow.setPosition(initialLocation);
