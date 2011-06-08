@@ -263,7 +263,7 @@ nav {
 
 .schatten_h {
 	width:55%;
-	background-image:url('/images/media/schatten_l.png');
+	background-image:url('/images/media/schatten_h.png');
 	background-position: bottom right;
 	background-repeat:no-repeat;
 	background-size:100%;	
@@ -470,7 +470,7 @@ a:hover {
 
 #ib_04_01 {
 	position: absolute;
-	top: 575px;	
+	top: 550px;	
 	left: -20%;
 	width:50%;
 	z-index:2000;
@@ -547,7 +547,7 @@ a:hover {
 	position: absolute;
 	top: 430px;	
 	left: -20%;
-	width: 100%;
+	width: 95%;
 	z-index:2000;
 }
 
