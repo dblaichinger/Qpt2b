@@ -10,6 +10,7 @@
 #  design_id   :integer(4)
 #  created_at  :datetime
 #  updated_at  :datetime
+#  status      :integer
 #
 
 class Order < ActiveRecord::Base
