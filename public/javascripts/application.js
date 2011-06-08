@@ -1,6 +1,6 @@
 /*
   application.JS
-  QPT2b MMT09 - made by Andre Schweighoder, Daniel Blaichinger, Francois Weber
+  QPT2b MMT09 - made by Andre Schweighoder, Daniel Blaifinger, Francmois Weber
 
   _DESCRIPTION:
     - This file includes most of the own javascript code of the site
@@ -110,7 +110,7 @@ function setTrashcanId(val) {
 	$("#user_orders_attributes_0_trashcan_id").val( val );
 	$.scrollTo("#step4", 2000);
   $("#isTrashcanSet").show();
-  $("#isTrashcanSetText").html("Mülleimer ausgew&auml;hlt!");
+  $("#isTrashcanSetText").html("Mülleimer ausgew&auml;hlt");
   $('#isTrashcanSetImage').attr("src", "/images/icon_muelleimer_uebernommen.png");
 }
 
@@ -219,7 +219,7 @@ function getPosition(){
           Gmaps4Rails.map.setCenter(initialLocation);
           Gmaps4Rails.map.setZoom(15);
 
-          var contentString = "Location found - you are here !";
+          var contentString = "Du befindest dich gerade hier!";
           
           infowindow.setContent(contentString);
           infowindow.setPosition(initialLocation);
@@ -267,12 +267,12 @@ function getPosition(){
     ,pixelOffset: new google.maps.Size(-140, 0)
     ,zIndex: null
     ,boxStyle: { 
-      background: "url('http://google-maps-utility-library-v3.googlecode.com/svn/tags/infobox/1.1.5/examples/tipbox.gif') no-repeat"
+      background: "url('/images/media/map_blase.png') no-repeat"
       ,opacity: 0.75
       ,width: "280px"
        }
     ,closeBoxMargin: "10px 2px 2px 2px"
-    ,closeBoxURL: "http://www.google.com/intl/en_us/mapfiles/close.gif"
+    ,closeBoxURL: "/images/media/btn_schliessen.png"
     ,infoBoxClearance: new google.maps.Size(1, 1)
     ,isHidden: false
     ,pane: "floatPane"
