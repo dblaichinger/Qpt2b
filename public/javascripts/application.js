@@ -23,6 +23,7 @@ $(document).ready(function() {
 
     $('#editorSaveButton').click(function() { 
       $('#isDesignSet').show();
+       $('#isDesignSetImage').attr("src", "");
     });
 });
 
@@ -100,6 +101,7 @@ function setTrashcanId(val) {
 	$("#user_orders_attributes_0_trashcan_id").val( val );
 	$.scrollTo("#step4", 2000);
   $("#isTrashcanSet").show();
+  $('#isTrashcanSetImage').attr("src", "");
 }
 
 // --------------------------------------------------
