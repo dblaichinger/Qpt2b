@@ -10,7 +10,8 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110608165345) do
+
+ActiveRecord::Schema.define(:version => 20110608102149) do
 
   create_table "demands", :force => true do |t|
     t.integer  "counter"
@@ -29,6 +30,7 @@ ActiveRecord::Schema.define(:version => 20110608165345) do
     t.datetime "updated_at"
     t.text     "xml_data"
     t.integer  "order_id"
+
   end
 
   create_table "orders", :force => true do |t|
@@ -49,7 +51,7 @@ ActiveRecord::Schema.define(:version => 20110608165345) do
     t.float    "latitude"
     t.float    "longitude"
     t.boolean  "is_free"
-    t.date     "adopted_until"
+    t.datetime "adopted_until"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
