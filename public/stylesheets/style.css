@@ -476,6 +476,11 @@ a:hover {
 	z-index:2000;
 }
 
+#suche {
+	cursor: pointer;
+}
+
+
 			/* step4 */
 
 #editor {

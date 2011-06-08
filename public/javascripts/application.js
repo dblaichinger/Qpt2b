@@ -82,6 +82,8 @@ var GeoTool = function() {
         return that.address;
     },
 
+
+
     this.addMarker = function(lat, lng) {   
       that.lat = lat;
       that.lng = lng;   
@@ -278,6 +280,18 @@ function getPosition(){
     ,pane: "floatPane"
     ,enableEventPropagation: false
  }};
+
+
+// -----------------------------------------------
+// Search street on the map
+
+  function searchForStreet(address){
+    
+  //  var geotool = new GeoTool();
+ //   geotool.GeoCode(address); 
+    return false;
+  }
+ 
 
 // --------------------------------------------------
 // Gallery
