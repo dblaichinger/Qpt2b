@@ -562,7 +562,7 @@ a:hover {
 }
 
 #top_votes {
-	overflow: hidden;
+	overflow: visible;
 	position: relative;
 	top:120px;
 }
@@ -618,8 +618,8 @@ a:hover {
 
 .ranking_1_3 {
 	position: absolute;
-	top: -30px;
-	left: -30px;
+	top: -10px;
+	left: -10px;
 }
 
 	/* ende mitbestimmen */
