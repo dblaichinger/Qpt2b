@@ -15,7 +15,7 @@
 
 class Order < ActiveRecord::Base
 
-	attr_accessible :user_id, :trashcan_id, :design_id, :code, :design_attributes
+	attr_accessible :user_id, :trashcan_id, :design_id, :code, :design_attributes, :status
 	belongs_to :user, :foreign_key => "user_id", :dependent => :destroy
 	
 	belongs_to :trashcan, :foreign_key => "trashcan_id"
