@@ -61,16 +61,16 @@
           	@top_demands.each do |demand| counter+=1 %>
             <li>
             <% if counter == 1 %>
-            <img src="/images/media/ranking_1.png" alt="Platz 1" class="ranking_1_3" />
+        	    <img src="/images/media/ranking_1.png" alt="Platz 1" class="ranking_1_3" />
 			<% end %>
-
-  <% if demand[1] %>
-  		<img src="/images/media/ranking_2.png" alt="Platz 2" class="ranking_1_3" />
-  <% end %>
+	
+  			<% if counter == 2 %>
+  				<img src="/images/media/ranking_2.png" alt="Platz 2" class="ranking_1_3" />
+ 			<% end %>
   
-  <% if demand[2] %>
-  		<img src="/images/media/ranking_3.png" alt="Platz 3" class="ranking_1_3" />
-  <% end %>
+  			<% if counter == 3 %>
+  				<img src="/images/media/ranking_3.png" alt="Platz 3" class="ranking_1_3" />
+  			<% end %>
               <%= render :partial => 'top_vote_form', :locals => { :demand => demand } %>
             </li>
           <% end %>

@@ -616,6 +616,12 @@ a:hover {
 	margin-top: 10px;
 }
 
+.ranking_1_3 {
+	position: absolute;
+	top: -30px;
+	left: -30px;
+}
+
 	/* ende mitbestimmen */
 	
 	/* kontakt */
