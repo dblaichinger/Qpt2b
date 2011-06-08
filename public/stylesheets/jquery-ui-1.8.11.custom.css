@@ -591,6 +591,8 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
 
 .ui-dialog-titlebar {
 	height: 50px:
+	background-color: none;
+	border: none;
 }
 
 .ui-dialog-title {
