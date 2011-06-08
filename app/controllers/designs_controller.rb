@@ -7,5 +7,4 @@ class DesignsController < ApplicationController
 
 	def create
 	end
-
 end

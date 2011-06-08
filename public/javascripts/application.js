@@ -6,10 +6,7 @@
     - This file includes most of the own javascript code of the site
 */
 
-$(document).ready(function() { 
-
-  $("#isDesignSet").hide();
-  $("#isTrashcanSet").hide();
+$(document).ready(function() {
 
 	// Scrolling
 	// Example: <span class="toScroll" rel="target.id">Some text</span>
@@ -29,6 +26,7 @@ $(document).ready(function() {
 
     $('#editorSaveButton').click(function() { 
       $('#isDesignSet').show();
+       $('#isDesignSetImage').attr("src", "/images/icon_design_uebernommen.png");
     });
 });
 
@@ -107,6 +105,7 @@ function setTrashcanId(val) {
 	$("#user_orders_attributes_0_trashcan_id").val( val );
 	$.scrollTo("#step4", 2000);
   $("#isTrashcanSet").show();
+  $('#isTrashcanSetImage').attr("src", "/images/icon_muelleimer_uebernommen.png");
 }
 
 // --------------------------------------------------
