@@ -28,7 +28,7 @@ class OrdersController < ApplicationController
 	end
 
   def confirm
-    UserMailer.order_confirmed(params[:user_id])
+    UserMailer.order_confirmed(@order.user.id)
   end
 
   def decline
