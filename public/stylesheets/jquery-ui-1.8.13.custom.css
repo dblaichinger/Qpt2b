@@ -585,3 +585,10 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
 	width: 80px;
 	height: 25px;
 }
+	
+.ui-icon-closethick {
+	background-image: url('/images/media/btn_schliessen.png');
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+}
