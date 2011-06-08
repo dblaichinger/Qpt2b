@@ -770,4 +770,7 @@ h3 {
 	text-shadow: -1px -1px #999, 1px 1px #fff;	
 }
 
-.yellow { border: 1px solid black; margin-top: 8px; background: yellow; padding: 5px; }
+.submit {
+  display: block;
+  margin-top: 20px;
+}

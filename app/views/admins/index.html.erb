@@ -1,7 +1,17 @@
  <section id="content">
-    <h3>Ausstehende Bestelllungen</h3>
-    <p>nothing so far</p>
-        
+    <h3 class="admin">Ausstehende Bestelllungen</h3>
+    <%if @orders != [] 
+    %>
+      <ul>
+        <%= @orders.each do |order| %>
+        <li>ID: <%= order.id %> | <%= order.trashcan.address %><br>
+            von <%= order.user.name %> | <a href=' <%= order.design.image_path %>'>Design</a> | <%= link_to "Bestätigen", order_confirm_path(order) %> / <%= link_to "Ablehnen", order_decline_path(order) %>
+        </li>
+      <% end %>
+      </ul>
+    <% else %>
+    <p>Momentan liegen keine Bestellungen vor.</p>
+    <% end %>
         	<h3 class="admin"> Vorhandene Mülleimer </h3>
 
         	<%if @trashcans != [] %>

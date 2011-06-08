@@ -1,4 +1,4 @@
-<%= form_tag '/demands/vote', :remote => true, :url => {:controller => 'demands', :action => 'vote'} do %>
+<%= form_tag demand_vote_path, :remote => true, :class => 'top_vote_form' do %>
   <%= hidden_field_tag :id,  demand.id %>
   
 
@@ -6,10 +6,10 @@
   <span class="top_address"><%= demand.address %></span>
   <span class="top_counter", id="counter_<%= demand.id %>"><%= demand.counter %></span>
   <p>Stimmen</p><% if !cookies[:demand] %>
-    <%= submit_tag "Vote", :disabled => false, :class => "vote_button", :id => "#{demand.id}" %>
+    <%= submit_tag "", :disabled => false, :class => "vote_button", :id => "#{demand.id}" %>
 
   <% else %>
-    <%= submit_tag "Vote", :disabled => true, :class => "vote_button"  %>
+    <%= submit_tag "", :disabled => true, :class => "vote_button", :id => "#{demand.id}"  %>
     <p>Du kannst nur alle 24h abstimmen!</p>
   <% end %>
 <% end %>
