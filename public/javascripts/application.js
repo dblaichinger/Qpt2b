@@ -314,7 +314,7 @@ function getPosition(){
 					slide_counter           :   1,		//Display slide numbers
 					slide_captions          :   1,		//Slide caption (Pull from "title" in slides array)
 					slides 					:  	[		//Slideshow Images
-														{image : '/images/gallery/muelleimer_02.jpg', title : 'Day 3 by Emily Tebbetts', url : '/images/gallery/muelleimer_01.jpg'},  
+														{image : 'http://www.users.fh-salzburg.ac.at/~fhs31268/gallery/muelleimer_01.jpg', title : 'Day 3 by Emily Tebbetts', url : 'http://www.users.fh-salzburg.ac.at/~fhs31268/gallery/muelleimer_01.jpg'},  
 														{image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.1/slides/film-emily.jpg', title : 'Film by Emily Tebbetts', url : 'http://www.nonsensesociety.com/2011/02/larissa/'},  
 														{image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.1/slides/day2-emily.jpg', title : 'Day 2 by Emily Tebbetts', url : 'http://www.nonsensesociety.com/2011/02/larissa/'}  
 												]
