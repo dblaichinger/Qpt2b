@@ -33,7 +33,7 @@ class OrdersController < ApplicationController
     order = Order.find(params[:order_id])
     order.status = "accepted"
     if order.save
-      UserMailer.order_confirmed(order.user.id)
+      UserMailer.order_confirmed(order.user.id).deliver
       flash[:success] = "Die Bestellung wurde bestätigt. Bitte ändern Sie die den Status des Mistkübel, sobald bezahlt wurde."
     end
 
@@ -46,7 +46,7 @@ class OrdersController < ApplicationController
 
     if order.save
       flash[:error] = "Die Bestellung wurde abgelehnt und der Benutzer informiert."
-      UserMailer.order_declined(order.user.id)
+      UserMailer.order_declined(order.user.id).deliver
     end
     redirect_to admins_path
   end
