@@ -534,10 +534,13 @@ a:hover {
 	margin-bottom: 20px;
 }
 
+.form_checked li {
+	height: 25px;
+	vertical-align: 5px;
+}
 
 .form_checked li img {
 	margin-right: 10px;
-	margin-bottom: -5px;
 }
 
 
