@@ -8,6 +8,9 @@
 
 $(document).ready(function() {
 
+  // Hide XML output
+  $("#xmlOutput").hide();
+
 	// Scrolling
 	// Example: <span class="toScroll" rel="target.id">Some text</span>
 	$(".toScroll").click(function() {
@@ -26,7 +29,8 @@ $(document).ready(function() {
 
     $('#editorSaveButton').click(function() { 
       $('#isDesignSet').show();
-       $('#isDesignSetImage').attr("src", "/images/icon_design_uebernommen.png");
+      $('#isDesignSetImage').attr("src", "/images/icon_design_uebernommen.png");
+      $.scrollTo("#step5", 2000);
     });
 });
 
