@@ -97,6 +97,12 @@ body {
 	height: 100%;
 }
 
+strong {
+    font-family: 'TitilliumText22LRegular', Verdana, Arial, sans-serif;
+	text-transform:uppercase;
+	font-weight: normal;
+}
+
 
 /* navigation */
 
@@ -130,7 +136,6 @@ nav {
 	width: 112%;
 	margin-left:-6%;
 	margin-bottom: 10px;
-	-moz-background-origin: content;
 }
 
 #nav_haupt li{
