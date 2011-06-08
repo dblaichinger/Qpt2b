@@ -30,6 +30,7 @@ $(document).ready(function() {
     $('#editorSaveButton').click(function() { 
       $('#isDesignSet').show();
       $('#isDesignSetImage').attr("src", "/images/icon_design_uebernommen.png");
+      $('#isDesignSet').innerHTML("Design ausgew&auml;hlt");
       $.scrollTo("#step5", 2000);
     });
 });
