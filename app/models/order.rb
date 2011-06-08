@@ -18,7 +18,7 @@ class Order < ActiveRecord::Base
 	belongs_to :user, :foreign_key => "user_id", :dependent => :destroy
 	
 	belongs_to :trashcan, :foreign_key => "trashcan_id"
-	has_one :design, :dependent => :destroy
+	has_one :design
 
 	accepts_nested_attributes_for :design
 
