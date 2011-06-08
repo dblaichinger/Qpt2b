@@ -110,6 +110,8 @@ nav {
 	background-image: url('/images/media/nav.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
 	overflow: visible;
 	z-index:5001;
 }
@@ -162,6 +164,7 @@ nav {
 	background-repeat: no-repeat;
 	background-size: 100%;
 	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
 	overflow:visible;
 	display:block;
 	padding-bottom:9px;
@@ -269,6 +272,7 @@ nav {
 	background-repeat:no-repeat;
 	background-size:100%;	
 	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
 	z-index:2;
 }
 
@@ -305,6 +309,7 @@ h1 {
 	background-repeat:no-repeat;
 	background-size:100%;
 	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
 }
 
 .schatten_s {
@@ -313,6 +318,7 @@ h1 {
 	background-repeat:no-repeat;
 	background-size:100%;
 	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
 }
 
 .schatten_l {
@@ -321,6 +327,7 @@ h1 {
 	background-repeat:no-repeat;
 	background-size:100%;
 	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
 }
 
 .schatten_xl {
@@ -329,6 +336,7 @@ h1 {
 	background-repeat:no-repeat;
 	background-size:100%;
 	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
 }
 	
 .infoblase_l {
