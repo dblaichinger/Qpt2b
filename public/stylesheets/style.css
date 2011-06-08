@@ -587,6 +587,7 @@ a:hover {
 	position: absolute;
 	bottom: 20px;
 	left: 30px;
+	border: none;
 }
 
 .vote_button:hover {
