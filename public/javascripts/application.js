@@ -8,6 +8,9 @@
 
 $(document).ready(function() {
 
+  // Hide XML output
+  $("#xmlOutput").hide();
+
 	// Scrolling
 	// Example: <span class="toScroll" rel="target.id">Some text</span>
 	$(".toScroll").click(function() {

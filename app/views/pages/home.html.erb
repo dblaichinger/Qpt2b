@@ -132,10 +132,13 @@
 					   
 					   <div class="form_kasten_2">
                        <%= t.fields_for :orders do |f| %>
-					       <%= f.hidden_field :trashcan_id, :value => "89" %>                          
-					       <%= f.hidden_field :design_id, :value => "45"  %>
-                          
-                    <% end %>
+					        <%= f.hidden_field :trashcan_id %>                          
+					        <%= f.hidden_field :design_id %>
+                            <%= f.fields_for :design do |d| %>
+                                <%= d.text_area :xml_data, :id => "xmlOutput", :cols => 0, :rows => 0 %>
+                            <% end %>
+                        <% end %>                          
+
 
                     <ul class="form_checked">
                         <li id="isTrashcanSet"><img id="isTrashcanSetImage" src="/images/icon_muelleimer_uebernommen_inaktiv.png" /> kein M&uuml;lleimer &uuml;bernommen</li>
