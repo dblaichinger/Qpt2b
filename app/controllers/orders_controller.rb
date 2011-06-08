@@ -4,13 +4,13 @@ class OrdersController < ApplicationController
 
 		param = params[:user]
 		pw = { :password => Devise.friendly_token[0,20] }
-		mergedParam = param.merge!(pw)
+		merged_param = param.merge!(pw)
 
 		#@newUser = User.new(:email => params[:user][:email], :name => params[:user][:name], :password => Devise.friendly_token[0,20], :street  => params[:user][:street], :city  => params[:user][:city])
 		#@newUser = User.new(:email => params[:user][:email], :name => params[:user][:name], :password => Devise.friendly_token[0,20])
 		#@order = @newUser.orders.build(params[:user][:orders_attributes]["0"])
 
-		@user = User.new #(mergedParam)
+		@user = User.new
 		@entry  = @user.orders.build(params[:user])
 
         if @entry.save
