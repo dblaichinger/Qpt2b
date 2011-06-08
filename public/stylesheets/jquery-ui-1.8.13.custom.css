@@ -576,3 +576,12 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
  */
 .ui-progressbar { height:2em; text-align: left; }
 .ui-progressbar .ui-progressbar-value {margin: -1px; height:100%; }
+
+
+/* MMA */
+.ui-button-text {
+	background-image: url('/images/media/btn_speichern.png');
+	background-repeat: no-repeat;
+	width: 80px;
+	height: 25px;
+}
