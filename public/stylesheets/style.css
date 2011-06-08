@@ -502,15 +502,20 @@ a:hover {
 }
 
 #pate_werden {
-	background-image: url('/images/media/pate_werden.png');
+	background-image: url('/images/media/btn_patewerden.png');
 	background-repeat:no-repeat;
-	width: 150px;
-	height: 27px;
+	width: 160px;
+	height: 25px;
 	border: none;
 	cursor: pointer;
 	right: 20px;
 	bottom: 20px;
 	position: absolute;
+}
+
+#pate_werden:hover {
+	background-image: url('/images/media/btn_patewerden_hover.png');
+	background-repeat:no-repeat;
 }
 	
 	/* ende pate werden */	
