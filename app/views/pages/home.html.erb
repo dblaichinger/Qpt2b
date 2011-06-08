@@ -119,27 +119,27 @@
             	<img src="/images/media/infoblase_spitz.png" />
 			</div>
             <div id="formular">
-				 <%= form_for @order do |f| %>
-					  <%= render 'shared/error_messages', :object => f.object %>
-
-					
-					<%= f.label :design_id %>
-					<%= f.text_field :design_id  %>
-					<%= f.label "TrashcanID" %>
-					<%= f.text_field :trashcan_id %>
-					
-                    <%= f.fields_for :user do |t| %>
-					   <%= t.label :name %>
-					   <%= t.text_field :name %>
-					
-					   <%= t.label :email %>
-					   <%= t.text_field :email %>
+				 <%= form_for @user , :url => orders_path do |t| %>
+					  <%= render 'shared/error_messages', :object => t.object %>
+                       <%= t.label :name %>
+                       <%= t.text_field :name %>
+                    
+                       <%= t.label :email %>
+                       <%= t.text_field :email %>
+					   
+                       <%= t.fields_for @order do |f| %>
+					      <%= f.label :design_id %>
+					       <%= f.text_field :design_id  %>
+					       <%= f.label "TrashcanID" %>
+					       <%= f.text_field :trashcan_id %>
                     <% end %>
 
-                    <span id="isDesignSet"><img src="/images/icons_buttons/icon_frei_legende.png" /> Design ausgewaehlt</span>
-                    <span id="isTrashcanSet"><img src="/images/icons_buttons/icon_pate_legende.png" /> Muelleimer uebernommen</span>
+                    <ul>
+                        <li id="isDesignSet"><img src="/images/icons_buttons/icon_frei_legende.png" /> Design ausgewaehlt</li>
+                        <li id="isTrashcanSet"><img src="/images/icons_buttons/icon_pate_legende.png" /> Muelleimer uebernommen</li>
+                    </ul>
 
-					<%= f.submit "", :id => "pate_werden" %>
+					<%= t.submit "", :id => "pate_werden" %>
 				<% end %>
             </div>
             <a class="toScroll" rel="step1" id="pfeil_oben"></a>

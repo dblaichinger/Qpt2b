@@ -2,7 +2,7 @@ class OrdersController < ApplicationController
 
 	def create
 
-		param = params[:order]
+		param = params[:user]
 		pw = { :password => Devise.friendly_token[0,20] }
 		mergedParam = param.merge!(pw)
 
@@ -10,10 +10,10 @@ class OrdersController < ApplicationController
 		#@newUser = User.new(:email => params[:user][:email], :name => params[:user][:name], :password => Devise.friendly_token[0,20])
 		#@order = @newUser.orders.build(params[:user][:orders_attributes]["0"])
 
-		@order = Order.new(mergedParam)
-		#@entry  = @order.build_user(mergedParam)
+		@user = User.new(mergedParam)
+		@entry  = @user.orders.build(params[:user][:order])
 
-        if @order.save
+        if @entry.save
           flash[:notice] = "Die Patenschaft wurde beantragt!"
           UserMailer.order_recieved(@newUser).deliver
         else
