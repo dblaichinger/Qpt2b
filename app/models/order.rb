@@ -14,11 +14,13 @@
 
 class Order < ActiveRecord::Base
 
-	attr_accessible :user_id, :trashcan_id, :design_id, :code
+	attr_accessible :user_id, :trashcan_id, :design_id, :code, :design_attributes
 
 	belongs_to :user, :foreign_key => "user_id", :dependent => :destroy
 	has_one :trashcan, :foreign_key => "trashcan_id"
 	has_one :design, :dependent => :destroy
+
+	accepts_nested_attributes_for :designs
 
 	#validates :code, :presence => true
 	#validates :owner_id, :presence => true
