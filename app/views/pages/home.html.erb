@@ -73,7 +73,7 @@
                 	<input type="text" name="suche" size="65" />
 				</div>
             	
-					<%= gmaps( "markers" => {"data" => @markers}, "map_options" => {"map_container_id" => "map_box"}
+					<%= gmaps( "markers" => {"data" => @markers}, "map_options" => {"map_container_id" => "map_box", "auto_adjust" => true, "auto_zoom" => true, "zoom" => 10}
 					) %>
 					<!-- NOTE: do not add (inline) css to div#map, neither put content within div#map. otherwise map won't get loaded -->
 					<div id="map_box">
