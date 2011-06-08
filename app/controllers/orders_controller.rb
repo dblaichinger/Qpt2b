@@ -10,8 +10,8 @@ class OrdersController < ApplicationController
 		#@newUser = User.new(:email => params[:user][:email], :name => params[:user][:name], :password => Devise.friendly_token[0,20])
 		#@order = @newUser.orders.build(params[:user][:orders_attributes]["0"])
 
-		@entry = User.new(params[:user])
-		#@entry  = @user.orders.build(params[:user][:order])
+		@user = User.new
+		@entry  = @user.orders.build(params[:user][:order])
 
         if @entry.save
           flash[:notice] = "Die Patenschaft wurde beantragt!"
