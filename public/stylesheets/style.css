@@ -212,7 +212,7 @@ nav {
 	margin-left: 40%;
 	position:absolute;
 	bottom:10px;
-	clear: both,
+	clear: both;
 	display:block;
 	width: 23px;
 	height:20px;
@@ -232,14 +232,6 @@ nav {
 	bottom: 12px;
 }
 
-#pfeil_oben:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: "++++++++++++++++++++++++++++++";
-    clear: both;
-    height: 0;
-}
 
 /* navigation ende */
 
