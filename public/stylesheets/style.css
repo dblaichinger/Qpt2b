@@ -535,7 +535,7 @@ a:hover {
 }
 
 .form_checked li {
-	vertical-align: middle;
+	vertical-align: 2px;
 }
 
 .form_checked li img {
