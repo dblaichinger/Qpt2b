@@ -606,7 +606,7 @@ a:hover {
 	width: 100%;
 	text-align:center;
 	display: block;
-	margin-top: 30px;
+	margin-top: 35px;
 	color: #003232;
 	text-shadow: -1px -1px #999, 1px 1px #fff;	
 	height: 30px;
@@ -614,7 +614,7 @@ a:hover {
 
 #top_votes p {
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 .ranking_1_3 {
