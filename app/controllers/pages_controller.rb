@@ -3,7 +3,8 @@ class PagesController < ApplicationController
   	@title = "Home"
 
   	@user = User.new
-    @user.orders.build
+    @order = @user.orders.build
+    @order.build_design
       
     @markers = Trashcan.all.to_gmaps4rails
   end
