@@ -232,6 +232,15 @@ nav {
 	bottom: 12px;
 }
 
+#pfeil_oben:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: "++++++++++++++++++++++++++++++";
+    clear: both;
+    height: 0;
+}
+
 /* navigation ende */
 
 
@@ -618,8 +627,8 @@ a:hover {
 
 .ranking_1_3 {
 	position: absolute;
-	top: -10px;
-	left: -10px;
+	top: -15px;
+	left: -15px;
 }
 
 	/* ende mitbestimmen */
