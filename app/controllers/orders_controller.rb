@@ -10,12 +10,10 @@ class OrdersController < ApplicationController
 		#@newUser = User.new(:email => params[:user][:email], :name => params[:user][:name], :password => Devise.friendly_token[0,20])
 		#@order = @newUser.orders.build(params[:user][:orders_attributes]["0"])
 
-		@user = User.new
-		@order = @user.orders.build(mergedParam)
+		@user = User.new #(mergedParam)
+		@entry  = @user.orders.build(params[:user])
 
-		#@   = Group.find(params[:group_id])
-        #@project = @group.projects.build(params[:project])      # build automatically sets the foreign_key
-        if @order.save #&& @newUser.save
+        if @entry.save
           flash[:notice] = "Die Patenschaft wurde beantragt!"
         else
           flash[:error] = "Die Bestellung ist fehlgeschlagen!"
