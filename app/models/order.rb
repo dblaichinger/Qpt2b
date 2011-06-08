@@ -27,7 +27,6 @@ class Order < ActiveRecord::Base
 	def self.random_code
 		 return rand(100) + Time.new.to_i
 	end
-
 end
 
 
