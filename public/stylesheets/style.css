@@ -580,16 +580,17 @@ a:hover {
 }
 	
 .vote_button {
-	background-image: url('/images/media/vote.png');
+	background-image: url('/images/media/btn_abstimmen.png');
 	background-repeat:no-repeat;
-	width: 152px;
-	height: 29px;
+	width: 160px;
+	height: 25px;
 	position: absolute;
 	bottom: 20px;
-	left: 34px;
-	display:block;
-	border: 1px solid #d9dadb;
-	cursor: pointer;
+}
+
+.vote_button:hover {
+	background-image: url('/images/media/btn_abstimmen_hover.png');
+	background-repeat:no-repeat;
 }
 
 .top_address {
