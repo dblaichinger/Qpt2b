@@ -29,10 +29,14 @@ class OrdersController < ApplicationController
 
   def confirm
     UserMailer.order_confirmed(params[:user_id])
+    flash.now[:success] = "Die Bestellung wurde bestätigt. Bitte ändern Sie die den Status des Mistkübel, sobald bezahlt wurde."
+    redirect_to admins_path
   end
 
   def decline
+    flash.now[:error] = "Die Bestellung wurde abgelehnt und der Benutzer informiert."
     UserMailer.order_declined(params[:user_id])
+    redirect_to admins_path
   end
 
 end
