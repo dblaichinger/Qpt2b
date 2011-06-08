@@ -223,7 +223,6 @@ function getPosition(){
           infowindow.setPosition(initialLocation);
           infowindow.open(Gmaps4Rails.map);
 
-          $.scrollTo("#map", 1000);
         }, function() {
           handleNoGeolocation(browserSupportFlag);
         });
