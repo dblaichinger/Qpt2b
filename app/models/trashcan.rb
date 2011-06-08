@@ -17,8 +17,10 @@ class Trashcan < ActiveRecord::Base
   acts_as_gmappable
   attr_accessible :latitude, :longitude, :address, :adopted_until, :is_free
 
-  require 'marker_module.rb'
-  include MarkerModule
+  require 'trashcan_module.rb'
+  include TrashcanModule
+
+  has_many :orders
 
   def gmaps4rails_marker_picture
     pic_path = ""
