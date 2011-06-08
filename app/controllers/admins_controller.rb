@@ -1,5 +1,5 @@
 class AdminsController < ApplicationController
-  before_filter :authenticate_user!
+  before_filter :authenticate_admin!
   #before_filter :is_admin
 
   def index

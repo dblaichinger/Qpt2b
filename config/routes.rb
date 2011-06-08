@@ -9,14 +9,14 @@ Meps::Application.routes.draw do
   get "pages/vote"
 
   devise_for :users  
-  #devise_for :admins
+  devise_for :admins
   resources :orders do
     match 'confirm' => 'orders#confirm', :as => 'confirm'
     match 'decline' => 'orders#decline', :as => 'decline'
   end
 
   resources :users
-  resources :admins, :only => :index
+  resources :admins
   resources :trashcans
   #resources :designs
   resources :demands
