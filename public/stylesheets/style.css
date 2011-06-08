@@ -530,6 +530,19 @@ a:hover {
 	margin-top: 10px;
 }
 
+#user_name {
+	margin-bottom: 20px;
+}
+
+.form_checked li {
+	vertical-align: middle;
+}
+
+.form_checked li img {
+	margin-right: 10px;
+}
+
+
 #pate_werden {
 	background-image: url('/images/media/btn_patewerden.png');
 	background-repeat:no-repeat;
@@ -537,8 +550,8 @@ a:hover {
 	height: 25px;
 	border: none;
 	cursor: pointer;
-	right: 20px;
-	bottom: 20px;
+	right: 30px;
+	bottom: 30px;
 	position: absolute;
 }
 
