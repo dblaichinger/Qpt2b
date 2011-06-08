@@ -22,7 +22,7 @@ class Order < ActiveRecord::Base
 
 	accepts_nested_attributes_for :design
 
-	validates :trashcan_id => "value", :presence => true
+	#validates :trashcan_id => "value", :presence => true
 
 	def self.random_code
 		 return rand(100) + Time.new.to_i
