@@ -33,8 +33,10 @@ def index
   end
 
   def vote
+      puts "VOOOOOOOOOOTE ******************"
       demand = Demand.find(params[:id])
       demand.vote
+      cookies[:demand] = "true"
 
       render :nothing => true, :status => 200
   end

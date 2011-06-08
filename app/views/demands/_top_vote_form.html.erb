@@ -1,12 +1,15 @@
-<%= form_tag '/demands/vote', :remote => true, :url => {:controller => 'demands', :action => 'vote'} do %>
+<%= form_tag demand_vote_path, :remote => true, :class => 'top_vote_form' do %>
+   <% if @top_demands.index(demand) < 3 %>
+     <img src='/images/media/ranking_<%= @top_demands.index(demand) + 1 %>.png' alt='Platz <%= @top_demands.index(demand) + 1 %>' class="ranking_1_3" />
+  	<% end %>
   <%= hidden_field_tag :id,  demand.id %>
   <span class="top_address"><%= demand.address %></span>
   <span class="top_counter", id="counter_<%= demand.id %>"><%= demand.counter %></span>
   <p>Stimmen</p><% if !cookies[:demand] %>
-    <%= submit_tag "Vote", :disabled => false, :class => "vote_button", :id => "#{demand.id}" %>
-
+    <%= submit_tag "", :disabled => false, :class => "vote_button", :id => "#{demand.id}" %>
+    <p class="top_vote_info"></p>
   <% else %>
-    <%= submit_tag "Vote", :disabled => true, :class => "vote_button"  %>
-    <p>Du kannst nur alle 24h abstimmen!</p>
+    <%= submit_tag "", :disabled => true, :class => "vote_button", :id => "#{demand.id}"  %>
+    <p class="top_vote_info">Du kannst nur alle 24h abstimmen!</p>
   <% end %>
 <% end %>

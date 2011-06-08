@@ -6,10 +6,10 @@
     - This file includes most of the own javascript code of the site
 */
 
-$(document).ready(function() { 
+$(document).ready(function() {
 
-  $("#isDesignSet").hide();
-  $("#isTrashcanSet").hide();
+  // Hide XML output
+  $("#xmlOutput").hide();
 
 	// Scrolling
 	// Example: <span class="toScroll" rel="target.id">Some text</span>
@@ -19,13 +19,25 @@ $(document).ready(function() {
 
 	// Get current geo position
   	getPosition();
-    $('.vote_button').click(function() {voteClicked($(this).attr('id'), false)});
+
+    if($.cookie('demand') == "true") {
+      $('.vote_button').hide();
+    }
+
+
+    $('.top_vote_form').submit(function() {voteClicked($(this).children('.vote_button').attr('id'), false);});
+
+    $('#editorSaveButton').click(function() { 
+      $('#isDesignSet').show();
+      $('#isDesignSetImage').attr("src", "/images/icon_design_uebernommen.png");
+      $.scrollTo("#step5", 2000);
+    });
 });
 
 // Vote-Button was clicked (within maps or top demands)
 function voteClicked($this, $fromMap) {
     // don't let user click again
-    $('.vote_button').attr('disabled', 'disabled');
+    $('.vote_button').hide();
     
     //do not increase the counters html value, if not allowed to vote
     if($.cookie('demand') != 'true') {
@@ -33,6 +45,7 @@ function voteClicked($this, $fromMap) {
       var sel = '#counter_' + $this;
       var countString = "" + (parseInt($(sel).html()) + 1);
       $(sel).html(countString);
+      $('.top_vote_info').html('Danke für Deine Stimme!');
     }
 
     // if vote was sent from map, call AJAX vote
@@ -96,6 +109,7 @@ function setTrashcanId(val) {
 	$("#user_orders_attributes_0_trashcan_id").val( val );
 	$.scrollTo("#step4", 2000);
   $("#isTrashcanSet").show();
+  $('#isTrashcanSetImage').attr("src", "/images/icon_muelleimer_uebernommen.png");
 }
 
 // --------------------------------------------------
@@ -209,7 +223,6 @@ function getPosition(){
           infowindow.setPosition(initialLocation);
           infowindow.open(Gmaps4Rails.map);
 
-          $.scrollTo("#map", 1000);
         }, function() {
           handleNoGeolocation(browserSupportFlag);
         });
@@ -263,3 +276,32 @@ function getPosition(){
     ,pane: "floatPane"
     ,enableEventPropagation: false
  }};
+
+// --------------------------------------------------
+// Gallery
+
+  $(function() {
+    var galleries = $('.ad-gallery').adGallery();
+    $('#switch-effect').change(
+      function() {
+        galleries[0].settings.effect = $(this).val();
+        return false;
+      }
+    );
+    $('#toggle-slideshow').click(
+      function() {
+        galleries[0].slideshow.toggle();
+        return false;
+      }
+    );
+    $('#toggle-description').click(
+      function() {
+        if(!galleries[0].settings.description_wrapper) {
+          galleries[0].settings.description_wrapper = $('#descriptions');
+        } else {
+          galleries[0].settings.description_wrapper = false;
+        }
+        return false;
+      }
+    );
+  });

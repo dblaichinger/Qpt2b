@@ -1,6 +1,6 @@
-module MarkerModule
+module TrashcanModule
   def gmaps4rails_address
-    self.address #describe how to retrieve the address from your model
+    self.address
   end
 
   def gmaps4rails_infowindow

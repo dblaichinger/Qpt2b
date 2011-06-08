@@ -83,6 +83,7 @@
 
 html {
     -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
   	height: 100%;
 }
 
@@ -95,6 +96,12 @@ body {
 	background-image: url('/images/media/hg.png');
 	background-repeat: repeat;
 	height: 100%;
+}
+
+strong {
+    font-family: 'TitilliumText22LXBold', Verdana, Arial, sans-serif;
+	text-transform:uppercase;
+	font-weight: normal;
 }
 
 
@@ -110,6 +117,8 @@ nav {
 	background-image: url('/images/media/nav.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
 	overflow: visible;
 	z-index:5001;
 }
@@ -161,6 +170,8 @@ nav {
 	background-image: url('/images/media/balken.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
 	overflow:visible;
 	display:block;
 	padding-bottom:9px;
@@ -195,7 +206,7 @@ nav {
 	margin-left: 40%;
 	position:absolute;
 	bottom:10px;
-	clear: both,
+	clear: both;
 	display:block;
 	width: 23px;
 	height:20px;
@@ -212,7 +223,7 @@ nav {
 	margin-left: 40%;
 	position:absolute;
 	bottom:10px;
-	clear: both,
+	clear: both;
 	display:block;
 	width: 23px;
 	height:20px;
@@ -231,6 +242,7 @@ nav {
 	margin-left: 44%;
 	bottom: 12px;
 }
+
 
 /* navigation ende */
 
@@ -260,16 +272,18 @@ nav {
 	position:relative;
 }
 
-.headblase_schatten {
+.schatten_h {
 	width:55%;
-	background-image:url('/images/media/headblase_schatten.png');
+	background-image:url('/images/media/schatten_h.png');
 	background-position: bottom right;
 	background-repeat:no-repeat;
 	background-size:100%;	
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
 	z-index:2;
 }
 
-.headblase_schatten img{
+.schatten_h img{
 	position: absolute;
 	right:0px;
 }
@@ -296,18 +310,40 @@ h1 {
 	font-weight: normal;
 }
 	
-.schatten_l {
-	background-image:url('/images/media/infoblase_l_schatten.png');
+.schatten {
+	background-image:url('/images/media/schatten.png');
 	background-position: bottom left;
 	background-repeat:no-repeat;
 	background-size:100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
 }
-	
-.schatten_m {
-	background-image:url('/images/media/infoblase_m_schatten.png');
+
+.schatten_s {
+	background-image:url('/images/media/schatten_s.png');
 	background-position: bottom left;
 	background-repeat:no-repeat;
 	background-size:100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+}
+
+.schatten_l {
+	background-image:url('/images/media/schatten_l.png');
+	background-position: bottom left;
+	background-repeat:no-repeat;
+	background-size:100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+}
+
+.schatten_xl {
+	background-image:url('/images/media/schatten_xl.png');
+	background-position: bottom left;
+	background-repeat:no-repeat;
+	background-size:100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
 }
 	
 .infoblase_l {
@@ -456,7 +492,7 @@ a:hover {
 
 #ib_04_01 {
 	position: absolute;
-	top: 575px;	
+	top: 530px;	
 	left: -20%;
 	width:50%;
 	z-index:2000;
@@ -478,16 +514,16 @@ a:hover {
 
 #hb05 {
 	position: absolute;
-	top:20%;
-	left: 10%;
+	top:10%;
+	right: 0px;
 	width: 40%;
 }
 
 #ib_05_01 {
 	position: absolute;
 	top: 40%;	
-	left: -10%;
-	width:55%;
+	left: -15%;
+	width:45%;
 }
 
 #formular {
@@ -495,22 +531,57 @@ a:hover {
 	height: 290px;
 	padding: 20px;
 	position: absolute;
-	right: 0;
-	top: 15%;
+	left: 30%;
+	top: 25%;
 	background-image:url('/images/media/praegeflaeche_formular.png');
 	background-repeat: no-repeat;
 }
 
+.form_kasten_1 {
+	border: 1px solid #fff;
+	width: 270px;
+	height: 100px;
+	padding: 20px;
+}
+
+.form_kasten_2 {
+	border: 1px solid #fff;
+	width: 270px;
+	height: 100px;
+	padding: 20px;
+	margin-top: 10px;
+}
+
+#user_name {
+	margin-bottom: 20px;
+}
+
+.form_checked li {
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+.form_checked li img {
+	margin-right: 10px;
+	margin-bottom: -7px;
+}
+
+
 #pate_werden {
-	background-image: url('/images/media/pate_werden.png');
+	background-image: url('/images/media/btn_patewerden.png');
 	background-repeat:no-repeat;
-	width: 150px;
-	height: 27px;
+	width: 160px;
+	height: 25px;
 	border: none;
 	cursor: pointer;
-	right: 20px;
-	bottom: 20px;
+	right: 30px;
+	bottom: 30px;
 	position: absolute;
+}
+
+#pate_werden:hover {
+	background-image: url('/images/media/btn_patewerden_hover.png');
+	background-repeat:no-repeat;
 }
 	
 	/* ende pate werden */	
@@ -526,9 +597,9 @@ a:hover {
 
 #ib_21_01 {
 	position: absolute;
-	top: 430px;	
+	bottom: 60px;	
 	left: -20%;
-	width: 100%;
+	width: 95%;
 	z-index:2000;
 }
 
@@ -563,7 +634,7 @@ a:hover {
 }
 
 #top_votes {
-	overflow: hidden;
+	overflow: visible;
 	position: relative;
 	top:120px;
 }
@@ -580,16 +651,19 @@ a:hover {
 }
 	
 .vote_button {
-	background-image: url('/images/media/vote.png');
+	background-image: url('/images/media/btn_abstimmen.png');
 	background-repeat:no-repeat;
-	width: 152px;
-	height: 29px;
+	width: 160px;
+	height: 25px;
 	position: absolute;
 	bottom: 20px;
-	left: 34px;
-	display:block;
-	border: 1px solid #d9dadb;
-	cursor: pointer;
+	left: 30px;
+	border: none;
+}
+
+.vote_button:hover {
+	background-image: url('/images/media/btn_abstimmen_hover.png');
+	background-repeat:no-repeat;
 }
 
 .top_address {
@@ -598,7 +672,6 @@ a:hover {
 	font-size: 14px;
 	display: block;
 	height: 40px;
-	margin-top: 10px;
 	line-height: 1.3em;
 }
 
@@ -607,14 +680,25 @@ a:hover {
 	width: 100%;
 	text-align:center;
 	display: block;
-	margin-top: 40px;
+	margin-top: 35px;
 	color: #003232;
 	text-shadow: -1px -1px #999, 1px 1px #fff;	
+	height: 30px;
 }
 
 #top_votes p {
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 15px;
+}
+
+.ranking_1_3 {
+	position: absolute;
+	top: -10px;
+	left: -15px;
+}
+
+.top_vote_info {
+	color: #ff6600;
 }
 
 	/* ende mitbestimmen */
@@ -756,4 +840,7 @@ h3 {
 	text-shadow: -1px -1px #999, 1px 1px #fff;	
 }
 
-.yellow { border: 1px solid black; margin-top: 8px; background: yellow; padding: 5px; }
+.submit {
+  display: block;
+  margin-top: 20px;
+}
