@@ -16,12 +16,12 @@
 
 one:
   trashcan_id: 1
-  owner_id: 1
+  user_id: 1
   code: MyString
   design_id: 1
 
 two:
   trashcan_id: 1
-  owner_id: 1
+  user_id: 1
   code: MyString
   design_id: 1

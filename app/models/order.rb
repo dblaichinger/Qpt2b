@@ -14,14 +14,21 @@
 
 class Order < ActiveRecord::Base
 
-	attr_accessible :user_id, :trashcan_id, :design_id, :code, :design_attributes
-
+	attr_accessible :user_id, :trashcan_id, :design_id, :code
 	belongs_to :user, :foreign_key => "user_id", :dependent => :destroy
-	has_one :trashcan, :foreign_key => "trashcan_id"
-	has_one :design, :dependent => :destroy
+	
+	belongs_to :trashcan, :foreign_key => "trashcan_id"
+	has_one :design
 
 	accepts_nested_attributes_for :design
 
 	#validates :code, :presence => true
 	#validates :owner_id, :presence => true
+
+	def self.random_code
+		 return rand(100) + Time.new.to_i
+	end
+
 end
+
+

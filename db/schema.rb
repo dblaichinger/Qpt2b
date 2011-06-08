@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110606120557) do
+ActiveRecord::Schema.define(:version => 20110608102149) do
 
   create_table "demands", :force => true do |t|
     t.integer  "counter"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(:version => 20110606120557) do
     t.string   "image_path"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "xml_data"
   end
 
   create_table "orders", :force => true do |t|
