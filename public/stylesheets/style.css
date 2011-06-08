@@ -130,6 +130,7 @@ nav {
 	width: 112%;
 	margin-left:-6%;
 	margin-bottom: 10px;
+	-moz-background-origin: content;
 }
 
 #nav_haupt li{
