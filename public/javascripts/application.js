@@ -22,7 +22,7 @@ $(document).ready(function() {
     }
 
 
-    $('.top_vote_form').submit(function() {voteClicked($(this).attr('id'), false);});
+    $('.top_vote_form').submit(function() {voteClicked($(this).children('.vote_button').attr('id'), false);});
 
     $('#editorSaveButton').click(function() { 
       $('#isDesignSet').show();
@@ -41,6 +41,7 @@ function voteClicked($this, $fromMap) {
       var sel = '#counter_' + $this;
       var countString = "" + (parseInt($(sel).html()) + 1);
       $(sel).html(countString);
+      $('.top_vote_info').html('Danke für Deine Stimme!');
     }
 
     // if vote was sent from map, call AJAX vote
