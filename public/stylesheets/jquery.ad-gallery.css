@@ -1,12 +1,12 @@
 .ad-gallery {
   width: 100%;
+  height: 80%;
 }
 .ad-gallery, .ad-gallery * {
   margin: 0 0 5px 0;
   padding: 0;
 }
   .ad-gallery .ad-image-wrapper {
-
     margin-bottom: 2px;
     position: relative;
     overflow: hidden;
@@ -103,6 +103,8 @@
     }
   .ad-gallery .ad-nav {
     position: relative;
+    width: 100%;
+    height: 80%;
   }
     .ad-gallery .ad-forward, .ad-gallery .ad-back {
       position: absolute;
@@ -117,12 +119,12 @@
       cursor: pointer;
       left: -12px;
       display: block;
-      background: url(ad_scroll_back.png) no-repeat;
+      background: url('ad_scroll_back.png') no-repeat;
 }
     .ad-gallery .ad-forward {
       cursor: pointer;
       display: block;
-      background: url(ad_scroll_forward.png) no-repeat;
+      background: url('ad_scroll_forward.png') no-repeat;
     }
 	
     .ad-gallery .ad-nav .ad-thumbs {
