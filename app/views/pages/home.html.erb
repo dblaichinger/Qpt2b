@@ -73,7 +73,7 @@
                 	<input type="text" name="suche" size="65" />
 				</div>
             	
-					<%= gmaps( "markers" => {"data" => @markers}, "map_options" => {"map_container_id" => "map_box"}
+					<%= gmaps( "markers" => {"data" => @markers}, "map_options" => {"map_container_id" => "map_box", "auto_adjust" => true, "auto_zoom" => true, "zoom" => 10}
 					) %>
 					<!-- NOTE: do not add (inline) css to div#map, neither put content within div#map. otherwise map won't get loaded -->
 					<div id="map_box">
@@ -132,8 +132,7 @@
 					   
 					   <div class="form_kasten_2">
                        <%= t.fields_for :orders do |f| %>
-					        <%= f.hidden_field :trashcan_id %>                          
-					        <%= f.hidden_field :design_id %>
+					        <%= f.hidden_field :trashcan_id %>                   
                             <%= f.fields_for :design do |d| %>
                                 <%= d.text_area :xml_data, :id => "xmlOutput", :cols => 0, :rows => 0 %>
                             <% end %>
@@ -141,8 +140,8 @@
 
 
                     <ul class="form_checked">
-                        <li id="isTrashcanSet"><img id="isTrashcanSetImage" src="/images/icon_muelleimer_uebernommen_inaktiv.png" /> kein M&uuml;lleimer &uuml;bernommen</li>
-                        <li id="isDesignSet"><img id="isDesignSetImage" src="/images/icon_design_uebernommen_inaktiv.png" /> kein Design ausgew&auml;hlt</li>
+                        <li id="isTrashcanSet"><img id="isTrashcanSetImage" src="/images/icon_muelleimer_uebernommen_inaktiv.png" /><span id="isTrashcanSetText">kein M&uuml;lleimer &uuml;bernommen</span></li>
+                        <li id="isDesignSet"><img id="isDesignSetImage" src="/images/icon_design_uebernommen_inaktiv.png" /> <span id="isDesignSetText">kein Design ausgew&auml;hlt</span></li>
                     </ul>
 
 					<%= t.submit "", :id => "pate_werden" %>

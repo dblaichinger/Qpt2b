@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110608175915) do
+ActiveRecord::Schema.define(:version => 20110608185916) do
 
   create_table "demands", :force => true do |t|
     t.integer  "counter"
@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(:version => 20110608175915) do
   end
 
   create_table "designs", :force => true do |t|
-    t.integer  "user_id"
     t.string   "image_path"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -35,12 +34,11 @@ ActiveRecord::Schema.define(:version => 20110608175915) do
     t.integer  "trashcan_id"
     t.integer  "user_id"
     t.string   "code"
-    t.integer  "design_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "status"
   end
 
-  add_index "orders", ["design_id"], :name => "index_orders_on_design_id"
   add_index "orders", ["trashcan_id"], :name => "index_orders_on_trashcan_id"
   add_index "orders", ["user_id"], :name => "index_orders_on_owner_id"
 
