@@ -15,7 +15,7 @@ class OrdersController < ApplicationController
 
         if @entry.save
           flash[:notice] = "Die Patenschaft wurde beantragt!"
-          #UserMailer.order_recieved(@newUser).deliver
+          UserMailer.order_recieved(params[:user]).deliver
         else
           flash[:error] = "Die Bestellung ist fehlgeschlagen!"
         end
