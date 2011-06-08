@@ -574,7 +574,7 @@ a:hover {
 	height: 25px;
 	border: none;
 	cursor: pointer;
-	right: 30px;
+	right: 40px;
 	bottom: 30px;
 	position: absolute;
 }
@@ -702,6 +702,18 @@ a:hover {
 }
 
 	/* ende mitbestimmen */
+
+	/* bildergalerie */
+
+#ib_31_01 {
+	position: absolute;
+	width: 30%;
+	top: 60%;
+	right: 0px;
+}	
+	
+	
+	/* ende bildergalerie */
 	
 	/* kontakt */
 

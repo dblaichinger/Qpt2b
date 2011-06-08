@@ -1,7 +1,6 @@
  <section id="content">
     <h3 class="admin">Ausstehende Bestelllungen</h3>
-    <%if @orders != [] 
-    %>
+    <%if @orders != [] %>
       <ul>
         <%= @orders.each do |order| %>
         <li>ID: <%= order.id %> | <%= order.trashcan.address %><br>
