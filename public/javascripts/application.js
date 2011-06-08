@@ -19,7 +19,13 @@ $(document).ready(function() {
 
 	// Get current geo position
   	getPosition();
-    $('.vote_button').click(function() {voteClicked($(this).attr('id'), false)});
+
+    if($.cookie('demand') == "true") {
+      $('.vote_button').hide();
+    }
+
+
+    $('.top_vote_form').submit(function() {voteClicked($(this).attr('id'), false);});
 
     $('#editorSaveButton').click(function() { 
       $('#isDesignSet').show();
@@ -29,7 +35,7 @@ $(document).ready(function() {
 // Vote-Button was clicked (within maps or top demands)
 function voteClicked($this, $fromMap) {
     // don't let user click again
-    $('.vote_button').attr('disabled', 'disabled');
+    $('.vote_button').hide();
     
     //do not increase the counters html value, if not allowed to vote
     if($.cookie('demand') != 'true') {

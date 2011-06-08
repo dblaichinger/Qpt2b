@@ -25,5 +25,5 @@ Meps::Application.routes.draw do
   match '/', :to => 'pages#home'
   match '/info', :to => 'pages#info'
   match '/contact', :to => 'pages#contact'
-  match '/demands/vote/' => 'demands#vote'
+  match '/demands/vote/' => 'demands#vote', :as => 'demand_vote'
 end

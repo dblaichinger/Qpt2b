@@ -20,6 +20,8 @@ class Trashcan < ActiveRecord::Base
   require 'trashcan_module.rb'
   include TrashcanModule
 
+  has_many :orders
+
   def gmaps4rails_marker_picture
     pic_path = ""
 

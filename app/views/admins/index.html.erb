@@ -1,11 +1,11 @@
  <section id="content">
     <h3 class="admin">Ausstehende Bestelllungen</h3>
-    <%if false #@orders != [] 
+    <%if @orders != [] 
     %>
       <ul>
         <%= @orders.each do |order| %>
-        <li>ID: <%= order.id %> | <%= Trashcan.find(order.trashcan_id).address %><br>
-            von <%= User.find(order.user_id).name %> | <a href=' <%= Design.find(order.design_id).image_path %>'>Design</a> | <%= link_to "Bestätigen", order_confirm_path(order) %> / <%= link_to "Ablehnen", order_decline_path(order) %>
+        <li>ID: <%= order.id %> | <%= order.trashcan.address %><br>
+            von <%= order.user.name %> | <a href=' <%= order.design.image_path %>'>Design</a> | <%= link_to "Bestätigen", order_confirm_path(order) %> / <%= link_to "Ablehnen", order_decline_path(order) %>
         </li>
       <% end %>
       </ul>
