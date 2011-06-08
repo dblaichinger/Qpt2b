@@ -263,7 +263,7 @@ nav {
 
 .headblase_schatten {
 	width:55%;
-	background-image:url('/images/media/headblase_schatten.png');
+	background-image:url('/images/media/schatten.png');
 	background-position: bottom right;
 	background-repeat:no-repeat;
 	background-size:100%;	
@@ -298,14 +298,14 @@ h1 {
 }
 	
 .schatten_l {
-	background-image:url('/images/media/infoblase_l_schatten.png');
+	background-image:url('/images/media/schatten.png');
 	background-position: bottom left;
 	background-repeat:no-repeat;
 	background-size:100%;
 }
 	
 .schatten_m {
-	background-image:url('/images/media/infoblase_m_schatten.png');
+	background-image:url('/images/media/schatten.png');
 	background-position: bottom left;
 	background-repeat:no-repeat;
 	background-size:100%;
