@@ -515,11 +515,19 @@ a:hover {
 	background-repeat: no-repeat;
 }
 
-#formular div {
+.form_kasten_1 {
 	border: 1px solid #fff;
 	width: 290px;
 	height: 120px;
 	padding: 10px;
+}
+
+.form_kasten_2 {
+	border: 1px solid #fff;
+	width: 290px;
+	height: 120px;
+	padding: 10px;
+	margin-top: 10px;
 }
 
 #pate_werden {

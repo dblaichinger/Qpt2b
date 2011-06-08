@@ -122,7 +122,7 @@
 				 <%= form_for @user , :url => orders_path do |t| %>
 					  <%= render 'shared/error_messages', :object => t.object %>
                        
-                       <div>
+                       <div class="form_kasten_1">
                        <%= t.label :name %>
                        <%= t.text_field :name %>
                     
@@ -130,7 +130,7 @@
                        <%= t.text_field :email %>
 					   </div>
 					   
-					   <div>
+					   <div class="form_kasten_2">
                        <%= t.fields_for :orders do |f| %>
 					       <%= f.hidden_field :trashcan_id, :value => "89" %>                          
 					       <%= f.hidden_field :design_id, :value => "45"  %>
