@@ -470,7 +470,7 @@ a:hover {
 
 #ib_04_01 {
 	position: absolute;
-	top: 575px;	
+	top: 530px;	
 	left: -20%;
 	width:50%;
 	z-index:2000;
@@ -492,16 +492,16 @@ a:hover {
 
 #hb05 {
 	position: absolute;
-	top:20%;
-	left: 10%;
+	top:10%;
+	right: 0px;
 	width: 40%;
 }
 
 #ib_05_01 {
 	position: absolute;
 	top: 40%;	
-	left: -10%;
-	width:55%;
+	left: -15%;
+	width:45%;
 }
 
 #formular {
@@ -509,11 +509,41 @@ a:hover {
 	height: 290px;
 	padding: 20px;
 	position: absolute;
-	right: 0;
-	top: 15%;
+	left: 30%;
+	top: 25%;
 	background-image:url('/images/media/praegeflaeche_formular.png');
 	background-repeat: no-repeat;
 }
+
+.form_kasten_1 {
+	border: 1px solid #fff;
+	width: 270px;
+	height: 100px;
+	padding: 20px;
+}
+
+.form_kasten_2 {
+	border: 1px solid #fff;
+	width: 270px;
+	height: 100px;
+	padding: 20px;
+	margin-top: 10px;
+}
+
+#user_name {
+	margin-bottom: 20px;
+}
+
+.form_checked li {
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+.form_checked li img {
+	margin-right: 10px;
+	margin-bottom: -7px;
+}
+
 
 #pate_werden {
 	background-image: url('/images/media/btn_patewerden.png');
@@ -522,8 +552,8 @@ a:hover {
 	height: 25px;
 	border: none;
 	cursor: pointer;
-	right: 20px;
-	bottom: 20px;
+	right: 30px;
+	bottom: 30px;
 	position: absolute;
 }
 
@@ -547,7 +577,7 @@ a:hover {
 	position: absolute;
 	top: 430px;	
 	left: -20%;
-	width: 100%;
+	width: 95%;
 	z-index:2000;
 }
 
@@ -643,6 +673,10 @@ a:hover {
 	position: absolute;
 	top: -10px;
 	left: -15px;
+}
+
+.top_vote_info {
+	color: #ff6600;
 }
 
 	/* ende mitbestimmen */
