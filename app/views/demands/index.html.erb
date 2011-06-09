@@ -20,9 +20,9 @@
 			</div>        	
 			<div id="map" class="praegeflaeche">
             	<div id="map_wahl">
-                	   <form action="#" id="search">
-                        <input type="text" name="suche" size="50" />
-                        <input type="submit" value="Suche" id="suche" />
+                <form id="search" onSubmit="return searchForStreet(this.suche.value);">
+                        <input type="text" name="suche" size="50" placeholder="Adresse eingeben" />
+                        <input type="submit" value="Suche" id="sucheSubmit" />
                     </form>
 				</div>
 

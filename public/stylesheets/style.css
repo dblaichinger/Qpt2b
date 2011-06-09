@@ -707,6 +707,18 @@ a:hover {
 }
 
 	/* ende mitbestimmen */
+
+	/* bildergalerie */
+
+#ib_31_01 {
+	position: absolute;
+	width: 30%;
+	top: 60%;
+	right: 0px;
+}	
+	
+	
+	/* ende bildergalerie */
 	
 	/* kontakt */
 

@@ -74,13 +74,15 @@ var GeoTool = function() {
           if (status == google.maps.GeocoderStatus.OK) {
             if (results[1]) {
               that.address = results[1].formatted_address;
-              console.log("Addr1: " + that.address);
+              //console.log("Addr1: " + that.address);
             }            
           }
         });
 
         return that.address;
     },
+
+
 
 
 
@@ -103,7 +105,15 @@ var GeoTool = function() {
               fillColor: '#AA0000'
       });
       circle.bindTo('center', marker, 'position');   
-    }
+    },
+
+
+    this.GeoCode = function(address) {
+       
+
+
+   return false;
+}
 }
 
 // --------------------------------------------------
@@ -286,9 +296,34 @@ function getPosition(){
 // Search street on the map
 
   function searchForStreet(address){
+
+    var geotool = new GeoTool();
+    var geocoder = new google.maps.Geocoder();
     
-  //  var geotool = new GeoTool();
- //   geotool.GeoCode(address); 
+    geocoder.geocode({'address': address}, function(results, status) {
+    
+    if (status == google.maps.GeocoderStatus.OK) {
+               
+        if (results[0]) {
+             Gmaps4Rails.map.setCenter(results[0].geometry.location);
+             Gmaps4Rails.map.setZoom(15);
+           
+             var marker = new google.maps.Marker({
+                  map: Gmaps4Rails.map,
+                  position: results[0].geometry.location
+             });
+
+            }
+          }
+          else {
+                if(!address){
+                  address = "Adresse";
+                }
+
+                alert(address + " konnte nicht gefunden werden");    
+          }        
+        });
+ 
     return false;
   }
  

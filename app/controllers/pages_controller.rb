@@ -9,8 +9,8 @@ class PagesController < ApplicationController
     @markers = Trashcan.all.to_gmaps4rails
   end
 
-  def gallery
-      
+
+  def gallery    
   end
 
   def search
@@ -20,7 +20,12 @@ class PagesController < ApplicationController
       #marker = new google.maps.Marker({position: object.latLng, map: Gmaps4Rails.map}
 
 
-      render :nothing => true, :status => 200
+      #render :nothing => true, :status => 200
   end
+
+  def contact
+  end
+
+
 
 end 
