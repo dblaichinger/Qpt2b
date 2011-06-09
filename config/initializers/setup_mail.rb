@@ -3,7 +3,7 @@
       :port                 => 587,  
       :domain               => "heroku.com",  
       :user_name            => "trashcanny.service@gmail.com",  
-      :password             => "qpt2bmmt",  
+      :password             => "*****",  
       :authentication       => "plain",  
       :enable_starttls_auto => true  
     }  
