@@ -34,11 +34,7 @@ $(document).ready(function() {
       $.scrollTo("#step5", 2000);
     });
 
- 
-    $('#slides').cycle({
-      fx: 'fade'
-     });
-
+    
 });
 
 // Vote-Button was clicked (within maps or top demands)
