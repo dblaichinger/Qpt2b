@@ -1,5 +1,6 @@
- <section id="content">
-     
+
+
+  <!--
     	<div id="step1" class="step">
 
          	<div class="schatten_l" id="ib_31_01">
@@ -9,8 +10,20 @@
             	<img src="/images/media/infoblase_spitz.png" />
 			</div>
 		</div>
-</section>
+-->
 
+<div class="slideshow" id="slides">
+		<img src="/images/gallery/1.jpg" width="1024" height="683" />
+		<img src="/images/gallery/2.jpg" width="1024" height="683"  />
+		<img src="/images/gallery/3.jpg" width="1024" height="683"  />
+		<img src="/images/gallery/4.jpg" width="1024" height="683"  />
+</div>
+    
 
-
-
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#slides').cycle({
+    fx: 'fade'
+  });
+});
+</script>

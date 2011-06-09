@@ -20,7 +20,7 @@ $(document).ready(function() {
 	// Get current geo position
   	getPosition();
 
-    if($.cookie('demand') == "true") {
+   if($.cookie('demand') == "true") {
       $('.vote_button').hide();
     }
 
@@ -33,6 +33,8 @@ $(document).ready(function() {
       $('#isDesignSetText').html("Design ausgew&auml;hlt");
       $.scrollTo("#step5", 2000);
     });
+
+    
 });
 
 // Vote-Button was clicked (within maps or top demands)
@@ -74,13 +76,17 @@ var GeoTool = function() {
           if (status == google.maps.GeocoderStatus.OK) {
             if (results[1]) {
               that.address = results[1].formatted_address;
-              console.log("Addr1: " + that.address);
+              //console.log("Addr1: " + that.address);
             }            
           }
         });
 
         return that.address;
     },
+
+
+
+
 
     this.addMarker = function(lat, lng) {   
       that.lat = lat;
@@ -101,7 +107,15 @@ var GeoTool = function() {
               fillColor: '#AA0000'
       });
       circle.bindTo('center', marker, 'position');   
-    }
+    },
+
+
+    this.GeoCode = function(address) {
+       
+
+
+   return false;
+}
 }
 
 // --------------------------------------------------
@@ -161,7 +175,7 @@ function gmaps4rails_callback() {
     		OK: function() {
 
             var geoTool = new GeoTool();
-            //TODO: var address = geoTool.reverseGeoCode(object.latLng.lat(), object.latLng.lng());
+            // var address = geoTool.reverseGeoCode(object.latLng.lat(), object.latLng.lng());
 
             // -----------------------------------------
             // Add CIRCLE to Map
@@ -279,6 +293,41 @@ function getPosition(){
     ,enableEventPropagation: false
  }};
 
-// --------------------------------------------------
-// Gallery
 
+// -----------------------------------------------
+// Search street on the map
+
+  function searchForStreet(address){
+
+    var geotool = new GeoTool();
+    var geocoder = new google.maps.Geocoder();
+    
+    geocoder.geocode({'address': address}, function(results, status) {
+    
+    if (status == google.maps.GeocoderStatus.OK) {
+               
+        if (results[0]) {
+             Gmaps4Rails.map.setCenter(results[0].geometry.location);
+             Gmaps4Rails.map.setZoom(15);
+           
+             var marker = new google.maps.Marker({
+                  map: Gmaps4Rails.map,
+                  position: results[0].geometry.location
+             });
+
+            }
+          }
+          else {
+                if(!address){
+                  address = "Adresse";
+                }
+
+                alert(address + " konnte nicht gefunden werden");    
+          }        
+        });
+ 
+    return false;
+  }
+ 
+// --------------------------------
+// Gallery

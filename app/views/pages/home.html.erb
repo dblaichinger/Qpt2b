@@ -45,7 +45,7 @@
         </div>
 
        <div id="step2" class="step">
-        	<div id="video" class="praegeflaeche"><iframe src="http://player.vimeo.com/video/20701329?portrait=0&color=ffffff" width="660" height="358"></iframe></div>
+        	<div id="video" class="praegeflaeche"><iframe src="http://player.vimeo.com/video/24854557?title=0&amp;byline=0&amp;portrait=0" width="640" height="358" frameborder="0"></iframe></div>
          	<div class="schatten_s" id="ib_02_01">
             	<div class="infoblase_l">
          			<p>Du bist Dir noch nicht ganz sicher, was das Ganze soll? In diesem <strong>Video</strong> erhälst Du nochmal eine kurze <strong>Zusammenfassung</strong> aller wichtigen Informationen.</p>
@@ -70,10 +70,13 @@
 			</div>
 			<div id="map" class="praegeflaeche">
             	<div id="map_wahl">
-                	<input type="text" name="suche" size="65" />
+                	<form id="search" onSubmit="return searchForStreet(this.suche.value);">
+                        <input type="text" name="suche" size="50" placeholder="Adresse eingeben" />
+                        <input type="submit" value="Suche" id="sucheSubmit" />
+                    </form>
 				</div>
             	
-					<%= gmaps( "markers" => {"data" => @markers}, "map_options" => {"map_container_id" => "map_box", "auto_adjust" => true, "auto_zoom" => true, "zoom" => 10}
+					<%= gmaps( "markers" => {"data" => @markers}, "map_options" => {"map_container_id" => "map_box", "auto_adjust" => true, "auto_zoom" => true, "zoom" => 15}
 					) %>
 					<!-- NOTE: do not add (inline) css to div#map, neither put content within div#map. otherwise map won't get loaded -->
 					<div id="map_box">
@@ -124,14 +127,14 @@
                        
                        <div class="form_kasten_1">
                        <%= t.label :name %>
-                       <%= t.text_field :name %>
+                       <%= t.text_field :name, :size => 25 %>
                     
                        <%= t.label "E-Mail" %>
-                       <%= t.text_field :email %>
+                       <%= t.text_field :email, :size => 25  %>
 					   </div>
 					   
 					   <div class="form_kasten_2">
-                       <%= t.fields_for :orders do |f| %>
+                       <% t.fields_for :orders do |f| %>
 					        <%= f.hidden_field :trashcan_id %>                   
                             <%= f.fields_for :design do |d| %>
                                 <%= d.text_area :xml_data, :id => "xmlOutput", :cols => 0, :rows => 0 %>

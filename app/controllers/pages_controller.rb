@@ -9,11 +9,14 @@ class PagesController < ApplicationController
     @markers = Trashcan.all.to_gmaps4rails
   end
 
+
+  def gallery    
+  end
+
+
   def contact
   end
 
-  def info
-  	@title = "Information"
-  end
+
 
 end 
