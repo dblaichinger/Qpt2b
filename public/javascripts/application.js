@@ -33,6 +33,12 @@ $(document).ready(function() {
       $('#isDesignSetText').html("Design ausgew&auml;hlt");
       $.scrollTo("#step5", 2000);
     });
+
+ 
+    $('#slides').cycle({
+      fx: 'fade'
+     });
+
 });
 
 // Vote-Button was clicked (within maps or top demands)
@@ -173,7 +179,7 @@ function gmaps4rails_callback() {
     		OK: function() {
 
             var geoTool = new GeoTool();
-            //TODO: var address = geoTool.reverseGeoCode(object.latLng.lat(), object.latLng.lng());
+            // var address = geoTool.reverseGeoCode(object.latLng.lat(), object.latLng.lng());
 
             // -----------------------------------------
             // Add CIRCLE to Map

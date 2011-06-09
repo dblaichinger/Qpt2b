@@ -10,8 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(:version => 20110608201052) do
+ActiveRecord::Schema.define(:version => 20110608203754) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                             :default => "", :null => false
@@ -28,9 +27,6 @@ ActiveRecord::Schema.define(:version => 20110608201052) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-=======
-ActiveRecord::Schema.define(:version => 20110608203754) do
->>>>>>> caf1aa87eb16c52d50a70628bcb25f38179968e3
 
   create_table "demands", :force => true do |t|
     t.integer  "counter"
@@ -67,7 +63,7 @@ ActiveRecord::Schema.define(:version => 20110608203754) do
     t.float    "latitude"
     t.float    "longitude"
     t.boolean  "is_free"
-    t.date     "adopted_until"
+    t.datetime "adopted_until"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -13,15 +13,6 @@ class PagesController < ApplicationController
   def gallery    
   end
 
-  def search
-  
-     # Gmaps4Rails.add_markers
-     # params[:LatLng]
-      #marker = new google.maps.Marker({position: object.latLng, map: Gmaps4Rails.map}
-
-
-      #render :nothing => true, :status => 200
-  end
 
   def contact
   end
