@@ -20,7 +20,7 @@ $(document).ready(function() {
 	// Get current geo position
   	getPosition();
 
-    if($.cookie('demand') == "true") {
+   if($.cookie('demand') == "true") {
       $('.vote_button').hide();
     }
 
@@ -327,7 +327,11 @@ function getPosition(){
     return false;
   }
  
-
-// --------------------------------------------------
+// --------------------------------
 // Gallery
 
+$(document).ready(function() {
+    $('#slides').cycle({
+    fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+  });
+});
