@@ -480,6 +480,12 @@ a:hover {
 	cursor: pointer;
 }
 
+#sucheSubmit {
+	background-image: url('/images/btn_suchen.png');
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+}
 
 			/* step4 */
 
