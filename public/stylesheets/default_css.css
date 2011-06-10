@@ -92,14 +92,15 @@ ul.form_checked {
 	margin-bottom: 10px;
 }
 
-.innerPadding { padding:0.5em; }
+.innerPadding { padding:5px;}
 
 #editorText, #editorInfo, #imageList {
-	width:180px; border:1px solid #FFFFFF; margin-right:1em;
+	width:200px; border:1px solid #FFFFFF; margin-right:10px;
 }
 
 #editorText {
 	float:left;	
+	margin-right: 0px;
 }
 
 #editorInfo {
@@ -121,10 +122,6 @@ ul.form_checked {
 }
 
 #deleteButton { position:absolute; background:#FFFFFF; }
-
-#editorWrapper select, #editorWrapper input  {
-	border:1px solid #000000;
-}
 
 #editorWrapper select {
 	color:#003232; background:#FFFFFF;
