@@ -511,6 +511,10 @@ a:hover {
 	z-index:2000;
 }
 
+#editor input {
+	cursor: pointer;
+}
+
 #newText {
 	background-image: url('/images/editor/btn_textfeld_hinzu_editor.png');
 	background-repeat: no-repeat;
@@ -527,8 +531,8 @@ a:hover {
 	border: none;
 }
 
-#textBold {
-	background-image: url('/images/editor/editor_bold.png');
+
+#textBold, #textItalic, #textLeft, #textCenter, #textRight {
 	background-repeat: no-repeat;
 	width: 18px;
 	height: 18px;
@@ -536,70 +540,49 @@ a:hover {
 	float:left;
 }
 
+#textBold {
+	background-image: url('/images/editor/editor_bold.png');
+}
+
 #textBold:hover {
 	background-image: url('/images/editor/editor_bold_hover.png');
-	background-repeat: no-repeat;
 	border: none;
 }
 
 #textItalic{
 	background-image: url('/images/editor/editor_italic.png');
-	background-repeat: no-repeat;
-	width: 18px;
-	height: 18px;
-	border: none;
-	float:left;
 	margin-right: 5px;
 }
 
 #textItalic:hover {
 	background-image: url('/images/editor/editor_italic_hover.png');
-	background-repeat: no-repeat;
 	border: none;
 }
 
 #textLeft {
 	background-image: url('/images/editor/editor_linksbuendig.png');
-	background-repeat: no-repeat;
-	width: 18px;
-	height: 18px;
-	border: none;
-	float:left;
 }
 
 #textLeft:hover {
 	background-image: url('/images/editor/editor_linksbuendig_hover.png');
-	background-repeat: no-repeat;
 	border: none;
 }
 
 #textCenter {
 	background-image: url('/images/editor/editor_zentriert.png');
-	background-repeat: no-repeat;
-	width: 18px;
-	height: 18px;
-	border: none;
-	float:left;
 }
 
 #textCenter:hover {
 	background-image: url('/images/editor/editor_zentriert_hover.png');
-	background-repeat: no-repeat;
 	border: none;
 }
 
 #textRight {
 	background-image: url('/images/editor/editor_rechtsbuendig.png');
-	background-repeat: no-repeat;
-	width: 18px;
-	height: 18px;
-	border: none;
-	float:left;
 }
 
 #textRight:hover {
 	background-image: url('/images/editor/editor_rechtsbuendig_hover.png');
-	background-repeat: no-repeat;
 	border: none;
 }
 
