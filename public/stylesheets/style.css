@@ -515,6 +515,10 @@ a:hover {
 	cursor: pointer;
 }
 
+#backgroundColor {
+	width: 200px;
+}
+
 #newText {
 	background-image: url('/images/editor/btn_textfeld_hinzu.png');
 	background-repeat: no-repeat;
@@ -526,7 +530,7 @@ a:hover {
 }
 
 #newText:hover {
-	background-image: url('/images/editor/btn_textfeld_hinzu_editor_hover.png');
+	background-image: url('/images/editor/btn_textfeld_hinzu_hover.png');
 	background-repeat: no-repeat;
 	border: none;
 }
@@ -611,7 +615,7 @@ a:hover {
 	border: none;
 	position: absolute;
 	bottom: 5px;
-	right: 5px;
+	left: 35px;
 }
 
 #editorSaveButton:hover {
