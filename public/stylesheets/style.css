@@ -516,11 +516,27 @@ a:hover {
 	background-repeat: no-repeat;
 	width: 160px;
 	height: 25px;
+	border: none;
 }
 
 #editorSaveButton:hover {
 	background-image: url('/images/editor/btn_design_uebernehmen_hover.png');
 	background-repeat: no-repeat;
+	border: none;
+}
+
+#newText {
+	background-image: url('/images/editor/btn_textfeld_hinzu_editor.png');
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 18px;
+	border: none;
+}
+
+#newText:hover {
+	background-image: url('/images/editor/btn_textfeld_hinzu_editor_hover.png');
+	background-repeat: no-repeat;
+	border: none;
 }
 
 			/* step5 */	
