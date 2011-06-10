@@ -511,8 +511,41 @@ a:hover {
 	z-index:2000;
 }
 
-#editor input {
+#editor input, .farben{
 	cursor: pointer;
+}
+
+#editor_farben {
+	width: 29px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.farben {
+	width: 25px;
+	height: 25px;
+	border: 2px solid #fff;
+}
+
+#farbe_01 {
+	background-color: #42210b;
+}
+
+#farbe_02 {
+	background-color: #c69c6d;
+}
+
+#farbe_03 {
+	background-color: #d9e021;
+}
+
+#farbe_04 {
+	background-color: #8cc63f;
+}
+
+#farbe_05 {
+	background-color: #006837;
 }
 
 #backgroundColor {

@@ -79,16 +79,14 @@ ul.form_checked {
 /* --- EDITOR --- */
 
 #editorWrapper {
-	background:#cccccc;
 	overflow:hidden;
-	padding:10px;
-	width:640px;
-	height: 338px;
+	width:660px;
+	height: 358px;
 }
 
 #canvas {
 	background:#FFFFFF;
-	width:580px;
+	width:600px;
 	height:200px;
 	margin-bottom: 10px;
 }
@@ -97,7 +95,7 @@ ul.form_checked {
 
 #editorText, #editorInfo, #imageList {
 	width:210px; 
-	height: 126px;
+	height: 146px;
 	outline:1px solid #FFFFFF; 
 	position: relative;
 }
@@ -108,14 +106,14 @@ ul.form_checked {
 
 #editorInfo {
 	float:left;
-	margin-right:5px;
+	margin-right:10px;
 }
 
 
 #imageList {
 	overflow:hidden;
 	float:left;
-	margin-right:5px;
+	margin-right:10px;
 }
 
 .motivIn { border:1px dotted #000000; }
