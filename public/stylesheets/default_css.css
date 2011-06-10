@@ -99,6 +99,7 @@ ul.form_checked {
 	width:204px; 
 	height: 126px;
 	border:1px solid #FFFFFF; 
+	position: relative;
 }
 
 #editorText {

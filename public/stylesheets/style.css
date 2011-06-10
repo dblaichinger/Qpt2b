@@ -511,30 +511,125 @@ a:hover {
 	z-index:2000;
 }
 
-#editorSaveButton {
-	background-image: url('/images/editor/btn_design_uebernehmen.png');
-	background-repeat: no-repeat;
-	width: 160px;
-	height: 25px;
-	border: none;
-}
-
-#editorSaveButton:hover {
-	background-image: url('/images/editor/btn_design_uebernehmen_hover.png');
-	background-repeat: no-repeat;
-	border: none;
-}
-
 #newText {
 	background-image: url('/images/editor/btn_textfeld_hinzu_editor.png');
 	background-repeat: no-repeat;
 	width: 100px;
 	height: 18px;
 	border: none;
+	float: left;
+	margin-right: 5px;
 }
 
 #newText:hover {
 	background-image: url('/images/editor/btn_textfeld_hinzu_editor_hover.png');
+	background-repeat: no-repeat;
+	border: none;
+}
+
+#textBold {
+	background-image: url('/images/editor/editor_bold.png');
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	border: none;
+	float:left;
+}
+
+#textBold:hover {
+	background-image: url('/images/editor/editor_bold.png');
+	background-repeat: no-repeat;
+	border: none;
+}
+
+#textItalic{
+	background-image: url('/images/editor/editor_italic.png');
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	border: none;
+	float:left;
+	margin-right: 5px;
+}
+
+#textItalic:hover {
+	background-image: url('/images/editor/editor_italic_hover.png');
+	background-repeat: no-repeat;
+	border: none;
+}
+
+#textLeft {
+	background-image: url('/images/editor/editor_linksbuendig.png');
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	border: none;
+	float:left;
+}
+
+#textLeft:hover {
+	background-image: url('/images/editor/editor_linksbuendig_hover.png');
+	background-repeat: no-repeat;
+	border: none;
+}
+
+#textCenter {
+	background-image: url('/images/editor/editor_zentriert.png');
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	border: none;
+	float:left;
+}
+
+#textCenter:hover {
+	background-image: url('/images/editor/editor_zentriert_hover.png');
+	background-repeat: no-repeat;
+	border: none;
+}
+
+#textRight {
+	background-image: url('/images/editor/editor_rechtsbuendig.png');
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	border: none;
+	float:left;
+}
+
+#textRight:hover {
+	background-image: url('/images/editor/editor_rechtsbuendig_hover.png');
+	background-repeat: no-repeat;
+	border: none;
+}
+
+#editorDeleteButton {
+	background-image: url('/images/editor/zuruecksetzen.png');
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 25px;
+	border: none;	
+}
+
+#editorDeleteButton:hover {
+	background-image: url('/images/editor/zuruecksetzen.png_hover');
+	background-repeat: no-repeat;
+	border: none;
+}
+
+#editorSaveButton {
+	background-image: url('/images/editor/btn_design_uebernehmen.png');
+	background-repeat: no-repeat;
+	width: 160px;
+	height: 25px;
+	border: none;
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}
+
+#editorSaveButton:hover {
+	background-image: url('/images/editor/btn_design_uebernehmen_hover.png');
 	background-repeat: no-repeat;
 	border: none;
 }
