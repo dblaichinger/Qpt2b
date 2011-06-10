@@ -537,7 +537,7 @@ a:hover {
 }
 
 #textBold:hover {
-	background-image: url('/images/editor/editor_bold.png');
+	background-image: url('/images/editor/editor_bold_hover.png');
 	background-repeat: no-repeat;
 	border: none;
 }
@@ -609,10 +609,13 @@ a:hover {
 	width: 25px;
 	height: 25px;
 	border: none;	
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
 }
 
 #editorDeleteButton:hover {
-	background-image: url('/images/editor/zuruecksetzen.png_hover');
+	background-image: url('/images/editor/zuruecksetzen_hover.png');
 	background-repeat: no-repeat;
 	border: none;
 }

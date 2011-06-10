@@ -96,9 +96,9 @@ ul.form_checked {
 .innerPadding { padding:5px;}
 
 #editorText, #editorInfo, #imageList {
-	width:204px; 
+	width:210px; 
 	height: 126px;
-	border:1px solid #FFFFFF; 
+	outline:1px solid #FFFFFF; 
 	position: relative;
 }
 
@@ -108,14 +108,14 @@ ul.form_checked {
 
 #editorInfo {
 	float:left;
-	margin-right:10px;
+	margin-right:5px;
 }
 
 
 #imageList {
 	overflow:hidden;
 	float:left;
-	margin-right:10px;
+	margin-right:5px;
 }
 
 .motivIn { border:1px dotted #000000; }
