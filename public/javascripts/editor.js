@@ -37,7 +37,7 @@ function MotivManager(focusManager) {
     this.setTextbox = function() {
         if(this.isTextbox == false) {
             this.isTextbox = true;
-            $("#newText").css({ 'border' : '1px solid #880000' });
+            $("#newText").css({ 'border' : '0px solid #880000' });
             $("#editorWrapper").css({ 'cursor' : 'text' });
         } else {
             this.isTextbox = false;

@@ -126,7 +126,6 @@ ul.form_checked {
 	cursor:move;	
 }
 
-#deleteButton { position:absolute; background:#FFFFFF; }
 
 #editorWrapper select {
 	color:#003232; background:#FFFFFF;
