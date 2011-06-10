@@ -292,7 +292,7 @@ function FocusManager() {
         $('#imageEditor').hide();
         $(".motivIn").css({"border" : "1px dotted #000000"});
         $(".textIn").css({"border" : "1px dotted #000000"});
-        $("#" + this.focusID).css({"border" : "3px dotted #880000"});
+        $("#" + this.focusID).css({"border" : "1px dotted #ff6600"});
 
         // SHOW edit tools
         if($("#" + this.focusID).is('input')) {
