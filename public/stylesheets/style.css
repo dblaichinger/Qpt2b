@@ -590,7 +590,7 @@ a:hover {
 	border: none;
 }
 
-#deleteButton {
+#editorDeleteButton {
 	background-image: url('/images/editor/zuruecksetzen.png');
 	background-repeat: no-repeat;
 	width: 25px;
@@ -601,7 +601,7 @@ a:hover {
 	left: 5px;
 }
 
-#deleteButton:hover {
+#editorDeleteButton:hover {
 	background-image: url('/images/editor/zuruecksetzen_hover.png');
 	background-repeat: no-repeat;
 	border: none;
