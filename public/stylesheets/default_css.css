@@ -79,14 +79,13 @@ ul.form_checked {
 /* --- EDITOR --- */
 
 #editorWrapper {
-	overflow:hidden;
 	width:660px;
 	height: 358px;
 }
 
 #canvas {
 	background:#FFFFFF;
-	width:630px;
+	width:615px;
 	height:200px;
 	margin-bottom: 10px;
 }
@@ -107,7 +106,6 @@ ul.form_checked {
 #editorInfo {
 	float:left;
 	margin-right:15px;
-	margin-left: 1px;
 }
 
 
