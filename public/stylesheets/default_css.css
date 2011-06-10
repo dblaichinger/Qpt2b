@@ -81,15 +81,14 @@ ul.form_checked {
 #editorWrapper {
 	background:#cccccc;
 	overflow:hidden;
-	padding:1em;
-	width:620px;
+	padding:10px;
+	width:640px;
 }
 
 #canvas {
 	background:#FFFFFF;
 	width:580px;
-	height:275px;
-	margin-bottom:1em;
+	height:250px;
 }
 
 .innerPadding { padding:0.5em; }
