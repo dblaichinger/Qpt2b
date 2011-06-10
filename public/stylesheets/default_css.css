@@ -83,19 +83,23 @@ ul.form_checked {
 	overflow:hidden;
 	padding:10px;
 	width:640px;
+	height: 338px;
 }
 
 #canvas {
 	background:#FFFFFF;
 	width:580px;
-	height:260px;
+	height:200px;
 	margin-bottom: 10px;
 }
 
 .innerPadding { padding:5px;}
 
 #editorText, #editorInfo, #imageList {
-	width:200px; border:1px solid #FFFFFF; margin-right:10px;
+	width:200px; 
+	height: 118px;
+	border:1px solid #FFFFFF; 
+	margin-right:10px;
 }
 
 #editorText {
