@@ -96,8 +96,8 @@ ul.form_checked {
 .innerPadding { padding:5px;}
 
 #editorText, #editorInfo, #imageList {
-	width:200px; 
-	height: 123px;
+	width:205px; 
+	height: 125px;
 	border:1px solid #FFFFFF; 
 }
 
