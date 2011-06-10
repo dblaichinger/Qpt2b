@@ -86,7 +86,7 @@ ul.form_checked {
 
 #canvas {
 	background:#FFFFFF;
-	width:600px;
+	width:630px;
 	height:200px;
 	margin-bottom: 10px;
 }
@@ -106,14 +106,15 @@ ul.form_checked {
 
 #editorInfo {
 	float:left;
-	margin-right:10px;
+	margin-right:15px;
+	margin-left: 1px;
 }
 
 
 #imageList {
 	overflow:hidden;
 	float:left;
-	margin-right:10px;
+	margin-right:15px;
 }
 
 .motivIn { border:1px dotted #000000; }
