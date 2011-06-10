@@ -97,24 +97,24 @@ ul.form_checked {
 
 #editorText, #editorInfo, #imageList {
 	width:200px; 
-	height: 118px;
+	height: 123px;
 	border:1px solid #FFFFFF; 
-	margin-right:10px;
 }
 
 #editorText {
 	float:left;	
-	margin-right: 0px;
 }
 
 #editorInfo {
 	float:left;
+	margin-right:10px;
 }
 
 
 #imageList {
 	overflow:hidden;
 	float:left;
+	margin-right:10px;
 }
 
 .motivIn { border:1px dotted #000000; }
