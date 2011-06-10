@@ -88,7 +88,8 @@ ul.form_checked {
 #canvas {
 	background:#FFFFFF;
 	width:580px;
-	height:250px;
+	height:260px;
+	margin-bottom: 10px;
 }
 
 .innerPadding { padding:0.5em; }
