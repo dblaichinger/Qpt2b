@@ -511,16 +511,16 @@ a:hover {
 	z-index:2000;
 }
 
-.button {
-	width: 150px;
-	height: 20px;
-	background-color: transparent;
-	color: #fff;
-    font-family: 'TitilliumText22LRegular', Verdana, Arial, sans-serif;
-	cursor: pointer;
-	text-transform: uppercase;
-	padding-top: 4px;
-	font-size: 10px;
+#editorSaveButton {
+	background-image: url('/images/editor/btn_design_uebernehmen.png');
+	background-repeat: no-repeat;
+	width: 160px;
+	height: 25px;
+}
+
+#editorSaveButton:hover {
+	background-image: url('/images/editor/btn_design_uebernehmen_hover.png');
+	background-repeat: no-repeat;
 }
 
 			/* step5 */	
