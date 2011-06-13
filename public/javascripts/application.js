@@ -34,7 +34,7 @@ $(document).ready(function() {
       $.scrollTo("#step5", 2000);
     });
 
-    
+     
 });
 
 // Vote-Button was clicked (within maps or top demands)
