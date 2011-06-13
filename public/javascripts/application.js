@@ -33,8 +33,7 @@ $(document).ready(function() {
       $('#isDesignSetText').html("Design ausgew&auml;hlt");
       $.scrollTo("#step5", 2000);
     });
-
-     
+    
 });
 
 // Vote-Button was clicked (within maps or top demands)
@@ -329,5 +328,5 @@ function getPosition(){
     return false;
   }
  
-// --------------------------------
-// Gallery
+
+
