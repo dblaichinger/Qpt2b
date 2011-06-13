@@ -79,23 +79,24 @@ ul.form_checked {
 /* --- EDITOR --- */
 
 #editorWrapper {
-	background:#cccccc;
-	overflow:hidden;
-	padding:1em;
-	width:620px;
+	width:660px;
+	height: 358px;
 }
 
 #canvas {
 	background:#FFFFFF;
-	width:580px;
-	height:300px;
-	margin-bottom:1em;
+	width:615px;
+	height:200px;
+	margin-bottom: 10px;
 }
 
-.innerPadding { padding:0.5em; }
+.innerPadding { padding:5px;}
 
 #editorText, #editorInfo, #imageList {
-	width:180px; border:1px solid #FFFFFF; margin-right:1em;
+	width:210px; 
+	height: 146px;
+	outline:1px solid #FFFFFF; 
+	position: relative;
 }
 
 #editorText {
@@ -104,12 +105,14 @@ ul.form_checked {
 
 #editorInfo {
 	float:left;
+	margin-right:15px;
 }
 
 
 #imageList {
 	overflow:hidden;
 	float:left;
+	margin-right:15px;
 }
 
 .motivIn { border:1px dotted #000000; }
@@ -120,19 +123,11 @@ ul.form_checked {
 	cursor:move;	
 }
 
-#deleteButton { position:absolute; background:#FFFFFF; }
-
-#editorWrapper select, #editorWrapper input  {
-	border:1px solid #000000;
-}
 
 #editorWrapper select {
 	color:#003232; background:#FFFFFF;
 }
 
-#editorWrapper input {
-	background:#003232; color:#FFFFFF;
-}
 
 .textIn {
 	background:none;

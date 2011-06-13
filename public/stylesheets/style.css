@@ -480,17 +480,25 @@ a:hover {
 	cursor: pointer;
 }
 
+#sucheSubmit {
+	background-image: url('/images/btn_suchen.png');
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	border: none;
+	cursor: pointer;	
+}
 
 			/* step4 */
 
 #editor {
 	position: relative;
-	top:120px;
+	top:150px;
 }
 
 #hb04 {
 	position: absolute;
-	top:50px;
+	top:40px;
 	right:-5%;
 	z-index:2000;
 }
@@ -503,16 +511,151 @@ a:hover {
 	z-index:2000;
 }
 
-.button {
-	width: 150px;
-	height: 20px;
-	background-color: transparent;
-	color: #fff;
-    font-family: 'TitilliumText22LRegular', Verdana, Arial, sans-serif;
+#editor input, .farben{
 	cursor: pointer;
-	text-transform: uppercase;
-	padding-top: 4px;
-	font-size: 10px;
+}
+
+#editor_farben {
+	width: 29px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+.farben {
+	width: 25px;
+	height: 25px;
+	border: 2px solid #fff;
+	margin-bottom: 5px;
+}
+
+#farbe_01 {
+	background-color: #42210b;
+}
+
+#farbe_02 {
+	background-color: #c69c6d;
+}
+
+#farbe_03 {
+	background-color: #d9e021;
+}
+
+#farbe_04 {
+	background-color: #8cc63f;
+}
+
+#farbe_05 {
+	background-color: #006837;
+}
+
+#backgroundColor {
+	width: 200px;
+}
+
+#newText {
+	background-image: url('/images/editor/btn_textfeld_hinzu.png');
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 18px;
+	border: none;
+	float: left;
+	margin-right: 5px;
+}
+
+#newText:hover {
+	background-image: url('/images/editor/btn_textfeld_hinzu_hover.png');
+	background-repeat: no-repeat;
+	border: none;
+}
+
+
+#textBold, #textItalic, #textLeft, #textCenter, #textRight {
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	border: none;
+	float:left;
+}
+
+#textBold {
+	background-image: url('/images/editor/editor_bold.png');
+}
+
+#textBold:hover {
+	background-image: url('/images/editor/editor_bold_hover.png');
+	border: none;
+}
+
+#textItalic{
+	background-image: url('/images/editor/editor_italic.png');
+	margin-right: 5px;
+}
+
+#textItalic:hover {
+	background-image: url('/images/editor/editor_italic_hover.png');
+	border: none;
+}
+
+#textLeft {
+	background-image: url('/images/editor/editor_linksbuendig.png');
+}
+
+#textLeft:hover {
+	background-image: url('/images/editor/editor_linksbuendig_hover.png');
+	border: none;
+}
+
+#textCenter {
+	background-image: url('/images/editor/editor_zentriert.png');
+}
+
+#textCenter:hover {
+	background-image: url('/images/editor/editor_zentriert_hover.png');
+	border: none;
+}
+
+#textRight {
+	background-image: url('/images/editor/editor_rechtsbuendig.png');
+}
+
+#textRight:hover {
+	background-image: url('/images/editor/editor_rechtsbuendig_hover.png');
+	border: none;
+}
+
+#editorDeleteButton {
+	background-image: url('/images/editor/zuruecksetzen.png');
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 25px;
+	border: none;	
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+}
+
+#editorDeleteButton:hover {
+	background-image: url('/images/editor/zuruecksetzen_hover.png');
+	background-repeat: no-repeat;
+	border: none;
+}
+
+#editorSaveButton {
+	background-image: url('/images/editor/btn_design_uebernehmen.png');
+	background-repeat: no-repeat;
+	width: 160px;
+	height: 25px;
+	border: none;
+	position: absolute;
+	bottom: 5px;
+	left: 35px;
+}
+
+#editorSaveButton:hover {
+	background-image: url('/images/editor/btn_design_uebernehmen_hover.png');
+	background-repeat: no-repeat;
+	border: none;
 }
 
 			/* step5 */	

@@ -37,7 +37,7 @@ function MotivManager(focusManager) {
     this.setTextbox = function() {
         if(this.isTextbox == false) {
             this.isTextbox = true;
-            $("#newText").css({ 'border' : '1px solid #880000' });
+            $("#newText").css({ 'border' : '0px solid #880000' });
             $("#editorWrapper").css({ 'cursor' : 'text' });
         } else {
             this.isTextbox = false;
@@ -292,7 +292,7 @@ function FocusManager() {
         $('#imageEditor').hide();
         $(".motivIn").css({"border" : "1px dotted #000000"});
         $(".textIn").css({"border" : "1px dotted #000000"});
-        $("#" + this.focusID).css({"border" : "3px dotted #880000"});
+        $("#" + this.focusID).css({"border" : "1px dotted #ff6600"});
 
         // SHOW edit tools
         if($("#" + this.focusID).is('input')) {
