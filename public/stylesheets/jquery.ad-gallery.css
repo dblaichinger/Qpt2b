@@ -70,7 +70,7 @@
       position: absolute;
       overflow: hidden;
       top: 0;
-      left: 0px;
+      left: 0px !important;
       z-index: 9;
       width: 100%;
     }
