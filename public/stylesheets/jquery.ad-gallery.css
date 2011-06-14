@@ -1,10 +1,15 @@
 #container {
-  width: 600px;
-  margin: 0 auto;
+  width: 660px;
+  height: 510px;
+  margin-left: 22%;
+  position: relative;  
+  background-image: url('/images/media/praegeflaeche_galerie.png');
+  background-repeat: no-repeat;
+  padding: 20px;
+  
 }
-
 .ad-gallery {
-  width: 600px;
+  width: 660px;
 }
 .ad-gallery, .ad-gallery * {
   margin: 0;
