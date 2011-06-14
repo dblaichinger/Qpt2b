@@ -951,6 +951,7 @@ a:hover {
 #sponsoren {
 	position: absolute;
 	top:120px;
+	padding: 20px;
 }
 
 #sponsoren img {
