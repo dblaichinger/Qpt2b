@@ -1,11 +1,11 @@
 #container {
-  width: 600px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .ad-gallery {
-  width: 600px;
+  width: 100%;
 }
+
 .ad-gallery, .ad-gallery * {
   margin: 0;
   padding: 0;
