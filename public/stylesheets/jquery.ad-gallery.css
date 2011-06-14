@@ -27,7 +27,7 @@
     }
     .ad-gallery .ad-image-wrapper .ad-next {
       position: absolute;
-      right: 0;
+      right: 15px;
       top: 0;
       width: 25px;
       height: 100%;
@@ -37,7 +37,7 @@
     }
     .ad-gallery .ad-image-wrapper .ad-prev {
       position: absolute;
-      left: 0;
+      left: 15px;
       top: 0;
       width: 25px;
       height: 100%;
@@ -72,7 +72,7 @@
       top: 0;
       left: 0px !important;
       z-index: 9;
-      width: 100%;
+      width: 100% !important;
     }
       .ad-gallery .ad-image-wrapper .ad-image a img {
         border: 0;
