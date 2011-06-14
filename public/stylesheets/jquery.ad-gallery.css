@@ -160,24 +160,24 @@
         .ad-gallery .ad-thumbs li {
           float: left;
           padding-right: 5px;
-          width: 75px;
-          height: 50px;
+          width: 90px;
+          height: 60px;
         }
           .ad-gallery .ad-thumbs li a {
             display: block;
-            width: 75px;
-            height: 50px;
+            width: 90px;
+            height: 60px;
           }
             .ad-gallery .ad-thumbs li a img {
-              border: 2px solid #d9dadb;
+              outline: 2px solid #d9dadb;
               display: block;
-              width: 75px;
-              height: 50px;           
+              width: 90px;
+              height: 60px;           
               }
             .ad-gallery .ad-thumbs li a.ad-active img {
-              border: 2px solid #ff6600;
-              width: 75px;
-              height: 50px;   
+              outline: 2px solid #ff6600;
+              width: 90px;
+              height: 60px;   
               }
 /* Can't do display none, since Opera won't load the images then */
 .ad-preloads {

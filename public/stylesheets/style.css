@@ -856,8 +856,10 @@ a:hover {
 #ib_31_01 {
 	position: absolute;
 	width: 30%;
-	top: 60%;
-	right: 0px;
+	top: 40%;
+	right: 10%;
+	z-index:20;
+	
 }	
 	
 	
