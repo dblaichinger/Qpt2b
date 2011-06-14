@@ -75,6 +75,8 @@
     }
       .ad-gallery .ad-image-wrapper .ad-image a img {
         border: 0;
+        width: 100%;
+        left: 0px;
       }
       .ad-gallery .ad-image-wrapper .ad-image .ad-image-description {
         position: absolute;
@@ -131,7 +133,7 @@
     }
     .ad-gallery .ad-back {
       cursor: pointer;
-      left: -20px;
+      left: 0px;
       width: 13px;
       display: block;
       background: url(/images/gallery/ad_scroll_back.png) 0px 22px no-repeat;
