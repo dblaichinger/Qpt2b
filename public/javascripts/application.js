@@ -33,7 +33,6 @@ $(document).ready(function() {
       $('#isDesignSetText').html("Design ausgew&auml;hlt");
       $.scrollTo("#step5", 2000);
     });
-
     
 });
 
@@ -329,5 +328,5 @@ function getPosition(){
     return false;
   }
  
-// --------------------------------
-// Gallery
+
+
