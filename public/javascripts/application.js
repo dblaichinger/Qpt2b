@@ -103,7 +103,7 @@ var GeoTool = function() {
       var circle = new google.maps.Circle({
               map: Gmaps4Rails.map,
               radius: RADIUS,
-              fillColor: '#AA0000'
+              fillColor: '#ff6600'
       });
       circle.bindTo('center', marker, 'position');   
     },
@@ -280,7 +280,7 @@ function getPosition(){
     ,pixelOffset: new google.maps.Size(-140, 0)
     ,zIndex: null
     ,boxStyle: { 
-      background: "url('http://google-maps-utility-library-v3.googlecode.com/svn/tags/infobox/1.1.5/examples/tipbox.gif') no-repeat"
+      background: "url('') no-repeat"
       ,opacity: 0.75
       ,width: "280px"
        }
