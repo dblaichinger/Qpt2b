@@ -17,6 +17,7 @@
     position: relative;
     overflow: hidden;
     height: 85%;
+    left: 0px;
   }
     .ad-gallery .ad-image-wrapper .ad-loader {
       position: absolute;
@@ -28,6 +29,7 @@
       position: absolute;
       right: 0;
       top: 0;
+      width: 25px;
       height: 100%;
       cursor: pointer;
       display: block;
@@ -37,6 +39,7 @@
       position: absolute;
       left: 0;
       top: 0;
+      width: 25px;
       height: 100%;
       cursor: pointer;
       display: block;
@@ -67,7 +70,7 @@
       position: absolute;
       overflow: hidden;
       top: 0;
-      left: 0;
+      left: 0px;
       z-index: 9;
       width: 100%;
     }
