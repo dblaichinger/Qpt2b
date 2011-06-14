@@ -953,6 +953,11 @@ a:hover {
 	top:120px;
 }
 
+#sponsoren img {
+	width: 200px;
+	margin-right: 25px;
+}
+
 #hb42 {
 	position: absolute;
 	top:4%;
