@@ -14,9 +14,9 @@
 }
   .ad-gallery .ad-image-wrapper {
     width: 100%;
-    position: relative;
+      position: absolute;
     overflow: hidden;
-    height: 80%;
+    height: 85%;
   }
     .ad-gallery .ad-image-wrapper .ad-loader {
       position: absolute;
