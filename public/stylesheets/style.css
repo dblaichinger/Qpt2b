@@ -1012,3 +1012,42 @@ h3 {
   display: block;
   margin-top: 20px;
 }
+
+/******* DOKU *****/
+.docu_nav {
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+.docu_nav li {
+	margin-bottom: 15px;
+
+}
+
+.docu_tab {
+	margin-left: 30px;
+
+}
+
+.docu_font16{
+	font-size: 16px;
+}
+
+.docu_font14{
+	font-size: 14px;
+}
+
+
+.docu {
+	max-width: 600px;
+	text-align: justify;
+}
+
+.docu_doubletab {
+	margin-left: 60px;
+
+}
+
+.docu h3 {
+	margin-top: 30px;
+}
