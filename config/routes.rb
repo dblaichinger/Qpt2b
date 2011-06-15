@@ -1,5 +1,5 @@
 Meps::Application.routes.draw do
-
+ 
   #get "admin/index"
 
   #get "demands/index"
@@ -8,6 +8,10 @@ Meps::Application.routes.draw do
   get "pages/gallery"
   get "pages/vote"
   get "pages/search"
+  get '/pages/docu_user'
+  get '/pages/docu_admin'
+  get 'pages/docu_tech'
+
 
   devise_for :users  
   devise_for :admins
