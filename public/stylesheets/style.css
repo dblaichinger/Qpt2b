@@ -1012,3 +1012,26 @@ h3 {
   display: block;
   margin-top: 20px;
 }
+
+#content.docu {
+  width: 600px;
+  font-size: 14px;
+}
+
+#content.docu p {
+  margin-bottom: 20px;
+}
+
+#content.docu h2 {
+  margin-top: 20px;
+}
+#content.docu ul {
+  list-style: none;
+}
+
+#content.docu .no_margin_p p,
+#content.docu #inhaltsverzeichnis p {
+  margin-bottom: 0px;
+}
+
+
