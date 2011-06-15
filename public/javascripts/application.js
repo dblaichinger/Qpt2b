@@ -103,7 +103,7 @@ var GeoTool = function() {
       var circle = new google.maps.Circle({
               map: Gmaps4Rails.map,
               radius: RADIUS,
-              fillColor: '#AA0000'
+              fillColor: '#ff6600'
       });
       circle.bindTo('center', marker, 'position');   
     },

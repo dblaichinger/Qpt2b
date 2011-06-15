@@ -855,9 +855,11 @@ a:hover {
 
 #ib_31_01 {
 	position: absolute;
-	width: 30%;
-	top: 60%;
-	right: 0px;
+	width: 20%;
+	top: 300px;
+	left: 5%;
+	z-index:20;
+	
 }	
 	
 	
@@ -951,6 +953,12 @@ a:hover {
 #sponsoren {
 	position: absolute;
 	top:120px;
+	padding: 50px;
+}
+
+#sponsoren img {
+	width: 150px;
+	margin: 20px;
 }
 
 #hb42 {
