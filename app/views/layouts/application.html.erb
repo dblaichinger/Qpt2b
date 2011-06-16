@@ -43,6 +43,26 @@
 	        <%else%><li><% end %>
 	        <%=link_to 'Bildergalerie', pages_gallery_path %></li>
 
+	       	<% if controller?("pages") && action?("docu_user")  %>
+	        <li class="active">
+	        <%else%><li><% end %>
+	        <%=link_to 'Dokumentation', pages_docu_user_path %></li>
+			
+			<% if controller?("pages") && (action?("docu_user") || action?("docu_tech") || action?("docu_admin"))  %>
+				     
+				     <% if action?("docu_tech")  %>
+				    	 <li class="active">
+				     <%else%><li><% end %>
+				     <%=link_to 'Technische Doku', pages_docu_tech_path %></li>
+				     
+				     <% if action?("docu_admin")  %>
+				    	 <li class="active">
+				     <%else%><li><% end %>
+				     <%=link_to 'Administrator Doku', pages_docu_admin_path %></li>
+	        <% end %>
+
+	        
+
 	    </ul>
 
 	</nav>
