@@ -1066,6 +1066,10 @@ h3 {
 	margin-bottom: 20px;
 }
 
+.docu ul li {
+		list-style: none;
+}
+
 
 #content.docu {
   width: 650px;
@@ -1085,7 +1089,7 @@ h3 {
   margin-top: 20px;
 }
 #content.docu ul {
-  list-style: none;
+  list-style-type: none;
 }
 
 
