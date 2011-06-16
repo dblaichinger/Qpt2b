@@ -1018,11 +1018,11 @@ h3 {
 .docu_nav {
 	margin-top: 20px;
 	font-size: 20px;
+	margin-bottom: 20px;
 }
 
 .docu_nav li {
-	margin-bottom: 15px;
-
+	margin: 0px;
 }
 
 .docu_tab {
@@ -1038,6 +1038,9 @@ h3 {
 	font-size: 14px;
 }
 
+.docu_font12{
+	font-size: 12px;
+}
 
 .docu {
 	max-width: 600px;
@@ -1049,18 +1052,23 @@ h3 {
 
 }
 
+.docu_tripletab {
+	margin-left: 90px;
+
+}
+
 .docu h3 {
 	margin-top: 30px;
 }
 
-
-#content.docu {
-  width: 600px;
-  font-size: 14px;
+.docu ul {
+	margin-bottom: 20px;
 }
 
+
+
 #content.docu p {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 #content.docu h2 {
