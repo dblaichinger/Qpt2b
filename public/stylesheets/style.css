@@ -1066,6 +1066,12 @@ h3 {
 	margin-bottom: 20px;
 }
 
+
+#content.docu {
+  width: 650px;
+  font-size: 14px;
+}
+
 .docu h2, .docu h3, .docu h4 {
 	text-align: left;
 }
@@ -1082,15 +1088,40 @@ h3 {
   list-style: none;
 }
 
-.docu .no_margin_p {
-    display: block;
-    float: left;
-    width: 250px;
+
+#content.docu .no_margin_p {
+	width: 250px;
+	display: block;
+	float: left;
 }
 
 #content.docu #inhaltsverzeichnis {
-    display: block;
-    float: left;
-    margin-bottom: 100px;
-    width: 400px;
+	width: 400px;
+	display: block;
+	float: left;
+	margin-bottom: 100px;
+}
+
+
+
+
+#content.docu .lvl1 {
+  padding-left: 10px;
+}
+
+#content.docu .lvl2 {
+  padding-left: 20px;
+}
+
+#content.docu #blocker {
+	display: block;
+	width: 650px;
+	clear: both;
+}
+
+#content.docu #hilfe {
+	width: 650px;
+	height: 50px;
+	display:block;
+	margin-top: 100px;
 }
