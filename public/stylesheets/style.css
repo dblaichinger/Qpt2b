@@ -1081,3 +1081,16 @@ h3 {
 #content.docu ul {
   list-style: none;
 }
+
+.docu .no_margin_p {
+    display: block;
+    float: left;
+    width: 250px;
+}
+
+#content.docu #inhaltsverzeichnis {
+    display: block;
+    float: left;
+    margin-bottom: 100px;
+    width: 400px;
+}
