@@ -1017,21 +1017,26 @@ h3 {
 /******* DOKU *****/
 .docu_nav {
 	margin-top: 20px;
-	font-size: 20px;
+	font-size: 16px;
 	margin-bottom: 20px;
+}
+
+.docu_nav li {
+	margin-top: 3px;	
 }
 
 .docu_tab {
 	margin-left: 30px;
-
 }
 
+
 .docu_font16{
-	font-size: 16px;
+
+	font-size: 14px;
 }
 
 .docu_font14{
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .docu_font12{
@@ -1083,6 +1088,7 @@ h3 {
   list-style: none;
 }
 
+
 #content.docu .no_margin_p {
 	width: 250px;
 	display: block;
@@ -1097,10 +1103,7 @@ h3 {
 }
 
 
-#content.docu .no_margin_p p,
-#content.docu #inhaltsverzeichnis p {
-  margin-bottom: 0px;
-}
+
 
 #content.docu .lvl1 {
   padding-left: 10px;
