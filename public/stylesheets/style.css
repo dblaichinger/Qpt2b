@@ -1080,6 +1080,22 @@ h3 {
 	text-align: left;
 }
 
+.docu_oben {
+	margin-left: 539px;
+	font-size: 10px;
+}
+
+#content a:visited {
+	color: #003232;
+}
+
+#content a:active {
+	    font-family: 'CharisSILItalic', Georgia, serif;
+}
+
+#content h3 {
+	border-bottom: solid #003232 thin;
+}
 
 #content.docu p {
   margin-bottom: 15px;
